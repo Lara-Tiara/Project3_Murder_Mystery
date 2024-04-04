@@ -1,0 +1,4560 @@
+fileFormatVersion: 2
+guid: 3c2f25be1a20c5b478c9479e48cafc7d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Inventory Book without border_Frame_0
+    originalName: 
+    pivot: {x: 0.5386905, y: -0.30403802}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2412
+      y: 5747
+      width: 336
+      height: 421
+    spriteID: d940feab93fdb574eb124a9fdaf0c371
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2412, y: 5747}
+  - name: Inventory Book without border_Frame_1
+    originalName: 
+    pivot: {x: 0.49107146, y: -0.29024944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7548
+      y: 528
+      width: 336
+      height: 441
+    spriteID: 58512a770285f04409a6afb29668a023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7548, y: 528}
+  - name: Inventory Book without border_Frame_2
+    originalName: 
+    pivot: {x: 0.44345236, y: -0.2524655}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5747
+      width: 336
+      height: 507
+    spriteID: d8a3f82d3aac0374880bc91cfbd7ed04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5747}
+  - name: Inventory Book without border_Frame_3
+    originalName: 
+    pivot: {x: 0.542811, y: -0.23837209}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 619
+      height: 516
+    spriteID: 6869b04d2001437499dad9fb20364b6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Inventory Book without border_Frame_4
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7363
+      y: 3970
+      width: 661
+      height: 416
+    spriteID: 7ef2ff3dccecfb04ea3587bc7d382fa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7363, y: 3970}
+  - name: Inventory Book without border_Frame_6
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1182
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: 06f82f5c3a2904348942343854950dbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1182, y: 4407}
+  - name: Inventory Book without border_Frame_7
+    originalName: 
+    pivot: {x: 0.542811, y: -0.23837209}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 631
+      y: 4
+      width: 619
+      height: 516
+    spriteID: 41f8be5567e6be2459e892100a9bea73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 631, y: 4}
+  - name: Inventory Book without border_Frame_8
+    originalName: 
+    pivot: {x: 0.44345236, y: -0.2524655}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 348
+      y: 5747
+      width: 336
+      height: 507
+    spriteID: 129c09dda9fc7c649b3043e3d0ec3f6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 348, y: 5747}
+  - name: Inventory Book without border_Frame_9
+    originalName: 
+    pivot: {x: 0.49107146, y: -0.29024944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1380
+      y: 5747
+      width: 336
+      height: 441
+    spriteID: f323157d8d36ef541917338270dbfb56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1380, y: 5747}
+  - name: Inventory Book without border_Frame_10
+    originalName: 
+    pivot: {x: 0.5386905, y: -0.30403802}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2756
+      y: 5747
+      width: 336
+      height: 421
+    spriteID: 9ce9a8056fdffb84ca12f86e9418ee22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2756, y: 5747}
+  - name: Inventory Book without border_Frame_13
+    originalName: 
+    pivot: {x: 0.5386905, y: -0.30403802}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3100
+      y: 5747
+      width: 336
+      height: 421
+    spriteID: 3f54e6d769a2d21408fa40a288d638d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3100, y: 5747}
+  - name: Inventory Book without border_Frame_14
+    originalName: 
+    pivot: {x: 0.49107146, y: -0.29024944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1724
+      y: 5747
+      width: 336
+      height: 441
+    spriteID: 07f779f7cec08984ab0abcab77ca05d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1724, y: 5747}
+  - name: Inventory Book without border_Frame_15
+    originalName: 
+    pivot: {x: 0.44345236, y: -0.2524655}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 692
+      y: 5747
+      width: 336
+      height: 507
+    spriteID: 1f47af61b1ca54e448e3f8b983b8aed1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 692, y: 5747}
+  - name: Inventory Book without border_Frame_16
+    originalName: 
+    pivot: {x: 0.542811, y: -0.23837209}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1258
+      y: 4
+      width: 619
+      height: 516
+    spriteID: 9e3f4e5c1281e9f449231ce4b26b6818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1258, y: 4}
+  - name: Inventory Book without border_Frame_17
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1851
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: a23eaa75a5c3a934c95cb086927ce6b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1851, y: 4407}
+  - name: Inventory Book without border_Frame_19
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2520
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: d7013211fde05a9488e4331ee85a1c6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2520, y: 4407}
+  - name: Inventory Book without border_Frame_20
+    originalName: 
+    pivot: {x: 0.542811, y: -0.23837209}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1885
+      y: 4
+      width: 619
+      height: 516
+    spriteID: 6c541e99a0663df43b32179800781cef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1885, y: 4}
+  - name: Inventory Book without border_Frame_21
+    originalName: 
+    pivot: {x: 0.44345236, y: -0.2524655}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1036
+      y: 5747
+      width: 336
+      height: 507
+    spriteID: 5682b2f82799ec84293c006f2ab6e2da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1036, y: 5747}
+  - name: Inventory Book without border_Frame_22
+    originalName: 
+    pivot: {x: 0.49107146, y: -0.29024944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2068
+      y: 5747
+      width: 336
+      height: 441
+    spriteID: c7211c88e200b7f42a2b98ec7852a0a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2068, y: 5747}
+  - name: Inventory Book without border_Frame_23
+    originalName: 
+    pivot: {x: 0.5386905, y: -0.30403802}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3444
+      y: 5747
+      width: 336
+      height: 421
+    spriteID: d0a97d19345e9334d9200dbede56d37b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3444, y: 5747}
+  - name: Inventory Book without border_Frame_28
+    originalName: 
+    pivot: {x: 0.48648682, y: -0.2942584}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8105
+      y: 4407
+      width: 37
+      height: 418
+    spriteID: 56fb15b88f25162489c2434785a031a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 8105, y: 4407}
+  - name: Inventory Book without border_Frame_29
+    originalName: 
+    pivot: {x: 0.4977778, y: -0.26973686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7872
+      y: 4407
+      width: 225
+      height: 456
+    spriteID: f2b24a7300d39e04ca2a82535a9181b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7872, y: 4407}
+  - name: Inventory Book without border_Frame_30
+    originalName: 
+    pivot: {x: 0.49913943, y: -0.25413224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4407
+      width: 581
+      height: 484
+    spriteID: 6ac62630fb8863b4aaeb35577cb3c8cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4407}
+  - name: Inventory Book without border_Frame_31
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3189
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: 2f761d65ea103dd419865a66c5a10990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3189, y: 4407}
+  - name: Inventory Book without border_Frame_33
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3858
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: d71448327c2de6f478f439321edd4f94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3858, y: 4407}
+  - name: Inventory Book without border_Frame_34
+    originalName: 
+    pivot: {x: 0.49913943, y: -0.25413224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 593
+      y: 4407
+      width: 581
+      height: 484
+    spriteID: 9850acfc8cd3e224988e06a1dc272b80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 593, y: 4407}
+  - name: Inventory Book without border_Frame_35
+    originalName: 
+    pivot: {x: 0.4977778, y: -0.26973686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7864
+      y: 4
+      width: 225
+      height: 456
+    spriteID: 5b5c4469a7840b343bd12490756c9163
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7864, y: 4}
+  - name: Inventory Book without border_Frame_36
+    originalName: 
+    pivot: {x: 0.48648682, y: -0.2942584}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8150
+      y: 4407
+      width: 37
+      height: 418
+    spriteID: 0bfed6f1d1f456b418a7a51c1bc71e64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 8150, y: 4407}
+  - name: Inventory Book without border_Frame_38
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4527
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: 7f72f5a1fb08aad47ba7777a27cd3c50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4527, y: 4407}
+  - name: Inventory Book without border_Frame_48
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5196
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: 847424a5c58d6cb4b91e9e209df16890
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5196, y: 4407}
+  - name: Inventory Book without border_Frame_58
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5865
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: b00b392aa9b901b47948a781bc0ebec9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5865, y: 4407}
+  - name: Inventory Book without border_Frame_67
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6534
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: c36f29e75e15cc84799bc34163c2f4b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6534, y: 4407}
+  - name: Inventory Book without border_Frame_76
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7203
+      y: 4407
+      width: 661
+      height: 416
+    spriteID: 8d8325548ba8fc0429e6491dd798e367
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7203, y: 4407}
+  - name: Inventory Book without border_Frame_85
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 94e88b9884e60ec498686ad75839bcc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4899}
+  - name: Inventory Book without border_Frame_39
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29216152}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3349
+      y: 3970
+      width: 661
+      height: 421
+    spriteID: b96e61db9ef1b03428bd35db53b49fbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3349, y: 3970}
+  - name: Inventory Book without border_Frame_40
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2789116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2680
+      y: 528
+      width: 661
+      height: 441
+    spriteID: 49219f1088b2ff64186956e1e70871a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2680, y: 528}
+  - name: Inventory Book without border_Frame_41
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2847222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3530
+      width: 661
+      height: 432
+    spriteID: 9962ae5bfd5646941a2669026cc8cc9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3530}
+  - name: Inventory Book without border_Frame_42
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4812
+      y: 3530
+      width: 661
+      height: 429
+    spriteID: 435197923978e45438c50015d03fb4f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4812, y: 3530}
+  - name: Inventory Book without border_Frame_43
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 673
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: aecdd9f70c05dc64f95c9199e5a8f830
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 673, y: 4899}
+  - name: Inventory Book without border_Frame_44
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1342
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: f2e7b9aacdbffe7489c36b16f4340819
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1342, y: 4899}
+  - name: Inventory Book without border_Frame_45
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 7a8f17d40b9e8ad4bb3cef9d8fb4018a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 4899}
+  - name: Inventory Book without border_Frame_46
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2680
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: a51a5d869e6ea57418d7cbf665e9144b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2680, y: 4899}
+  - name: Inventory Book without border_Frame_49
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29216152}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4018
+      y: 3970
+      width: 661
+      height: 421
+    spriteID: a74207a14c3f19a45b712ed2c9a31c63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4018, y: 3970}
+  - name: Inventory Book without border_Frame_50
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2789116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3349
+      y: 528
+      width: 661
+      height: 441
+    spriteID: 5f838fad27e171a468c470852998c67c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3349, y: 528}
+  - name: Inventory Book without border_Frame_51
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2847222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 673
+      y: 3530
+      width: 661
+      height: 432
+    spriteID: 8690af15fbc41654eb17e1ab6f09cea4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 673, y: 3530}
+  - name: Inventory Book without border_Frame_52
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5481
+      y: 3530
+      width: 661
+      height: 429
+    spriteID: 423f6cbffe8c9df4399e8ab2a5e77289
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5481, y: 3530}
+  - name: Inventory Book without border_Frame_53
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3349
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 0a8078b8d7adba748a448b4626db6f12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3349, y: 4899}
+  - name: Inventory Book without border_Frame_54
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4018
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 437c3f39bd0950b4380b29548b8a1cb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4018, y: 4899}
+  - name: Inventory Book without border_Frame_55
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4687
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 75940d895a658ee47acb2cf9bd1b6ec8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4687, y: 4899}
+  - name: Inventory Book without border_Frame_56
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5356
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 188503bf7cde3fb4d975fc1744467c20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5356, y: 4899}
+  - name: Inventory Book without border_Frame_59
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.28738317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 673
+      y: 3970
+      width: 661
+      height: 428
+    spriteID: e188361aee764d04a9b227b337d0b4f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 673, y: 3970}
+  - name: Inventory Book without border_Frame_60
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27152318}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5188
+      y: 4
+      width: 661
+      height: 453
+    spriteID: d3368e6c7e0d9f14a9ea81aa9e91fdd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5188, y: 4}
+  - name: Inventory Book without border_Frame_61
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.26914662}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2512
+      y: 4
+      width: 661
+      height: 457
+    spriteID: 66a2600573855c24aac6c5187215f181
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2512, y: 4}
+  - name: Inventory Book without border_Frame_62
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 528
+      width: 661
+      height: 450
+    spriteID: 98e47317d3f6d91438e1a0cc05e638d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 528}
+  - name: Inventory Book without border_Frame_63
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6150
+      y: 3530
+      width: 661
+      height: 429
+    spriteID: 78a630d74afb37641aca0fea49c45a5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6150, y: 3530}
+  - name: Inventory Book without border_Frame_64
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2935561}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4687
+      y: 3970
+      width: 661
+      height: 419
+    spriteID: 7d45e376ac5f5ac4ea8ec6b289c5f8e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4687, y: 3970}
+  - name: Inventory Book without border_Frame_65
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6025
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: b7e4e5d5faa0ed347b8dfbfd0836bbe0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6025, y: 4899}
+  - name: Inventory Book without border_Frame_68
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.28738317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1342
+      y: 3970
+      width: 661
+      height: 428
+    spriteID: 182f6f10f79f88a458dfe32a24329ba7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1342, y: 3970}
+  - name: Inventory Book without border_Frame_69
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27152318}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5857
+      y: 4
+      width: 661
+      height: 453
+    spriteID: c0d1d8d76bfb7564d9db1b01fa9ffbd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5857, y: 4}
+  - name: Inventory Book without border_Frame_70
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.26914662}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3181
+      y: 4
+      width: 661
+      height: 457
+    spriteID: 42945ff88ac6e864d8a2121e78f5b9de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3181, y: 4}
+  - name: Inventory Book without border_Frame_71
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 673
+      y: 528
+      width: 661
+      height: 450
+    spriteID: e822d756362e31b419d6e5721a2a1316
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 673, y: 528}
+  - name: Inventory Book without border_Frame_72
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6819
+      y: 3530
+      width: 661
+      height: 429
+    spriteID: becce8f27a88b2d42afa316581a005b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6819, y: 3530}
+  - name: Inventory Book without border_Frame_73
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2935561}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5356
+      y: 3970
+      width: 661
+      height: 419
+    spriteID: e9500fd506edaeb4786e39def7db3bd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5356, y: 3970}
+  - name: Inventory Book without border_Frame_74
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6694
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 44b900957a5e395439c4d9c7fe29736b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6694, y: 4899}
+  - name: Inventory Book without border_Frame_77
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2935561}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6025
+      y: 3970
+      width: 661
+      height: 419
+    spriteID: 6b35c00c25ad9dc419c310307a0b4dbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6025, y: 3970}
+  - name: Inventory Book without border_Frame_78
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7488
+      y: 3530
+      width: 661
+      height: 429
+    spriteID: 5a9b5f546ff88bc4eacffabf7e9ec6aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7488, y: 3530}
+  - name: Inventory Book without border_Frame_79
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1342
+      y: 528
+      width: 661
+      height: 450
+    spriteID: e9b699e18e8941e47af792598247934f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1342, y: 528}
+  - name: Inventory Book without border_Frame_80
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.26914662}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3850
+      y: 4
+      width: 661
+      height: 457
+    spriteID: 0a17466d23409ba4586e73ff21148c5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3850, y: 4}
+  - name: Inventory Book without border_Frame_81
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27152318}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6526
+      y: 4
+      width: 661
+      height: 453
+    spriteID: 560c594968236aa419d72227879ff6cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6526, y: 4}
+  - name: Inventory Book without border_Frame_82
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.28738317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 3970
+      width: 661
+      height: 428
+    spriteID: 12980adbc18fb244fab9986d3c7eb115
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 3970}
+  - name: Inventory Book without border_Frame_83
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7363
+      y: 4899
+      width: 661
+      height: 416
+    spriteID: 8006662f27bd0a641baf68473a451443
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7363, y: 4899}
+  - name: Inventory Book without border_Frame_86
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2935561}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6694
+      y: 3970
+      width: 661
+      height: 419
+    spriteID: d513294878dca3c45bd36459e2de4ace
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6694, y: 3970}
+  - name: Inventory Book without border_Frame_87
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.2867133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3970
+      width: 661
+      height: 429
+    spriteID: 39304e397917fb94095ff26bd229635e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3970}
+  - name: Inventory Book without border_Frame_88
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 528
+      width: 661
+      height: 450
+    spriteID: 34760b5f619481c4780f0feaafde1fd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 528}
+  - name: Inventory Book without border_Frame_89
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.26914662}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4519
+      y: 4
+      width: 661
+      height: 457
+    spriteID: 5a665bd318a54c74f88788a1716baa0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4519, y: 4}
+  - name: Inventory Book without border_Frame_90
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.27152318}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7195
+      y: 4
+      width: 661
+      height: 453
+    spriteID: 1dbbe1d4c9294514d9d326db65d7ce01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7195, y: 4}
+  - name: Inventory Book without border_Frame_91
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.28738317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2680
+      y: 3970
+      width: 661
+      height: 428
+    spriteID: 29e12702e979e444eb8d82c9df8094e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2680, y: 3970}
+  - name: Inventory Book without border_Frame_92
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5323
+      width: 661
+      height: 416
+    spriteID: 2a7682e6cfe68154ca7ea05fb6773bd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5323}
+  - name: Inventory Book without border_Frame_94
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6358
+      y: 986
+      width: 695
+      height: 416
+    spriteID: ffcca5c9f14b5d247b706f36626ea544
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6358, y: 986}
+  - name: Inventory Book without border_Frame_95
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7061
+      y: 986
+      width: 695
+      height: 416
+    spriteID: 21d2be9773b0928469198125ad6e3c2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7061, y: 986}
+  - name: Inventory Book without border_Frame_96
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 155c9eab0d169e54493687a05e463170
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1410}
+  - name: Inventory Book without border_Frame_97
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 707
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 52085026f2a31174597e50b66fafd7c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 707, y: 1410}
+  - name: Inventory Book without border_Frame_98
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1410
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 420957e6d4266d1419aca25a515a7899
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1410, y: 1410}
+  - name: Inventory Book without border_Frame_99
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2113
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: bcb7b26ec89d2a14a956e50e1e92f64f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2113, y: 1410}
+  - name: Inventory Book without border_Frame_100
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2816
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 1e5af6ef764d2b94abb41fad159a9d0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2816, y: 1410}
+  - name: Inventory Book without border_Frame_101
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3519
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: b0c55e2a23874e1429348ca5e8d56efb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3519, y: 1410}
+  - name: Inventory Book without border_Frame_102
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4222
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 910024bd4f543094583783e8ae35e52f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4222, y: 1410}
+  - name: Inventory Book without border_Frame_103
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4925
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: fda5fb67d3e50d14c92fafe495430c6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4925, y: 1410}
+  - name: Inventory Book without border_Frame_104
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5628
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 6cc9bbd0dfdc4f94d8b6c8008b70cb07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5628, y: 1410}
+  - name: Inventory Book without border_Frame_105
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6331
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: 43900d64fe710104c86e4cc8b67a2f68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6331, y: 1410}
+  - name: Inventory Book without border_Frame_106
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7034
+      y: 1410
+      width: 695
+      height: 416
+    spriteID: e2b59811221989d40a38ffe4a797396e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7034, y: 1410}
+  - name: Inventory Book without border_Frame_107
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: a3bd92408f931ac42aae718ca5085e52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1834}
+  - name: Inventory Book without border_Frame_108
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 707
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 1a6a2d5c6a3596b45bd5caa16a2db95d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 707, y: 1834}
+  - name: Inventory Book without border_Frame_109
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1410
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 6bec366ee7efb8a47bd308f0a6953f3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1410, y: 1834}
+  - name: Inventory Book without border_Frame_110
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2113
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 028f4408179a2c34097ed1ad79b2d272
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2113, y: 1834}
+  - name: Inventory Book without border_Frame_111
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2816
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 3acbbfdae71d8c64cadc190169760501
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2816, y: 1834}
+  - name: Inventory Book without border_Frame_112
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3519
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 616352acf1228084ab4be99b7a40d996
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3519, y: 1834}
+  - name: Inventory Book without border_Frame_113
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4222
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: ca1aeb491ea9a484486ea91860d86237
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4222, y: 1834}
+  - name: Inventory Book without border_Frame_114
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4925
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 9b2fe6286aea6df4884ff08db8837cc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4925, y: 1834}
+  - name: Inventory Book without border_Frame_115
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5628
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 35c1da236a720424d9e9d77ef7b9ccb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5628, y: 1834}
+  - name: Inventory Book without border_Frame_116
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6331
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 22cf50ac78c609044976d1435b9cafd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6331, y: 1834}
+  - name: Inventory Book without border_Frame_117
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7034
+      y: 1834
+      width: 695
+      height: 416
+    spriteID: 87decfdf5f436df4d8c768e6f7c5d31f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7034, y: 1834}
+  - name: Inventory Book without border_Frame_118
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 1e598559b4e126f48970abf6db62385f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2258}
+  - name: Inventory Book without border_Frame_119
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 707
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 9f6a2bbcbf0a99e4aaeab78e3f393879
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 707, y: 2258}
+  - name: Inventory Book without border_Frame_120
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1410
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 3caef1f08afa3b04cb3a686e0a410ce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1410, y: 2258}
+  - name: Inventory Book without border_Frame_121
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2113
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 22f3fdc22267abe459648fb909518cdf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2113, y: 2258}
+  - name: Inventory Book without border_Frame_122
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2816
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 87ef565e214ca184e9732419e3dae1bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2816, y: 2258}
+  - name: Inventory Book without border_Frame_123
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3519
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: af8fb79b2d3ce5a44b7068a983e923c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3519, y: 2258}
+  - name: Inventory Book without border_Frame_124
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4222
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 4dfa9ae75276b1d4facd05ed8123d224
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4222, y: 2258}
+  - name: Inventory Book without border_Frame_125
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4925
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: f2bdae762d3790043bbf625473aec8a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4925, y: 2258}
+  - name: Inventory Book without border_Frame_126
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5628
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: eb8f5dc15957fe54e85f8a21c9727e26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5628, y: 2258}
+  - name: Inventory Book without border_Frame_127
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6331
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: 8678c837f5cb4f04f94dbc56f856cb3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6331, y: 2258}
+  - name: Inventory Book without border_Frame_128
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7034
+      y: 2258
+      width: 695
+      height: 416
+    spriteID: a68025c45f369dc479a92dd05dac8b0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7034, y: 2258}
+  - name: Inventory Book without border_Frame_129
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: 785f988806a5219408fbb29d5febecea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2682}
+  - name: Inventory Book without border_Frame_131
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2098
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: a7e1c94d73d0e6548baeac1f07bb9217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2098, y: 3106}
+  - name: Inventory Book without border_Frame_132
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 707
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: 7a5e59d8c0d452d4ca127bdedb4def48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 707, y: 2682}
+  - name: Inventory Book without border_Frame_133
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1410
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: fa2ab2d99fff21b47bbe6a13f3fd7d6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1410, y: 2682}
+  - name: Inventory Book without border_Frame_134
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2113
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: a67b9c0de22525c4989bda7cce670207
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2113, y: 2682}
+  - name: Inventory Book without border_Frame_135
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2816
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: b4c6af59f05f9974c94b3c9e152e52ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2816, y: 2682}
+  - name: Inventory Book without border_Frame_136
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3519
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: 5bca3c6f8312ede429bbda6447ca832f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3519, y: 2682}
+  - name: Inventory Book without border_Frame_137
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4222
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: 4b19512b3b0479c4683d0ab3d6f5d5cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4222, y: 2682}
+  - name: Inventory Book without border_Frame_138
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4925
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: e40e236fc080bba46a0043fed6762d2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4925, y: 2682}
+  - name: Inventory Book without border_Frame_139
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5628
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: cdd8805682d4d2d479cc7c4684e58c9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5628, y: 2682}
+  - name: Inventory Book without border_Frame_140
+    originalName: 
+    pivot: {x: 0.47482014, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6331
+      y: 2682
+      width: 695
+      height: 416
+    spriteID: 8ec97faa8f69aa34ba1d8b6d3224da74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6331, y: 2682}
+  - name: Inventory Book without border_Frame_142
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 673
+      y: 5323
+      width: 661
+      height: 416
+    spriteID: 37781c054b1411045b6df453bd1f4b01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 673, y: 5323}
+  - name: Inventory Book without border_Frame_143
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1342
+      y: 5323
+      width: 661
+      height: 416
+    spriteID: ed814afcabc9fc4498baeb29f3027e8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1342, y: 5323}
+  - name: Inventory Book without border_Frame_144
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4018
+      y: 528
+      width: 698
+      height: 416
+    spriteID: 5f3e2fb51edf03942b5aebe678a71f47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4018, y: 528}
+  - name: Inventory Book without border_Frame_145
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7034
+      y: 2682
+      width: 690
+      height: 416
+    spriteID: 75e2a65d0890ffa4690f9433bf3014c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7034, y: 2682}
+  - name: Inventory Book without border_Frame_146
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4724
+      y: 528
+      width: 698
+      height: 416
+    spriteID: 47e41301339b2204db553d88a29ce64f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4724, y: 528}
+  - name: Inventory Book without border_Frame_147
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5430
+      y: 528
+      width: 698
+      height: 416
+    spriteID: 333b6e8e5a8bc2048a19d7001d178911
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5430, y: 528}
+  - name: Inventory Book without border_Frame_148
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6136
+      y: 528
+      width: 698
+      height: 416
+    spriteID: 53a41f5713fba3a4d9467925d4277476
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6136, y: 528}
+  - name: Inventory Book without border_Frame_149
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6842
+      y: 528
+      width: 698
+      height: 416
+    spriteID: e5af53a0683b1394f92eb65a261d8147
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6842, y: 528}
+  - name: Inventory Book without border_Frame_150
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 30454c81d69101a418ea9dc9e5173262
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 986}
+  - name: Inventory Book without border_Frame_151
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 710
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 2280075c89a12a843adc39799e0dce58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 710, y: 986}
+  - name: Inventory Book without border_Frame_152
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3106
+      width: 690
+      height: 416
+    spriteID: 405d42c24282aa34486f8aa1e6817763
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3106}
+  - name: Inventory Book without border_Frame_153
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2792
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: dd2f87b51c7c5034187b9e990e638d3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2792, y: 3106}
+  - name: Inventory Book without border_Frame_154
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3486
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: 96aaf6abd9e7d4843bb4c82c36d12f08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3486, y: 3106}
+  - name: Inventory Book without border_Frame_155
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4180
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: 2e697f5dac53aed4c831381a026e6d4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4180, y: 3106}
+  - name: Inventory Book without border_Frame_156
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4874
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: c0be5f23029a10848a35f57abc4b113e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4874, y: 3106}
+  - name: Inventory Book without border_Frame_157
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5568
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: 40b0e18c23139c842997fa54c6dc6b37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5568, y: 3106}
+  - name: Inventory Book without border_Frame_158
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6262
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: c550b48bf7d2cdf46ac4c87fd24f5bd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6262, y: 3106}
+  - name: Inventory Book without border_Frame_160
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6956
+      y: 3106
+      width: 686
+      height: 416
+    spriteID: 792f5660e72f1534ab6418b896d274d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6956, y: 3106}
+  - name: Inventory Book without border_Frame_161
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1342
+      y: 3530
+      width: 686
+      height: 416
+    spriteID: 0a7d9fa82439c0c4c8af26e502b6c23c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1342, y: 3530}
+  - name: Inventory Book without border_Frame_162
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2036
+      y: 3530
+      width: 686
+      height: 416
+    spriteID: f7bf1f3905e5acf47bab9cdb66b27e29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2036, y: 3530}
+  - name: Inventory Book without border_Frame_163
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2730
+      y: 3530
+      width: 686
+      height: 416
+    spriteID: b084b90b0280e39408da39738567c1db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2730, y: 3530}
+  - name: Inventory Book without border_Frame_164
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3424
+      y: 3530
+      width: 686
+      height: 416
+    spriteID: 80ce69313ff257d45ab8458eb1256fdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3424, y: 3530}
+  - name: Inventory Book without border_Frame_165
+    originalName: 
+    pivot: {x: 0.48104954, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4118
+      y: 3530
+      width: 686
+      height: 416
+    spriteID: 83588a0f41124104480d880b9194d0f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4118, y: 3530}
+  - name: Inventory Book without border_Frame_166
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 702
+      y: 3106
+      width: 690
+      height: 416
+    spriteID: 0934d41d4e27f9f4d8a81cdb18354bd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 702, y: 3106}
+  - name: Inventory Book without border_Frame_167
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1416
+      y: 986
+      width: 698
+      height: 416
+    spriteID: c24909f99b3068e44ad5704f0a83545c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1416, y: 986}
+  - name: Inventory Book without border_Frame_168
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2122
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 647f92ac0e20eae419797038358ad185
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2122, y: 986}
+  - name: Inventory Book without border_Frame_169
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2828
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 72f60699912798046b90965a07cc1f75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2828, y: 986}
+  - name: Inventory Book without border_Frame_170
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3534
+      y: 986
+      width: 698
+      height: 416
+    spriteID: d7dcc0e08cfed1a45badc46b56428c72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3534, y: 986}
+  - name: Inventory Book without border_Frame_171
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4240
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 8e499e4a2b0ee5d4d94c7a1f5309bbef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4240, y: 986}
+  - name: Inventory Book without border_Frame_172
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4946
+      y: 986
+      width: 698
+      height: 416
+    spriteID: 84c20401aeaf4354d921b9a2d105e106
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4946, y: 986}
+  - name: Inventory Book without border_Frame_173
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1400
+      y: 3106
+      width: 690
+      height: 416
+    spriteID: f9b645bb7de3669488a5a3f0111dc6fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1400, y: 3106}
+  - name: Inventory Book without border_Frame_174
+    originalName: 
+    pivot: {x: 0.47277933, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5652
+      y: 986
+      width: 698
+      height: 416
+    spriteID: cf1de2f0d86b492408abaaa9b0fb1ad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5652, y: 986}
+  - name: Inventory Book without border_Frame_175
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 5323
+      width: 661
+      height: 416
+    spriteID: fdb2718a6fb93424996f9350feaf5ee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 5323}
+  - name: Inventory Book without border_Frame_176
+    originalName: 
+    pivot: {x: 0.49924356, y: -0.29567307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2680
+      y: 5323
+      width: 661
+      height: 416
+    spriteID: 031daaac03c6b484bb55d4def8a6e16e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2680, y: 5323}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -922501253
+    name: Inventory Book without border
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Inventory Book without border_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 267
+        y: 128
+        width: 336
+        height: 421
+      spriteId: d940feab93fdb574eb124a9fdaf0c371
+    - name: Inventory Book without border_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 283
+        y: 128
+        width: 336
+        height: 441
+      spriteId: 58512a770285f04409a6afb29668a023
+    - name: Inventory Book without border_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 299
+        y: 128
+        width: 336
+        height: 507
+      spriteId: d8a3f82d3aac0374880bc91cfbd7ed04
+    - name: Inventory Book without border_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 112
+        y: 123
+        width: 619
+        height: 516
+      spriteId: 6869b04d2001437499dad9fb20364b6e
+    - name: Inventory Book without border_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 7ef2ff3dccecfb04ea3587bc7d382fa0
+    - name: Inventory Book without border_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 06f82f5c3a2904348942343854950dbf
+    - name: Inventory Book without border_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 112
+        y: 123
+        width: 619
+        height: 516
+      spriteId: 41f8be5567e6be2459e892100a9bea73
+    - name: Inventory Book without border_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 299
+        y: 128
+        width: 336
+        height: 507
+      spriteId: 129c09dda9fc7c649b3043e3d0ec3f6b
+    - name: Inventory Book without border_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 283
+        y: 128
+        width: 336
+        height: 441
+      spriteId: f323157d8d36ef541917338270dbfb56
+    - name: Inventory Book without border_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 267
+        y: 128
+        width: 336
+        height: 421
+      spriteId: 9ce9a8056fdffb84ca12f86e9418ee22
+    - name: Inventory Book without border_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 267
+        y: 128
+        width: 336
+        height: 421
+      spriteId: 3f54e6d769a2d21408fa40a288d638d6
+    - name: Inventory Book without border_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 283
+        y: 128
+        width: 336
+        height: 441
+      spriteId: 07f779f7cec08984ab0abcab77ca05d6
+    - name: Inventory Book without border_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 299
+        y: 128
+        width: 336
+        height: 507
+      spriteId: 1f47af61b1ca54e448e3f8b983b8aed1
+    - name: Inventory Book without border_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 112
+        y: 123
+        width: 619
+        height: 516
+      spriteId: 9e3f4e5c1281e9f449231ce4b26b6818
+    - name: Inventory Book without border_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: a23eaa75a5c3a934c95cb086927ce6b4
+    - name: Inventory Book without border_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: d7013211fde05a9488e4331ee85a1c6d
+    - name: Inventory Book without border_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 112
+        y: 123
+        width: 619
+        height: 516
+      spriteId: 6c541e99a0663df43b32179800781cef
+    - name: Inventory Book without border_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 299
+        y: 128
+        width: 336
+        height: 507
+      spriteId: 5682b2f82799ec84293c006f2ab6e2da
+    - name: Inventory Book without border_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 283
+        y: 128
+        width: 336
+        height: 441
+      spriteId: c7211c88e200b7f42a2b98ec7852a0a0
+    - name: Inventory Book without border_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 267
+        y: 128
+        width: 336
+        height: 421
+      spriteId: d0a97d19345e9334d9200dbede56d37b
+    - name: Inventory Book without border_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 430
+        y: 123
+        width: 37
+        height: 418
+      spriteId: 56fb15b88f25162489c2434785a031a6
+    - name: Inventory Book without border_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 336
+        y: 123
+        width: 225
+        height: 456
+      spriteId: f2b24a7300d39e04ca2a82535a9181b7
+    - name: Inventory Book without border_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 158
+        y: 123
+        width: 581
+        height: 484
+      spriteId: 6ac62630fb8863b4aaeb35577cb3c8cb
+    - name: Inventory Book without border_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 2f761d65ea103dd419865a66c5a10990
+    - name: Inventory Book without border_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: d71448327c2de6f478f439321edd4f94
+    - name: Inventory Book without border_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 158
+        y: 123
+        width: 581
+        height: 484
+      spriteId: 9850acfc8cd3e224988e06a1dc272b80
+    - name: Inventory Book without border_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 336
+        y: 123
+        width: 225
+        height: 456
+      spriteId: 5b5c4469a7840b343bd12490756c9163
+    - name: Inventory Book without border_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 430
+        y: 123
+        width: 37
+        height: 418
+      spriteId: 0bfed6f1d1f456b418a7a51c1bc71e64
+    - name: Inventory Book without border_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 7f72f5a1fb08aad47ba7777a27cd3c50
+    - name: Inventory Book without border_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 847424a5c58d6cb4b91e9e209df16890
+    - name: Inventory Book without border_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: b00b392aa9b901b47948a781bc0ebec9
+    - name: Inventory Book without border_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: c36f29e75e15cc84799bc34163c2f4b3
+    - name: Inventory Book without border_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 8d8325548ba8fc0429e6491dd798e367
+    - name: Inventory Book without border_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 94e88b9884e60ec498686ad75839bcc9
+    - name: Inventory Book without border_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 421
+      spriteId: b96e61db9ef1b03428bd35db53b49fbc
+    - name: Inventory Book without border_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 441
+      spriteId: 49219f1088b2ff64186956e1e70871a5
+    - name: Inventory Book without border_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 432
+      spriteId: 9962ae5bfd5646941a2669026cc8cc9a
+    - name: Inventory Book without border_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: 435197923978e45438c50015d03fb4f7
+    - name: Inventory Book without border_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: aecdd9f70c05dc64f95c9199e5a8f830
+    - name: Inventory Book without border_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: f2e7b9aacdbffe7489c36b16f4340819
+    - name: Inventory Book without border_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 7a8f17d40b9e8ad4bb3cef9d8fb4018a
+    - name: Inventory Book without border_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: a51a5d869e6ea57418d7cbf665e9144b
+    - name: Inventory Book without border_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 421
+      spriteId: a74207a14c3f19a45b712ed2c9a31c63
+    - name: Inventory Book without border_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 441
+      spriteId: 5f838fad27e171a468c470852998c67c
+    - name: Inventory Book without border_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 432
+      spriteId: 8690af15fbc41654eb17e1ab6f09cea4
+    - name: Inventory Book without border_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: 423f6cbffe8c9df4399e8ab2a5e77289
+    - name: Inventory Book without border_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 0a8078b8d7adba748a448b4626db6f12
+    - name: Inventory Book without border_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 437c3f39bd0950b4380b29548b8a1cb2
+    - name: Inventory Book without border_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 75940d895a658ee47acb2cf9bd1b6ec8
+    - name: Inventory Book without border_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 188503bf7cde3fb4d975fc1744467c20
+    - name: Inventory Book without border_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 428
+      spriteId: e188361aee764d04a9b227b337d0b4f9
+    - name: Inventory Book without border_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 453
+      spriteId: d3368e6c7e0d9f14a9ea81aa9e91fdd3
+    - name: Inventory Book without border_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 457
+      spriteId: 66a2600573855c24aac6c5187215f181
+    - name: Inventory Book without border_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 450
+      spriteId: 98e47317d3f6d91438e1a0cc05e638d7
+    - name: Inventory Book without border_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: 78a630d74afb37641aca0fea49c45a5d
+    - name: Inventory Book without border_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 419
+      spriteId: 7d45e376ac5f5ac4ea8ec6b289c5f8e1
+    - name: Inventory Book without border_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: b7e4e5d5faa0ed347b8dfbfd0836bbe0
+    - name: Inventory Book without border_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 428
+      spriteId: 182f6f10f79f88a458dfe32a24329ba7
+    - name: Inventory Book without border_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 453
+      spriteId: c0d1d8d76bfb7564d9db1b01fa9ffbd8
+    - name: Inventory Book without border_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 457
+      spriteId: 42945ff88ac6e864d8a2121e78f5b9de
+    - name: Inventory Book without border_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 450
+      spriteId: e822d756362e31b419d6e5721a2a1316
+    - name: Inventory Book without border_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: becce8f27a88b2d42afa316581a005b2
+    - name: Inventory Book without border_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 419
+      spriteId: e9500fd506edaeb4786e39def7db3bd7
+    - name: Inventory Book without border_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 44b900957a5e395439c4d9c7fe29736b
+    - name: Inventory Book without border_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 419
+      spriteId: 6b35c00c25ad9dc419c310307a0b4dbd
+    - name: Inventory Book without border_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: 5a9b5f546ff88bc4eacffabf7e9ec6aa
+    - name: Inventory Book without border_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 450
+      spriteId: e9b699e18e8941e47af792598247934f
+    - name: Inventory Book without border_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 457
+      spriteId: 0a17466d23409ba4586e73ff21148c5f
+    - name: Inventory Book without border_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 453
+      spriteId: 560c594968236aa419d72227879ff6cc
+    - name: Inventory Book without border_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 428
+      spriteId: 12980adbc18fb244fab9986d3c7eb115
+    - name: Inventory Book without border_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 8006662f27bd0a641baf68473a451443
+    - name: Inventory Book without border_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 419
+      spriteId: d513294878dca3c45bd36459e2de4ace
+    - name: Inventory Book without border_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 429
+      spriteId: 39304e397917fb94095ff26bd229635e
+    - name: Inventory Book without border_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 450
+      spriteId: 34760b5f619481c4780f0feaafde1fd2
+    - name: Inventory Book without border_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 457
+      spriteId: 5a665bd318a54c74f88788a1716baa0e
+    - name: Inventory Book without border_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 453
+      spriteId: 1dbbe1d4c9294514d9d326db65d7ce01
+    - name: Inventory Book without border_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 428
+      spriteId: 29e12702e979e444eb8d82c9df8094e6
+    - name: Inventory Book without border_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 2a7682e6cfe68154ca7ea05fb6773bd0
+    - name: Inventory Book without border_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: ffcca5c9f14b5d247b706f36626ea544
+    - name: Inventory Book without border_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 21d2be9773b0928469198125ad6e3c2a
+    - name: Inventory Book without border_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 155c9eab0d169e54493687a05e463170
+    - name: Inventory Book without border_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 52085026f2a31174597e50b66fafd7c3
+    - name: Inventory Book without border_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 420957e6d4266d1419aca25a515a7899
+    - name: Inventory Book without border_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: bcb7b26ec89d2a14a956e50e1e92f64f
+    - name: Inventory Book without border_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 1e5af6ef764d2b94abb41fad159a9d0d
+    - name: Inventory Book without border_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: b0c55e2a23874e1429348ca5e8d56efb
+    - name: Inventory Book without border_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 910024bd4f543094583783e8ae35e52f
+    - name: Inventory Book without border_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: fda5fb67d3e50d14c92fafe495430c6b
+    - name: Inventory Book without border_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 6cc9bbd0dfdc4f94d8b6c8008b70cb07
+    - name: Inventory Book without border_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 43900d64fe710104c86e4cc8b67a2f68
+    - name: Inventory Book without border_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: e2b59811221989d40a38ffe4a797396e
+    - name: Inventory Book without border_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: a3bd92408f931ac42aae718ca5085e52
+    - name: Inventory Book without border_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 1a6a2d5c6a3596b45bd5caa16a2db95d
+    - name: Inventory Book without border_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 6bec366ee7efb8a47bd308f0a6953f3e
+    - name: Inventory Book without border_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 028f4408179a2c34097ed1ad79b2d272
+    - name: Inventory Book without border_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 3acbbfdae71d8c64cadc190169760501
+    - name: Inventory Book without border_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 616352acf1228084ab4be99b7a40d996
+    - name: Inventory Book without border_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: ca1aeb491ea9a484486ea91860d86237
+    - name: Inventory Book without border_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 9b2fe6286aea6df4884ff08db8837cc8
+    - name: Inventory Book without border_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 35c1da236a720424d9e9d77ef7b9ccb1
+    - name: Inventory Book without border_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 22cf50ac78c609044976d1435b9cafd2
+    - name: Inventory Book without border_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 87decfdf5f436df4d8c768e6f7c5d31f
+    - name: Inventory Book without border_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 1e598559b4e126f48970abf6db62385f
+    - name: Inventory Book without border_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 9f6a2bbcbf0a99e4aaeab78e3f393879
+    - name: Inventory Book without border_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 3caef1f08afa3b04cb3a686e0a410ce5
+    - name: Inventory Book without border_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 22f3fdc22267abe459648fb909518cdf
+    - name: Inventory Book without border_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 87ef565e214ca184e9732419e3dae1bd
+    - name: Inventory Book without border_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: af8fb79b2d3ce5a44b7068a983e923c7
+    - name: Inventory Book without border_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 4dfa9ae75276b1d4facd05ed8123d224
+    - name: Inventory Book without border_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: f2bdae762d3790043bbf625473aec8a6
+    - name: Inventory Book without border_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: eb8f5dc15957fe54e85f8a21c9727e26
+    - name: Inventory Book without border_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 8678c837f5cb4f04f94dbc56f856cb3d
+    - name: Inventory Book without border_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: a68025c45f369dc479a92dd05dac8b0a
+    - name: Inventory Book without border_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 785f988806a5219408fbb29d5febecea
+    - name: Inventory Book without border_Frame_131
+      frameIndex: 131
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: a7e1c94d73d0e6548baeac1f07bb9217
+    - name: Inventory Book without border_Frame_132
+      frameIndex: 132
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 7a5e59d8c0d452d4ca127bdedb4def48
+    - name: Inventory Book without border_Frame_133
+      frameIndex: 133
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: fa2ab2d99fff21b47bbe6a13f3fd7d6a
+    - name: Inventory Book without border_Frame_134
+      frameIndex: 134
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: a67b9c0de22525c4989bda7cce670207
+    - name: Inventory Book without border_Frame_135
+      frameIndex: 135
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: b4c6af59f05f9974c94b3c9e152e52ff
+    - name: Inventory Book without border_Frame_136
+      frameIndex: 136
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 5bca3c6f8312ede429bbda6447ca832f
+    - name: Inventory Book without border_Frame_137
+      frameIndex: 137
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 4b19512b3b0479c4683d0ab3d6f5d5cc
+    - name: Inventory Book without border_Frame_138
+      frameIndex: 138
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: e40e236fc080bba46a0043fed6762d2e
+    - name: Inventory Book without border_Frame_139
+      frameIndex: 139
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: cdd8805682d4d2d479cc7c4684e58c9d
+    - name: Inventory Book without border_Frame_140
+      frameIndex: 140
+      cellRect:
+        x: 118
+        y: 123
+        width: 695
+        height: 416
+      spriteId: 8ec97faa8f69aa34ba1d8b6d3224da74
+    - name: Inventory Book without border_Frame_142
+      frameIndex: 142
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 37781c054b1411045b6df453bd1f4b01
+    - name: Inventory Book without border_Frame_143
+      frameIndex: 143
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: ed814afcabc9fc4498baeb29f3027e8c
+    - name: Inventory Book without border_Frame_144
+      frameIndex: 144
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 5f3e2fb51edf03942b5aebe678a71f47
+    - name: Inventory Book without border_Frame_145
+      frameIndex: 145
+      cellRect:
+        x: 118
+        y: 123
+        width: 690
+        height: 416
+      spriteId: 75e2a65d0890ffa4690f9433bf3014c7
+    - name: Inventory Book without border_Frame_146
+      frameIndex: 146
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 47e41301339b2204db553d88a29ce64f
+    - name: Inventory Book without border_Frame_147
+      frameIndex: 147
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 333b6e8e5a8bc2048a19d7001d178911
+    - name: Inventory Book without border_Frame_148
+      frameIndex: 148
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 53a41f5713fba3a4d9467925d4277476
+    - name: Inventory Book without border_Frame_149
+      frameIndex: 149
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: e5af53a0683b1394f92eb65a261d8147
+    - name: Inventory Book without border_Frame_150
+      frameIndex: 150
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 30454c81d69101a418ea9dc9e5173262
+    - name: Inventory Book without border_Frame_151
+      frameIndex: 151
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 2280075c89a12a843adc39799e0dce58
+    - name: Inventory Book without border_Frame_152
+      frameIndex: 152
+      cellRect:
+        x: 118
+        y: 123
+        width: 690
+        height: 416
+      spriteId: 405d42c24282aa34486f8aa1e6817763
+    - name: Inventory Book without border_Frame_153
+      frameIndex: 153
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: dd2f87b51c7c5034187b9e990e638d3b
+    - name: Inventory Book without border_Frame_154
+      frameIndex: 154
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 96aaf6abd9e7d4843bb4c82c36d12f08
+    - name: Inventory Book without border_Frame_155
+      frameIndex: 155
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 2e697f5dac53aed4c831381a026e6d4e
+    - name: Inventory Book without border_Frame_156
+      frameIndex: 156
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: c0be5f23029a10848a35f57abc4b113e
+    - name: Inventory Book without border_Frame_157
+      frameIndex: 157
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 40b0e18c23139c842997fa54c6dc6b37
+    - name: Inventory Book without border_Frame_158
+      frameIndex: 158
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: c550b48bf7d2cdf46ac4c87fd24f5bd6
+    - name: Inventory Book without border_Frame_160
+      frameIndex: 160
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 792f5660e72f1534ab6418b896d274d4
+    - name: Inventory Book without border_Frame_161
+      frameIndex: 161
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 0a7d9fa82439c0c4c8af26e502b6c23c
+    - name: Inventory Book without border_Frame_162
+      frameIndex: 162
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: f7bf1f3905e5acf47bab9cdb66b27e29
+    - name: Inventory Book without border_Frame_163
+      frameIndex: 163
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: b084b90b0280e39408da39738567c1db
+    - name: Inventory Book without border_Frame_164
+      frameIndex: 164
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 80ce69313ff257d45ab8458eb1256fdb
+    - name: Inventory Book without border_Frame_165
+      frameIndex: 165
+      cellRect:
+        x: 118
+        y: 123
+        width: 686
+        height: 416
+      spriteId: 83588a0f41124104480d880b9194d0f6
+    - name: Inventory Book without border_Frame_166
+      frameIndex: 166
+      cellRect:
+        x: 118
+        y: 123
+        width: 690
+        height: 416
+      spriteId: 0934d41d4e27f9f4d8a81cdb18354bd3
+    - name: Inventory Book without border_Frame_167
+      frameIndex: 167
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: c24909f99b3068e44ad5704f0a83545c
+    - name: Inventory Book without border_Frame_168
+      frameIndex: 168
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 647f92ac0e20eae419797038358ad185
+    - name: Inventory Book without border_Frame_169
+      frameIndex: 169
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 72f60699912798046b90965a07cc1f75
+    - name: Inventory Book without border_Frame_170
+      frameIndex: 170
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: d7dcc0e08cfed1a45badc46b56428c72
+    - name: Inventory Book without border_Frame_171
+      frameIndex: 171
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 8e499e4a2b0ee5d4d94c7a1f5309bbef
+    - name: Inventory Book without border_Frame_172
+      frameIndex: 172
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: 84c20401aeaf4354d921b9a2d105e106
+    - name: Inventory Book without border_Frame_173
+      frameIndex: 173
+      cellRect:
+        x: 118
+        y: 123
+        width: 690
+        height: 416
+      spriteId: f9b645bb7de3669488a5a3f0111dc6fa
+    - name: Inventory Book without border_Frame_174
+      frameIndex: 174
+      cellRect:
+        x: 118
+        y: 123
+        width: 698
+        height: 416
+      spriteId: cf1de2f0d86b492408abaaa9b0fb1ad5
+    - name: Inventory Book without border_Frame_175
+      frameIndex: 175
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: fdb2718a6fb93424996f9350feaf5ee5
+    - name: Inventory Book without border_Frame_176
+      frameIndex: 176
+      cellRect:
+        x: 118
+        y: 123
+        width: 661
+        height: 416
+      spriteId: 031daaac03c6b484bb55d4def8a6e16e
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 896, y: 720}

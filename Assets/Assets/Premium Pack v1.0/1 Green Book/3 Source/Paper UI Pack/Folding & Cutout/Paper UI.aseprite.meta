@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 4a758d09f495c1843bb17bf6f9923786
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData: []
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -165204638
+    name: Paper UI
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Paper UI_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 457ad74786f015c448ccf1b6749adef9
+    - name: Paper UI_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: ad903bfdb529bcf458c8cc7501260bf1
+    - name: Paper UI_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 0fb270cf7d6f77b4db7b3b8e743f39c1
+    - name: Paper UI_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: a6d1e7d2561ed804ea48075601ae2135
+    - name: Paper UI_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 3508b02f5dbfb9446ba7ca727a004432
+    - name: Paper UI_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: c01cda43a19ca4e4889770d5da730131
+    - name: Paper UI_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: e7920c4ece75a914f8092f26140ac68c
+    - name: Paper UI_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: e860147365872914ab10c5aeefa6e020
+    - name: Paper UI_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: bef83c476aeba4e48b069f2851e8b70f
+    - name: Paper UI_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: c15800b135679c74db4d9698ec600c07
+    - name: Paper UI_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 050fe7a14ae41364e8d719da7e6ac880
+    - name: Paper UI_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 64de653723a8fc04195b29f84ee0e93c
+    - name: Paper UI_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 6a992463d9af6b34384797c67eb01ede
+    - name: Paper UI_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 79ead8efc6f30984e8ef18397dc08379
+    - name: Paper UI_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 5a79ebb0e52197b45a7ce8e1eaf4dbbb
+    - name: Paper UI_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: babe2015cdba76041aeea118df64cc71
+    - name: Paper UI_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 9549e5b2ff205f3449fa78071ecf1855
+    - name: Paper UI_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 88da6bb41592a3b4fb23264e7a6cc085
+    - name: Paper UI_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 104e5f4f81a517b4bb14976e8b928fec
+    - name: Paper UI_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: e671c1334a726b048868b5b4911582c7
+    - name: Paper UI_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: f76062aca95ebc0478088e7f945b889e
+    - name: Paper UI_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: deb8b005daef1ad41851de6e48cd56b0
+    - name: Paper UI_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 5dbcf1d6df822c3439891f77be6e5e9e
+    - name: Paper UI_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: a4fdf0b5ba3a19742b8edefadcb04ee4
+    - name: Paper UI_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: df010e15d050eb64fb44a5bf158d0486
+    - name: Paper UI_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: d7b554087b9f0ad47b593ec5a720f2b5
+    - name: Paper UI_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 17d24dea28864b44cbb15aee9c8e63ff
+    - name: Paper UI_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 7ed609d8da683ca439f2caee51e41673
+    - name: Paper UI_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 65c2c66a7ded1c044a237e5b83690c87
+    - name: Paper UI_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 69b2fbb4848814749b3a5b94b245a466
+    - name: Paper UI_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 248abb7e1413f35488d92df394dd18ac
+    - name: Paper UI_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: d84496943fbd8464eaaf696e97dae11e
+    - name: Paper UI_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 161
+        y: 60
+        width: 5597
+        height: 3641
+      spriteId: 1946169050e99bd44ad68b6a4660aed1
+    - name: Paper UI_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 161
+        y: 60
+        width: 5358
+        height: 3641
+      spriteId: 342b6ac7ec807604db61ea99258b58db
+    - name: Paper UI_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: ce06335a56cd1104a88648ece7daa03a
+    - name: Paper UI_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 89ef42312d50edd479256f3b5b6b5fc3
+    - name: Paper UI_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: bb36ecb4a3540b24db8cc0fe44c85d91
+    - name: Paper UI_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: c7817ca73c8ba854abc325b081f3e245
+    - name: Paper UI_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: f75ddb3c6eb515746bda3409b759a5e7
+    - name: Paper UI_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 0f308ffae57208d49a5fe1373d4acfc8
+    - name: Paper UI_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 7becef4279964194096dddcd625bb869
+    - name: Paper UI_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 2355d48316a544842b149e76af151331
+    - name: Paper UI_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 2f3e6830520b9e540a0a4d4ed3b5bf62
+    - name: Paper UI_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 9db069396e3814b49831b535e12647e8
+    - name: Paper UI_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: b057cc25fecaa5f40bf303895b1d3e99
+    - name: Paper UI_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: fd458b56357364b42936b45925c0bc12
+    - name: Paper UI_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 6cbbff4c6614e8148bcdfcd444fe89a2
+    - name: Paper UI_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: b3670edaeb2b3024da3edbfd2b2284cd
+    - name: Paper UI_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 161
+        y: 60
+        width: 5333
+        height: 3641
+      spriteId: 4f4be2dec35a2194098439c981194848
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 2704, y: 3772}

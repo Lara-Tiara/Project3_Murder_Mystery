@@ -1,0 +1,2404 @@
+fileFormatVersion: 2
+guid: 25a8fe11148cd38499326f1053c3ae6d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Paper Book_Frame_0
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5492
+      width: 682
+      height: 384
+    spriteID: 9de2e561eb46af54a9ffc0958e93e90c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5492}
+  - name: Paper Book_Frame_1
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5884
+      width: 682
+      height: 384
+    spriteID: ed3acb73fda9a694c8f3366c55407aad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5884}
+  - name: Paper Book_Frame_2
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6276
+      width: 682
+      height: 384
+    spriteID: ca1a2f16e6e2d564eb4203875ea9fdaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 6276}
+  - name: Paper Book_Frame_3
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6668
+      width: 682
+      height: 384
+    spriteID: 8481f9e80620ab84385ecbead571f6a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 6668}
+  - name: Paper Book_Frame_4
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7060
+      width: 682
+      height: 384
+    spriteID: aa2524d7b93966e43a47f862ef392a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 7060}
+  - name: Paper Book_Frame_5
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7452
+      width: 682
+      height: 384
+    spriteID: 33141297c5385234aae5e10f2580acbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 7452}
+  - name: Paper Book_Frame_6
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 4
+      width: 682
+      height: 384
+    spriteID: eef63d81002aef54588abb84a39f0938
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 4}
+  - name: Paper Book_Frame_7
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 396
+      width: 682
+      height: 384
+    spriteID: 2083241816952594a8fc0270f88456fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 396}
+  - name: Paper Book_Frame_8
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 788
+      width: 682
+      height: 384
+    spriteID: 02898b50d2905c64f9895f6484e53e16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 788}
+  - name: Paper Book_Frame_9
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1180
+      width: 682
+      height: 384
+    spriteID: 024e8fe166a4d2b4a8d86771dc3d8564
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1180}
+  - name: Paper Book_Frame_10
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1572
+      width: 682
+      height: 384
+    spriteID: 43175ace2a012564290435b40a30843e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1572}
+  - name: Paper Book_Frame_11
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1964
+      width: 682
+      height: 384
+    spriteID: 36b229277ddc62147b7f7a4103b5b9e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1964}
+  - name: Paper Book_Frame_12
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 2356
+      width: 682
+      height: 384
+    spriteID: 4014a0b3b1d891a4a821b0f21ea5c2f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 2356}
+  - name: Paper Book_Frame_13
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 2748
+      width: 682
+      height: 384
+    spriteID: a6bd89b4de92a7d40b4b8bf27211225e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 2748}
+  - name: Paper Book_Frame_14
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3140
+      width: 682
+      height: 384
+    spriteID: 7cbf490913ba3b94493fd41e24f68d30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3140}
+  - name: Paper Book_Frame_15
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3532
+      width: 682
+      height: 384
+    spriteID: 15da4ac6b98a98d4a8ca77b0d30e8901
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3532}
+  - name: Paper Book_Frame_16
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3924
+      width: 682
+      height: 384
+    spriteID: 00287ca7163a9104e876a31f596cab75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3924}
+  - name: Paper Book_Frame_17
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 4316
+      width: 682
+      height: 384
+    spriteID: 89992b2a7b4d8064a8c49766d85971ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 4316}
+  - name: Paper Book_Frame_18
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 4708
+      width: 682
+      height: 384
+    spriteID: 657c00adb79404944a4e779544c43a1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 4708}
+  - name: Paper Book_Frame_19
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 5100
+      width: 682
+      height: 384
+    spriteID: 338f89693f364df44a47a526e6ec62d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 5100}
+  - name: Paper Book_Frame_20
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 5492
+      width: 682
+      height: 384
+    spriteID: 835af51e8a0470f48b6aaf9884d89918
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 5492}
+  - name: Paper Book_Frame_21
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 5884
+      width: 682
+      height: 384
+    spriteID: 616d70a3ebf4b4a41861a0b6d894aa2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 5884}
+  - name: Paper Book_Frame_22
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 6276
+      width: 682
+      height: 384
+    spriteID: 45458c99c8c9af04e8a856e4f60c4544
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 6276}
+  - name: Paper Book_Frame_23
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 6668
+      width: 682
+      height: 384
+    spriteID: 5361bb189fb1e3f4b9f6babe4d7dde0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 6668}
+  - name: Paper Book_Frame_24
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 7060
+      width: 682
+      height: 384
+    spriteID: cadaabff7c5fb4f4395f530f3e183ecd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 7060}
+  - name: Paper Book_Frame_25
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 7452
+      width: 682
+      height: 384
+    spriteID: 4250095701dd17f42be070152965795d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 7452}
+  - name: Paper Book_Frame_26
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 4
+      width: 682
+      height: 384
+    spriteID: bedd2d77098d59b429dfb3fd55009248
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 4}
+  - name: Paper Book_Frame_27
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 396
+      width: 682
+      height: 384
+    spriteID: 8cdccc75e17171049842e49f5d24d91a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 396}
+  - name: Paper Book_Frame_28
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 788
+      width: 682
+      height: 384
+    spriteID: 267b2a7e1a766424a98084c1bfeb79c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 788}
+  - name: Paper Book_Frame_29
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 1180
+      width: 682
+      height: 384
+    spriteID: f07bd3101934a1a4b89918b4769b14e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 1180}
+  - name: Paper Book_Frame_30
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 1572
+      width: 682
+      height: 384
+    spriteID: a10b2d82a86fd1048a058b42ca05d340
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 1572}
+  - name: Paper Book_Frame_31
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 1964
+      width: 682
+      height: 384
+    spriteID: 6eb97aca25321c34f8306010d02aa1fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 1964}
+  - name: Paper Book_Frame_32
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 2356
+      width: 682
+      height: 384
+    spriteID: 44d31465ab42e594dbee9633d60030df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 2356}
+  - name: Paper Book_Frame_33
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 2748
+      width: 682
+      height: 384
+    spriteID: b724a8b091d568e4e8927b3a4c73abf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 2748}
+  - name: Paper Book_Frame_34
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 3140
+      width: 682
+      height: 384
+    spriteID: 940d57372a52f9042833651f2a50c5b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 3140}
+  - name: Paper Book_Frame_35
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 3532
+      width: 682
+      height: 384
+    spriteID: 736821ecf6eda71449e9ccbb8b19b554
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 3532}
+  - name: Paper Book_Frame_37
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 1180
+      width: 672
+      height: 384
+    spriteID: a79b54f9643624e4e9938430343a15d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 1180}
+  - name: Paper Book_Frame_38
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 3924
+      width: 682
+      height: 384
+    spriteID: 3c4ed740a3f5f0f4083a5191b8ee8e29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 3924}
+  - name: Paper Book_Frame_39
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 4316
+      width: 682
+      height: 384
+    spriteID: 03d0a243f59316b45af0e985aa1adcf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 4316}
+  - name: Paper Book_Frame_40
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 4708
+      width: 682
+      height: 384
+    spriteID: 87633603400b7644eb79272fd22173c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 4708}
+  - name: Paper Book_Frame_41
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 5100
+      width: 682
+      height: 384
+    spriteID: 4cf340271b428274fb03bf212a7ef38c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 5100}
+  - name: Paper Book_Frame_42
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 5492
+      width: 682
+      height: 384
+    spriteID: 3ccd9718882eda44fb3ee39441ffc142
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 5492}
+  - name: Paper Book_Frame_43
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 5884
+      width: 682
+      height: 384
+    spriteID: 727a57acfbf1dd14d92a1de8aace20d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 5884}
+  - name: Paper Book_Frame_44
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 6276
+      width: 682
+      height: 384
+    spriteID: 3d34a6f82d4cde44ea68efa3a8985787
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 6276}
+  - name: Paper Book_Frame_45
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 6668
+      width: 682
+      height: 384
+    spriteID: 6e8a47da316b2d446a1fd39cbad4f8e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 6668}
+  - name: Paper Book_Frame_46
+    originalName: 
+    pivot: {x: 0.46920824, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 7060
+      width: 682
+      height: 384
+    spriteID: 7823471685d96ba44b0bf8c729798196
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 7060}
+  - name: Paper Book_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 7060
+      width: 640
+      height: 384
+    spriteID: 56b7ef715f8691941acc615e980e32b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 7060}
+  - name: Paper Book_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 7452
+      width: 640
+      height: 384
+    spriteID: f192426d11330eb4f81b276e6b907331
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 7452}
+  - name: Paper Book_Frame_50
+    originalName: 
+    pivot: {x: 0.49535602, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 6276
+      width: 646
+      height: 384
+    spriteID: f279d262389984740b8b29f18b601a6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 6276}
+  - name: Paper Book_Frame_51
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 684
+      height: 384
+    spriteID: e327d6cd372f6f24c8000c7ef65f66d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Paper Book_Frame_52
+    originalName: 
+    pivot: {x: 0.4733728, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1386
+      y: 7452
+      width: 676
+      height: 384
+    spriteID: 7cf877bb25fc59944bed91a90fb200ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1386, y: 7452}
+  - name: Paper Book_Frame_53
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 396
+      width: 684
+      height: 384
+    spriteID: 67b82667420454e4aa9e815f9f67111a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 396}
+  - name: Paper Book_Frame_54
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 788
+      width: 684
+      height: 384
+    spriteID: d89559a8fcbb71f45a34c96bfabaf565
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 788}
+  - name: Paper Book_Frame_55
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1180
+      width: 684
+      height: 384
+    spriteID: b5e35c8d5a9818b4d85f80952459729d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1180}
+  - name: Paper Book_Frame_56
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1572
+      width: 684
+      height: 384
+    spriteID: 776127daaf20a7b48adf22400c90dc76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1572}
+  - name: Paper Book_Frame_57
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1964
+      width: 684
+      height: 384
+    spriteID: 1020e8aa3460f6a4e9e9aa4a25d8b688
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1964}
+  - name: Paper Book_Frame_58
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2356
+      width: 684
+      height: 384
+    spriteID: bd9f0a2fbf3e9774688d234be64077d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2356}
+  - name: Paper Book_Frame_59
+    originalName: 
+    pivot: {x: 0.4733728, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 4
+      width: 676
+      height: 384
+    spriteID: 5efef7b71c35f0841bb6f363bde7c8ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 4}
+  - name: Paper Book_Frame_60
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 1572
+      width: 672
+      height: 384
+    spriteID: 4d08051c15993a443b4cd04c32e65a72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 1572}
+  - name: Paper Book_Frame_61
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 1964
+      width: 672
+      height: 384
+    spriteID: 2f3de8f5243cf8b41aff4cbe2e5c2e2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 1964}
+  - name: Paper Book_Frame_62
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 2356
+      width: 672
+      height: 384
+    spriteID: 0c4e4cca55557a142acf1a8f3af8836b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 2356}
+  - name: Paper Book_Frame_63
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 2748
+      width: 672
+      height: 384
+    spriteID: 8cb2b5d3a88e0b3498698cbf88d86303
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 2748}
+  - name: Paper Book_Frame_64
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 3140
+      width: 672
+      height: 384
+    spriteID: 50825f1bb6f767947be3de18cec12055
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 3140}
+  - name: Paper Book_Frame_65
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 3532
+      width: 672
+      height: 384
+    spriteID: e939f04f014473546886e441583fd1ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 3532}
+  - name: Paper Book_Frame_67
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 3924
+      width: 672
+      height: 384
+    spriteID: 52705676c86dac447a768c6fcbc10034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 3924}
+  - name: Paper Book_Frame_68
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 4316
+      width: 672
+      height: 384
+    spriteID: 1f1098d6dfa20ec40a576ae67077e9d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 4316}
+  - name: Paper Book_Frame_69
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 4708
+      width: 672
+      height: 384
+    spriteID: 606aa7a96e460db4fb4d5b8ae41360f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 4708}
+  - name: Paper Book_Frame_70
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 5100
+      width: 672
+      height: 384
+    spriteID: e5c595e5e992664468c0fca07414a68c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 5100}
+  - name: Paper Book_Frame_71
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 5492
+      width: 672
+      height: 384
+    spriteID: 2663bc40bd6903044ad151056060b979
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 5492}
+  - name: Paper Book_Frame_72
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 5884
+      width: 672
+      height: 384
+    spriteID: efe7d5dfba6999047946fc6734fe1039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 5884}
+  - name: Paper Book_Frame_73
+    originalName: 
+    pivot: {x: 0.4733728, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 396
+      width: 676
+      height: 384
+    spriteID: 39cad425be2d7074688316722ae88ea7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 396}
+  - name: Paper Book_Frame_74
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2748
+      width: 684
+      height: 384
+    spriteID: d1b13e1e37a915a4284561238e2a1092
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2748}
+  - name: Paper Book_Frame_75
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3140
+      width: 684
+      height: 384
+    spriteID: 936e3c4c8a773f44ca4fb4fbeba63339
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3140}
+  - name: Paper Book_Frame_76
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3532
+      width: 684
+      height: 384
+    spriteID: bb295b9a714757f4ab346316689e582a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3532}
+  - name: Paper Book_Frame_77
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3924
+      width: 684
+      height: 384
+    spriteID: 5440fddd3e9f07b4c86e96d635ec5448
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3924}
+  - name: Paper Book_Frame_78
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4316
+      width: 684
+      height: 384
+    spriteID: acbef7fc2209b9945b380ffd0207e73d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4316}
+  - name: Paper Book_Frame_79
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4708
+      width: 684
+      height: 384
+    spriteID: 39dd0de9fc96435439a9f3453f1d3e01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4708}
+  - name: Paper Book_Frame_80
+    originalName: 
+    pivot: {x: 0.4733728, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 788
+      width: 676
+      height: 384
+    spriteID: 99485c4687fc14248a6f8b7476a702f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 788}
+  - name: Paper Book_Frame_81
+    originalName: 
+    pivot: {x: 0.46783626, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5100
+      width: 684
+      height: 384
+    spriteID: 9649235c21bbcdd4a99fa02718fa037c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5100}
+  - name: Paper Book_Frame_82
+    originalName: 
+    pivot: {x: 0.49535602, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2076
+      y: 6668
+      width: 646
+      height: 384
+    spriteID: 8d4532a6f091a524a8c0692c3aeda56b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2076, y: 6668}
+  - name: Paper Book_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2760
+      y: 4
+      width: 640
+      height: 384
+    spriteID: 91e5d035b5115eb458ff4827b8e00b21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2760, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 83526007
+    name: Paper Book
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Paper Book_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 9de2e561eb46af54a9ffc0958e93e90c
+    - name: Paper Book_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: ed3acb73fda9a694c8f3366c55407aad
+    - name: Paper Book_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: ca1a2f16e6e2d564eb4203875ea9fdaa
+    - name: Paper Book_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 8481f9e80620ab84385ecbead571f6a1
+    - name: Paper Book_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: aa2524d7b93966e43a47f862ef392a42
+    - name: Paper Book_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 33141297c5385234aae5e10f2580acbe
+    - name: Paper Book_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: eef63d81002aef54588abb84a39f0938
+    - name: Paper Book_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 2083241816952594a8fc0270f88456fa
+    - name: Paper Book_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 02898b50d2905c64f9895f6484e53e16
+    - name: Paper Book_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 024e8fe166a4d2b4a8d86771dc3d8564
+    - name: Paper Book_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 43175ace2a012564290435b40a30843e
+    - name: Paper Book_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 36b229277ddc62147b7f7a4103b5b9e0
+    - name: Paper Book_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 4014a0b3b1d891a4a821b0f21ea5c2f6
+    - name: Paper Book_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: a6bd89b4de92a7d40b4b8bf27211225e
+    - name: Paper Book_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 7cbf490913ba3b94493fd41e24f68d30
+    - name: Paper Book_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 15da4ac6b98a98d4a8ca77b0d30e8901
+    - name: Paper Book_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 00287ca7163a9104e876a31f596cab75
+    - name: Paper Book_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 89992b2a7b4d8064a8c49766d85971ce
+    - name: Paper Book_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 657c00adb79404944a4e779544c43a1d
+    - name: Paper Book_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 338f89693f364df44a47a526e6ec62d9
+    - name: Paper Book_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 835af51e8a0470f48b6aaf9884d89918
+    - name: Paper Book_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 616d70a3ebf4b4a41861a0b6d894aa2e
+    - name: Paper Book_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 45458c99c8c9af04e8a856e4f60c4544
+    - name: Paper Book_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 5361bb189fb1e3f4b9f6babe4d7dde0f
+    - name: Paper Book_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: cadaabff7c5fb4f4395f530f3e183ecd
+    - name: Paper Book_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 4250095701dd17f42be070152965795d
+    - name: Paper Book_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: bedd2d77098d59b429dfb3fd55009248
+    - name: Paper Book_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 8cdccc75e17171049842e49f5d24d91a
+    - name: Paper Book_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 267b2a7e1a766424a98084c1bfeb79c3
+    - name: Paper Book_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: f07bd3101934a1a4b89918b4769b14e3
+    - name: Paper Book_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: a10b2d82a86fd1048a058b42ca05d340
+    - name: Paper Book_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 6eb97aca25321c34f8306010d02aa1fa
+    - name: Paper Book_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 44d31465ab42e594dbee9633d60030df
+    - name: Paper Book_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: b724a8b091d568e4e8927b3a4c73abf5
+    - name: Paper Book_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 940d57372a52f9042833651f2a50c5b3
+    - name: Paper Book_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 736821ecf6eda71449e9ccbb8b19b554
+    - name: Paper Book_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: a79b54f9643624e4e9938430343a15d5
+    - name: Paper Book_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 3c4ed740a3f5f0f4083a5191b8ee8e29
+    - name: Paper Book_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 03d0a243f59316b45af0e985aa1adcf3
+    - name: Paper Book_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 87633603400b7644eb79272fd22173c8
+    - name: Paper Book_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 4cf340271b428274fb03bf212a7ef38c
+    - name: Paper Book_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 3ccd9718882eda44fb3ee39441ffc142
+    - name: Paper Book_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 727a57acfbf1dd14d92a1de8aace20d4
+    - name: Paper Book_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 3d34a6f82d4cde44ea68efa3a8985787
+    - name: Paper Book_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 6e8a47da316b2d446a1fd39cbad4f8e8
+    - name: Paper Book_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 128
+        y: 144
+        width: 682
+        height: 384
+      spriteId: 7823471685d96ba44b0bf8c729798196
+    - name: Paper Book_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 128
+        y: 144
+        width: 640
+        height: 384
+      spriteId: 56b7ef715f8691941acc615e980e32b6
+    - name: Paper Book_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 128
+        y: 144
+        width: 640
+        height: 384
+      spriteId: f192426d11330eb4f81b276e6b907331
+    - name: Paper Book_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 128
+        y: 144
+        width: 646
+        height: 384
+      spriteId: f279d262389984740b8b29f18b601a6f
+    - name: Paper Book_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: e327d6cd372f6f24c8000c7ef65f66d4
+    - name: Paper Book_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 128
+        y: 144
+        width: 676
+        height: 384
+      spriteId: 7cf877bb25fc59944bed91a90fb200ce
+    - name: Paper Book_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 67b82667420454e4aa9e815f9f67111a
+    - name: Paper Book_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: d89559a8fcbb71f45a34c96bfabaf565
+    - name: Paper Book_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: b5e35c8d5a9818b4d85f80952459729d
+    - name: Paper Book_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 776127daaf20a7b48adf22400c90dc76
+    - name: Paper Book_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 1020e8aa3460f6a4e9e9aa4a25d8b688
+    - name: Paper Book_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: bd9f0a2fbf3e9774688d234be64077d0
+    - name: Paper Book_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 128
+        y: 144
+        width: 676
+        height: 384
+      spriteId: 5efef7b71c35f0841bb6f363bde7c8ea
+    - name: Paper Book_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 4d08051c15993a443b4cd04c32e65a72
+    - name: Paper Book_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 2f3de8f5243cf8b41aff4cbe2e5c2e2e
+    - name: Paper Book_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 0c4e4cca55557a142acf1a8f3af8836b
+    - name: Paper Book_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 8cb2b5d3a88e0b3498698cbf88d86303
+    - name: Paper Book_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 50825f1bb6f767947be3de18cec12055
+    - name: Paper Book_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: e939f04f014473546886e441583fd1ba
+    - name: Paper Book_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 52705676c86dac447a768c6fcbc10034
+    - name: Paper Book_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 1f1098d6dfa20ec40a576ae67077e9d7
+    - name: Paper Book_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 606aa7a96e460db4fb4d5b8ae41360f3
+    - name: Paper Book_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: e5c595e5e992664468c0fca07414a68c
+    - name: Paper Book_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: 2663bc40bd6903044ad151056060b979
+    - name: Paper Book_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 128
+        y: 144
+        width: 672
+        height: 384
+      spriteId: efe7d5dfba6999047946fc6734fe1039
+    - name: Paper Book_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 128
+        y: 144
+        width: 676
+        height: 384
+      spriteId: 39cad425be2d7074688316722ae88ea7
+    - name: Paper Book_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: d1b13e1e37a915a4284561238e2a1092
+    - name: Paper Book_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 936e3c4c8a773f44ca4fb4fbeba63339
+    - name: Paper Book_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: bb295b9a714757f4ab346316689e582a
+    - name: Paper Book_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 5440fddd3e9f07b4c86e96d635ec5448
+    - name: Paper Book_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: acbef7fc2209b9945b380ffd0207e73d
+    - name: Paper Book_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 39dd0de9fc96435439a9f3453f1d3e01
+    - name: Paper Book_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 128
+        y: 144
+        width: 676
+        height: 384
+      spriteId: 99485c4687fc14248a6f8b7476a702f3
+    - name: Paper Book_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 128
+        y: 144
+        width: 684
+        height: 384
+      spriteId: 9649235c21bbcdd4a99fa02718fa037c
+    - name: Paper Book_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 128
+        y: 144
+        width: 646
+        height: 384
+      spriteId: 8d4532a6f091a524a8c0692c3aeda56b
+    - name: Paper Book_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 128
+        y: 144
+        width: 640
+        height: 384
+      spriteId: 91e5d035b5115eb458ff4827b8e00b21
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 896, y: 720}
