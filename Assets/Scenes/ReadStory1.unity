@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 3126452021208728987, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b8ab0f8d33018314db901ed57dc6fb06, type: 3}
+      objectReference: {fileID: 21300000, guid: 62b77dfd5d885274cabb70975c85d67a, type: 3}
     - target: {fileID: 5569871906566926849, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -380,7 +380,7 @@ PrefabInstance:
     - target: {fileID: 3126452021208728987, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1f41420ae7dd167478f765bb94a48a5b, type: 3}
+      objectReference: {fileID: 21300000, guid: 78fb905dc3cf1b846b9805578e06f583, type: 3}
     - target: {fileID: 5569871906566926849, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -524,10 +524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -945,6 +945,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3126452021208728987, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 658f20fad2797fe40a01ebe6e972c800, type: 3}
     - target: {fileID: 5569871906566926849, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
