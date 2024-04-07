@@ -1692,7 +1692,7 @@ MonoBehaviour:
   player1Phone: {fileID: 934744616}
   player2Phone: {fileID: 462546901}
   player3Phone: {fileID: 206090177}
-  nextScene: 0
+  nextScene: 3
   readOverBtn: {fileID: 1230664058}
   readOverTips:
   - {fileID: 401440823}
@@ -1925,7 +1925,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -343673702534853227, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1969,8 +1969,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
+  m_sharedMaterial: {fileID: -343673702534853227, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
