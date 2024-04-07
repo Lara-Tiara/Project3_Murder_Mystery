@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Vote : MonoBehaviourPunCallbacks
 {
-    public int targetChar;
+    public int murder;
+    public int suspect;
     public GameObject endUI;
-    public Text resultText;
+    public TextMeshProUGUI resultText;
 
     public Button[] buttons;
     private static int clickedButtonCount = 0;
@@ -37,7 +39,7 @@ public class Vote : MonoBehaviourPunCallbacks
 
         buttons[buttonIndex].interactable = false;
 
-        if(buttonIndex == targetChar)
+        if(buttonIndex == murder)
             photonView.RPC("IncreaseRightButtonCount", RpcTarget.All);
 
         //string playerName = PhotonNetwork.LocalPlayer.NickName;
@@ -79,19 +81,34 @@ public class Vote : MonoBehaviourPunCallbacks
     [PunRPC]
     private void ShowEndUI()
     {
-        if(GameDataManager.selectCharacter == targetChar)
+        bool rachelVotedOut = murder == 0 && clickedRightCount >= 2;
+        bool chloeVotedOut = murder == 1 && clickedRightCount >= 2;
+
+        if (GameDataManager.selectCharacter == 0)
         {
-            if (clickedRightCount >= 2)
-                resultText.text = "You Lose";
-            else
-                resultText.text = "You Win";
+            resultText.text = rachelVotedOut ? "You Lose" : "You Win";
         }
-        else
+        else if (GameDataManager.selectCharacter == 1)
         {
-            if (clickedRightCount >= 2)
+            resultText.text = chloeVotedOut ? "You Win" : "You Lose";
+        }
+        else if (GameDataManager.selectCharacter == 2)
+        {
+            if (rachelVotedOut)
+            {
                 resultText.text = "You Win";
+            }
             else
-                resultText.text = "You Lose";
+            {
+                if (GameDataManager.voteCharacter == 0)
+                {
+                    resultText.text = "You lose but you voted the true murder.";
+                }
+                else
+                {
+                    resultText.text = "You Lose";
+                }
+            }
         }
 
         endUI.SetActive(true);
