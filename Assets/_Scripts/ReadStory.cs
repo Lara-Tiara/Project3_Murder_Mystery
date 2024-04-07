@@ -9,19 +9,19 @@ using TMPro;
 public class ReadStory : MonoBehaviourPunCallbacks
 {
     public TextMeshPro content;
-    public Slider player1Slider;
-    public Slider player2Slider;
-    public Slider player3Slider;
+    public Slider maxSlider;
+    public Slider rachelSlider;
+    public Slider chloeSlider;
 
-    public TextAsset player1TextAsset;
-    public TextAsset player2TextAsset;
-    public TextAsset player3TextAsset;
-    public string[] player1Story;
-    public string[] player2Story;
-    public string[] player3Story;
-    public GameObject player1Phone;
-    public GameObject player2Phone;
-    public GameObject player3Phone;
+    public TextAsset maxTextAsset;
+    public TextAsset rachelTextAsset;
+    public TextAsset chloeTextAsset;
+    public string[] maxStory;
+    public string[] rachelStory;
+    public string[] chloeStory;
+    public GameObject maxPhone;
+    public GameObject rachelPhone;
+    public GameObject chloePhone;
 
     public int nextScene;
 
@@ -38,23 +38,23 @@ public class ReadStory : MonoBehaviourPunCallbacks
         i = 0;
         readOverCount = 0;
 
-        player1Story = player1TextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        player2Story = player2TextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        player3Story = player3TextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        maxStory = maxTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        rachelStory = rachelTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        chloeStory = chloeTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
         switch (GameDataManager.selectCharacter)
         {
             case 0:
-                currentStory = player1Story;
-                player1Phone.SetActive(true);
+                currentStory = maxStory;
+                maxPhone.SetActive(true);
                 break;
             case 1:
-                currentStory = player2Story;
-                player2Phone.SetActive(true);
+                currentStory = rachelStory;
+                rachelPhone.SetActive(true);
                 break;
             case 2:
-                currentStory = player3Story;
-                player3Phone.SetActive(true);
+                currentStory = chloeStory;
+                chloePhone.SetActive(true);
                 break;
             default:
                 break;
@@ -66,20 +66,20 @@ public class ReadStory : MonoBehaviourPunCallbacks
     [PunRPC]
     private void UpdateSliderValue(int targetPlayer,int targetProgress)
     {
-        player1Slider.maxValue = player1Story.Length - 1;
-        player2Slider.maxValue = player2Story.Length - 1;
-        player3Slider.maxValue = player3Story.Length - 1;
+        maxSlider.maxValue = maxStory.Length - 1;
+        rachelSlider.maxValue = rachelStory.Length - 1;
+        chloeSlider.maxValue = chloeStory.Length - 1;
 
         switch (targetPlayer)
         {
             case 0:
-                player1Slider.value = targetProgress;
+                maxSlider.value = targetProgress;
                 break;
             case 1:
-                player2Slider.value = targetProgress;
+                rachelSlider.value = targetProgress;
                 break;
             case 2:
-                player3Slider.value = targetProgress;
+                chloeSlider.value = targetProgress;
                 break;
             default:
                 break;

@@ -955,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1224030832811365419, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3126452021208728987, guid: e5525590cc6804a49a2d3890331d056a, type: 3}
       propertyPath: m_Sprite
@@ -1680,18 +1680,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 1917067350}
-  player1Slider: {fileID: 401440822}
-  player2Slider: {fileID: 1739090380}
-  player3Slider: {fileID: 2005226536}
-  player1TextAsset: {fileID: 0}
-  player2TextAsset: {fileID: 0}
-  player3TextAsset: {fileID: 0}
-  player1Story: []
-  player2Story: []
-  player3Story: []
-  player1Phone: {fileID: 934744616}
-  player2Phone: {fileID: 462546901}
-  player3Phone: {fileID: 206090177}
+  maxSlider: {fileID: 401440822}
+  rachelSlider: {fileID: 1739090380}
+  chloeSlider: {fileID: 2005226536}
+  maxTextAsset: {fileID: 4900000, guid: be6bea03906285444a7bd3d721f0a6f6, type: 3}
+  rachelTextAsset: {fileID: 4900000, guid: 7620e8448326a2144a06cca448835bef, type: 3}
+  chloeTextAsset: {fileID: 4900000, guid: ec7fed7a72001604db629587d1ec7e00, type: 3}
+  maxStory: []
+  rachelStory: []
+  chloeStory: []
+  maxPhone: {fileID: 206090177}
+  rachelPhone: {fileID: 462546901}
+  chloePhone: {fileID: 934744616}
   nextScene: 3
   readOverBtn: {fileID: 1230664058}
   readOverTips:
