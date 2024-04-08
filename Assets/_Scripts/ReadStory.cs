@@ -8,7 +8,7 @@ using TMPro;
 
 public class ReadStory : MonoBehaviourPunCallbacks
 {
-    public TextMeshPro content;
+    public TextMeshProUGUI content;
     public Slider maxSlider;
     public Slider rachelSlider;
     public Slider chloeSlider;
@@ -38,9 +38,9 @@ public class ReadStory : MonoBehaviourPunCallbacks
         i = 0;
         readOverCount = 0;
 
-        maxStory = maxTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        rachelStory = rachelTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        chloeStory = chloeTextAsset.text.Split(new string[] { "\n\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        maxStory = maxTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        rachelStory = rachelTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        chloeStory = chloeTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
         switch (GameDataManager.selectCharacter)
         {

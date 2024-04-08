@@ -275,8 +275,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomNamePrefab: {fileID: 9122609348615078212, guid: eb12fb3468744fd48bb1243a4b29b589, type: 3}
   gridLayout: {fileID: 1358953615}
-  joinRoomTip: {fileID: 139826155}
+  joinRoomTip: {fileID: 1844399542}
   loginUI: {fileID: 622623798}
 --- !u!1 &666601746
 GameObject:
@@ -2619,7 +2619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1238587001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1056759307}
+        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+        m_MethodName: StartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238587001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,7 +3253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1551417245}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1056759307}
+        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+        m_MethodName: JoinGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1551417245
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,12 +14,12 @@ public class Chat : MonoBehaviourPunCallbacks
     public TextMeshProUGUI timedownText;
     public int nextScene;
     public InputField iptMessage;
-    public Text chatText;
+    public TextMeshProUGUI chatText;
     public ScrollRect scrollRect;
     public GameObject noteCanvas;
     public Button sendButton;
     private EventSystem eventSystem;
-    private string[] characterNames = { "Rachel", "Chloe", "Max" };
+    private string[] characterNames = { "Max", "Rachel", "Chloe" };
 
     private void Start()
     {

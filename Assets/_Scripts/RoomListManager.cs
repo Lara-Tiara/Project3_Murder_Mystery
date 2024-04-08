@@ -46,7 +46,7 @@ public class RoomListManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.CurrentRoom != null)
         {
-            joinRoomTip.GetComponent<Text>().text = "Room joined! Wait for other players, 3 players needed," + 
+            joinRoomTip.GetComponentInChildren<TextMeshProUGUI>().text = "Room joined! Wait for other players, 3 players needed," + 
                 "\nnow " + PhotonNetwork.CurrentRoom.PlayerCount + " player(s)";
         }
     }

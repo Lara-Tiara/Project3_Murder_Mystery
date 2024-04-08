@@ -42,7 +42,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public void StartButton()
     {
         nameUI.SetActive(false);
-        PhotonNetwork.NickName = nickNameIpt.GetComponent<InputField>().text;
+        PhotonNetwork.NickName = nickNameIpt.GetComponent<TMP_InputField>().text;
         loginUI.SetActive(true);
         if(PhotonNetwork.InLobby)
         {
@@ -72,7 +72,7 @@ public class Launcher : MonoBehaviourPunCallbacks
             {
                 SceneManager.LoadScene(1);
             }
-            joinRoomTip.GetComponent<Text>().text = "Room joined! Wait for other players, 3 players needed," + 
+            joinRoomTip.GetComponentInChildren<TextMeshProUGUI>().text = "Room joined! Wait for other players, 3 players needed," + 
                 "\nnow " + PhotonNetwork.CurrentRoom.PlayerCount + " player(s)";
         }
     }
