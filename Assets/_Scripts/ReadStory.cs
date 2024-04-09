@@ -13,12 +13,12 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public Slider rachelSlider;
     public Slider chloeSlider;
 
-    public TextAsset maxTextAsset;
-    public TextAsset rachelTextAsset;
-    public TextAsset chloeTextAsset;
-    public string[] maxStory;
-    public string[] rachelStory;
-    public string[] chloeStory;
+    public StoryNode[] maxNodes;
+    public StoryNode[] rachelNodes;
+    public StoryNode[] chloeNodes;
+    private string[] maxStorySplit;
+    private string[] rachelStorySplit;
+    private string[] chloeStorySplit;
     public GameObject maxPhone;
     public GameObject rachelPhone;
     public GameObject chloePhone;
@@ -32,28 +32,42 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public GameObject[] readOverTips;
     private static int readOverCount;
     private bool hasReadOver;
+    private string maxStory;
+    private string rachelStory;
+    private string chloeStory;
 
     private void Start()
     {
         i = 0;
         readOverCount = 0;
+        
+        List<StoryNode> activeMaxNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(maxNodes));
+        Debug.Log("Active Max Nodes Count: " + activeMaxNodes.Count);
+        List<StoryNode> activeRachelNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(rachelNodes));
+        Debug.Log("Active Rachel Nodes Count: " + activeRachelNodes.Count);
+        List<StoryNode> activeChloeNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(chloeNodes));
+        Debug.Log("Active Chloe Nodes Count: " + activeChloeNodes.Count);
+    
+        maxStory = CombineStoryText(activeMaxNodes);
+        rachelStory = CombineStoryText(activeRachelNodes);
+        chloeStory = CombineStoryText(activeChloeNodes);
 
-        maxStory = maxTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        rachelStory = rachelTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        chloeStory = chloeTextAsset.text.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        maxStorySplit = maxStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
         switch (GameDataManager.selectCharacter)
         {
             case 0:
-                currentStory = maxStory;
+                currentStory = maxStorySplit;
                 maxPhone.SetActive(true);
                 break;
             case 1:
-                currentStory = rachelStory;
+                currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
                 break;
             case 2:
-                currentStory = chloeStory;
+                currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
                 break;
             default:
@@ -63,12 +77,32 @@ public class ReadStory : MonoBehaviourPunCallbacks
         content.text = currentStory.Length > 0 ? currentStory[i] : "";
     }
 
+    public string CombineStoryText(List<StoryNode> storyNodes)
+    {
+        // Initialize an empty string to hold the combined text
+        string combinedText = "";
+
+        // Iterate through each StoryNode in the list
+        foreach (StoryNode node in storyNodes)
+        {
+            // Check if the node and its storyText field are not null to avoid null reference exceptions
+            if (node != null && node.storyText != null)
+            {
+                // Append this node's text to the combinedText string, adding a newline for separation
+                combinedText += node.storyText.text + "\n\n";
+            }
+        }
+
+        // Return the combined text
+        return combinedText;
+    }
+
     [PunRPC]
     private void UpdateSliderValue(int targetPlayer,int targetProgress)
     {
-        maxSlider.maxValue = maxStory.Length - 1;
-        rachelSlider.maxValue = rachelStory.Length - 1;
-        chloeSlider.maxValue = chloeStory.Length - 1;
+        maxSlider.maxValue = maxStorySplit.Length - 1;
+        rachelSlider.maxValue = rachelStorySplit.Length - 1;
+        chloeSlider.maxValue = chloeStorySplit.Length - 1;
 
         switch (targetPlayer)
         {
@@ -117,6 +151,8 @@ public class ReadStory : MonoBehaviourPunCallbacks
             return;
 
         hasReadOver = true;
+        //StoryNode currentNode = GetCurrentStoryNode();
+        //currentNode.hasBeenRead = true;
 
         photonView.RPC("AddReadOver", RpcTarget.All, GameDataManager.selectCharacter);
 
@@ -138,5 +174,11 @@ public class ReadStory : MonoBehaviourPunCallbacks
             readOverCount = 0;
             SceneManager.LoadScene(nextScene);
         }
+    }
+
+    public List<StoryNode> LoadActiveCharacterStoryNodes(List<StoryNode> storyNodes)
+    {
+        List<StoryNode> activeStoryNodes = storyNodes.FindAll(node => node.isActive);
+        return activeStoryNodes;
     }
 }

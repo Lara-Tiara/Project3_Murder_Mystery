@@ -1771,15 +1771,13 @@ MonoBehaviour:
   maxSlider: {fileID: 401440822}
   rachelSlider: {fileID: 2005226536}
   chloeSlider: {fileID: 1739090380}
-  maxTextAsset: {fileID: 4900000, guid: be6bea03906285444a7bd3d721f0a6f6, type: 3}
-  rachelTextAsset: {fileID: 4900000, guid: 7620e8448326a2144a06cca448835bef, type: 3}
-  chloeTextAsset: {fileID: 4900000, guid: ec7fed7a72001604db629587d1ec7e00, type: 3}
-  maxStory:
-  - 
-  rachelStory:
-  - 
-  chloeStory:
-  - 
+  maxNodes:
+  - {fileID: 11400000, guid: c5cecfd9ed05a714696157be16c3c7b0, type: 2}
+  - {fileID: 11400000, guid: 39ab2dfe9fd118c46978165314ff32d0, type: 2}
+  rachelNodes:
+  - {fileID: 11400000, guid: b56eca4fb317c74499ebfcc262087c0e, type: 2}
+  chloeNodes:
+  - {fileID: 11400000, guid: 1a04028b47796a04980e1a251e45aad2, type: 2}
   maxPhone: {fileID: 206090177}
   rachelPhone: {fileID: 462546901}
   chloePhone: {fileID: 934744616}

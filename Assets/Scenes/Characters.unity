@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8527639992340136400, guid: fec3412f11aade34bba56c06b214d836, type: 3}
       propertyPath: m_Name
-      value: Btn_Char2
+      value: Btn_Chloe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -954,7 +954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8735001920220507399, guid: d8b3f7f3daeff8a4988150523d83802d, type: 3}
       propertyPath: m_Name
-      value: Btn_Char1
+      value: Btn_Rachel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1176,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5392290709571047686, guid: a92c11280fc7fd74786960c7996d8687, type: 3}
       propertyPath: m_Name
-      value: Btn_Char3
+      value: Btn_Max
       objectReference: {fileID: 0}
     - target: {fileID: 6452734146532417024, guid: a92c11280fc7fd74786960c7996d8687, type: 3}
       propertyPath: m_FontData.m_MinSize
