@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chloe1
   m_EditorClassIdentifier: 
   characterName: Chloe
-  nodeId: 2
+  nodeId: 0
   storyText: {fileID: 4900000, guid: ec7fed7a72001604db629587d1ec7e00, type: 3}
   isActive: 1
   hasBeenRead: 0

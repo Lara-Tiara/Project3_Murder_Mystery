@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rachel1
   m_EditorClassIdentifier: 
   characterName: Rachel
-  nodeId: 1
+  nodeId: 0
   storyText: {fileID: 4900000, guid: 7620e8448326a2144a06cca448835bef, type: 3}
   isActive: 1
   hasBeenRead: 0

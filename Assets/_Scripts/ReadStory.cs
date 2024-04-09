@@ -36,6 +36,30 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private string rachelStory;
     private string chloeStory;
 
+    private void Awake() {
+
+        foreach (var node in maxNodes)
+        {
+            if(node.nodeId == 0){
+                node.isActive = true;
+            }
+        }
+
+        foreach (var node in rachelNodes)
+        {
+            if(node.nodeId == 0){
+                node.isActive = true;
+            }
+        }
+
+        foreach (var node in chloeNodes)
+        {
+            if(node.nodeId == 0){
+                node.isActive = true;
+            }
+        }
+    }
+
     private void Start()
     {
         i = 0;
