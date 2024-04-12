@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Chat1.unity
     guid: eaf3a4b1574fcf249859c7928d6e207a
   - enabled: 1
+    path: Assets/Scenes/ReadStory2.unity
+    guid: 8c621552224d81f4ebc6b538d3259b20
+  - enabled: 1
+    path: Assets/Scenes/Chat2.unity
+    guid: a7ea4e9221cba0f449c0294fcddabb14
+  - enabled: 1
+    path: Assets/Scenes/ReadStory3.unity
+    guid: 6f168c62883126642a1a844f87f3db26
+  - enabled: 1
+    path: Assets/Scenes/Chat3.unity
+    guid: a5eb58918b1e5a142b033314a3f87649
+  - enabled: 1
     path: Assets/Scenes/Vote.unity
     guid: 25adb06af0c0c1948a2a255f8751083e
   m_configObjects: {}
