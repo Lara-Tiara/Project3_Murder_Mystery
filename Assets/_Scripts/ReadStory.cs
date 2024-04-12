@@ -103,21 +103,15 @@ public class ReadStory : MonoBehaviourPunCallbacks
 
     public string CombineStoryText(List<StoryNode> storyNodes)
     {
-        // Initialize an empty string to hold the combined text
         string combinedText = "";
 
-        // Iterate through each StoryNode in the list
         foreach (StoryNode node in storyNodes)
         {
-            // Check if the node and its storyText field are not null to avoid null reference exceptions
             if (node != null && node.storyText != null)
             {
-                // Append this node's text to the combinedText string, adding a newline for separation
                 combinedText += node.storyText.text + "\n\n";
             }
         }
-
-        // Return the combined text
         return combinedText;
     }
 
