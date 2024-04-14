@@ -17,6 +17,6 @@ public class StoryClue
 {
     public string clueText;
     public bool sharedClue;
-    public StoryNode nextNode; 
+    //public StoryNode nextNode; 
 }
 

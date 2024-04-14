@@ -18,6 +18,8 @@ public class Chat : MonoBehaviourPunCallbacks
     public ScrollRect scrollRect;
     public GameObject noteCanvas;
     public Button sendButton;
+    public Transform gridLayout;
+    public GameObject clueButtonPrefab;
     private EventSystem eventSystem;
     private string[] characterNames = { "Max", "Rachel", "Chloe" };
 
@@ -25,6 +27,7 @@ public class Chat : MonoBehaviourPunCallbacks
     {
         eventSystem = EventSystem.current;
         SetFocusOnInputField();
+        SharedCluesUpdate(CluesManager.Instance.GetSharedClues());
     }
 
     private void Update()
@@ -48,6 +51,21 @@ public class Chat : MonoBehaviourPunCallbacks
         if (!iptMessage.isFocused && !noteCanvas.activeSelf)
         {
             SetFocusOnInputField();
+        }
+    }
+
+    public void SharedCluesUpdate(List<StoryClue> clues)
+    {
+        foreach (Transform child in gridLayout)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (StoryClue clue in clues)
+        {
+            GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayout);
+            TextMeshProUGUI clueText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
+            clueText.text = clue.clueText;
         }
     }
 

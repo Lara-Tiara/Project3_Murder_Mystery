@@ -1068,6 +1068,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428046198}
   m_CullTransparentMesh: 1
+--- !u!1001 &432589082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1296659828503443743, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473966183273117135, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_Name
+      value: ClueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1008.82043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 604.29926
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.03946
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
 --- !u!1001 &439903683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4091,6 +4152,8 @@ MonoBehaviour:
   scrollRect: {fileID: 1761282745}
   noteCanvas: {fileID: 296962550}
   sendButton: {fileID: 206063599}
+  gridLayout: {fileID: 74853855}
+  clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
 --- !u!4 &1570816338
 Transform:
   m_ObjectHideFlags: 0
@@ -5961,3 +6024,4 @@ SceneRoots:
   - {fileID: 296962554}
   - {fileID: 1344600123}
   - {fileID: 55593844}
+  - {fileID: 432589082}

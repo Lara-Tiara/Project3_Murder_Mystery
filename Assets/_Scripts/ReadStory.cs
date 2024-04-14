@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Linq;
 
 public class ReadStory : MonoBehaviourPunCallbacks
 {
@@ -35,43 +36,48 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private string maxStory;
     private string rachelStory;
     private string chloeStory;
+    private List<StoryClue> maxClues;
+    private List<StoryClue> rachelClues;
+    private List<StoryClue> chloeClues;
+    private List<StoryClue> currentClueList;
+    public Transform gridLayoutClue;
+    public GameObject clueButtonPrefab;
 
     private void Awake() {
 
-        foreach (var node in maxNodes)
-        {
-            if(node.nodeId == 0){
-                node.isActive = true;
-            }
-        }
+        InitializeStoryNodes();
+    }
 
-        foreach (var node in rachelNodes)
-        {
-            if(node.nodeId == 0){
-                node.isActive = true;
-            }
-        }
+    private void Start()
+    {
+        SetupStoryEnvironment();
+    }
 
-        foreach (var node in chloeNodes)
-        {
-            if(node.nodeId == 0){
+    private void InitializeStoryNodes() 
+    {
+        SetInitialActiveNodes(maxNodes);
+        SetInitialActiveNodes(rachelNodes);
+        SetInitialActiveNodes(chloeNodes);
+    }
+
+    private void SetInitialActiveNodes(StoryNode[] nodes) 
+    {
+        foreach (var node in nodes) {
+            if(node.nodeId == 0) {
                 node.isActive = true;
             }
         }
     }
 
-    private void Start()
+    private void SetupStoryEnvironment() 
     {
         i = 0;
         readOverCount = 0;
-        
+
         List<StoryNode> activeMaxNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(maxNodes));
-        Debug.Log("Active Max Nodes Count: " + activeMaxNodes.Count);
         List<StoryNode> activeRachelNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(rachelNodes));
-        Debug.Log("Active Rachel Nodes Count: " + activeRachelNodes.Count);
         List<StoryNode> activeChloeNodes = LoadActiveCharacterStoryNodes(new List<StoryNode>(chloeNodes));
-        Debug.Log("Active Chloe Nodes Count: " + activeChloeNodes.Count);
-    
+
         maxStory = CombineStoryText(activeMaxNodes);
         rachelStory = CombineStoryText(activeRachelNodes);
         chloeStory = CombineStoryText(activeChloeNodes);
@@ -80,19 +86,21 @@ public class ReadStory : MonoBehaviourPunCallbacks
         rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
-        switch (GameDataManager.selectCharacter)
-        {
+        switch (GameDataManager.selectCharacter) {
             case 0:
                 currentStory = maxStorySplit;
                 maxPhone.SetActive(true);
+                LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
                 break;
             case 1:
                 currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
+                LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
                 break;
             case 2:
                 currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
+                LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
                 break;
             default:
                 break;
@@ -198,5 +206,28 @@ public class ReadStory : MonoBehaviourPunCallbacks
     {
         List<StoryNode> activeStoryNodes = storyNodes.FindAll(node => node.isActive);
         return activeStoryNodes;
+    }
+
+    public void LoadClues(List<StoryClue> clues)
+    {
+        foreach (Transform child in gridLayoutClue)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (StoryClue clue in clues)
+        {
+            GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
+            TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
+            clueButtonText.text = clue.clueText;
+
+            Button button = newClueButton.GetComponent<Button>();
+            button.onClick.AddListener(() => ShareClue(clue));
+        }
+    }
+
+    public void ShareClue(StoryClue clue)
+    {
+        CluesManager.Instance.AddSharedClue(clue);
     }
 }

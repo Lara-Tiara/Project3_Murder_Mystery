@@ -15,5 +15,7 @@ MonoBehaviour:
   characterName: Rachel
   nodeId: 0
   storyText: {fileID: 4900000, guid: 7620e8448326a2144a06cca448835bef, type: 3}
-  isActive: 0
-  hasBeenRead: 0
+  clues:
+  - clueText: Rachel
+    sharedClue: 0
+  isActive: 1

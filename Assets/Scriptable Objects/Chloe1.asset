@@ -15,5 +15,7 @@ MonoBehaviour:
   characterName: Chloe
   nodeId: 0
   storyText: {fileID: 4900000, guid: ec7fed7a72001604db629587d1ec7e00, type: 3}
-  clues: []
-  isActive: 0
+  clues:
+  - clueText: Chloe
+    sharedClue: 0
+  isActive: 1

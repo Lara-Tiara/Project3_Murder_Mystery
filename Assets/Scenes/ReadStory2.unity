@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 50
   m_Viewport: {fileID: 418068636}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1136079937}
@@ -1794,6 +1794,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783435895}
   m_CullTransparentMesh: 1
+--- !u!1001 &785675363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1296659828503443743, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473966183273117135, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_Name
+      value: ClueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1008.82043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 604.29926
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.03946
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728085329742773781, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2676662dae5a88449df6cc78caddf53, type: 3}
 --- !u!1 &867015068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2494,8 @@ MonoBehaviour:
   - {fileID: 468004631}
   - {fileID: 1686728334}
   - {fileID: 695372468}
+  gridLayoutClue: {fileID: 1196763285}
+  clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
 --- !u!114 &1489763960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3608,3 +3671,4 @@ SceneRoots:
   - {fileID: 1489763961}
   - {fileID: 1565196532}
   - {fileID: 1763086504}
+  - {fileID: 785675363}
