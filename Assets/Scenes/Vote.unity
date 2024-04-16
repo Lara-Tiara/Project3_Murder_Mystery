@@ -1097,13 +1097,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e727a5f17b5e0074c94436ab3fcf4a29, type: 2}
   - {fileID: 11400000, guid: 663b422cb2e692c4faf8e97e802831f7, type: 2}
   - {fileID: 11400000, guid: c0fd3ea9608f3cf41a289be2d2de3852, type: 2}
+  - {fileID: 11400000, guid: da97fa293cf64ed459876abb596bb6d3, type: 2}
   rachelNodes:
   - {fileID: 11400000, guid: f5dafc0de11531449833b28003d74cfa, type: 2}
   - {fileID: 11400000, guid: 3e6acc947a36f9d4080f88d626cd870b, type: 2}
   - {fileID: 11400000, guid: fc560361f33389741994efc0d79f134b, type: 2}
+  - {fileID: 11400000, guid: da97fa293cf64ed459876abb596bb6d3, type: 2}
   chloeNodes:
   - {fileID: 11400000, guid: e461bb5775f9ff44fb7ac00fe2e84a73, type: 2}
   - {fileID: 11400000, guid: e1dc34b9f7c9a6746b73c1553ce81a58, type: 2}
+  - {fileID: 11400000, guid: da97fa293cf64ed459876abb596bb6d3, type: 2}
   totalRounds: 2
 --- !u!4 &605944742
 Transform:

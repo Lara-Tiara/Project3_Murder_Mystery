@@ -208,10 +208,13 @@ public class Vote : MonoBehaviourPunCallbacks
         bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] {0, 0});
         bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] {1, 1});
         bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] {2, 2});
+        bool equalVote = roundResults.SequenceEqual(new int[] {-1, -1});
         bool maxRachelVotedOut = roundResults.Contains(0) && roundResults.Contains(1);
         bool maxChloeVotedOut = roundResults.Contains(0) && roundResults.Contains(2);
         bool chloeRachelVotedOut = roundResults.Contains(1) && roundResults.Contains(2);
-        bool equalVote = roundResults.Contains(-1);
+        bool equalMaxVote = roundResults.Contains(0) && roundResults.Contains(-1);
+        bool equalChloeVote = roundResults.Contains(2) && roundResults.Contains(-1);
+        bool equalRachelVote = roundResults.Contains(1) && roundResults.Contains(-1);
 
         if (maxVotedOutTwice)
         {
@@ -249,11 +252,29 @@ public class Vote : MonoBehaviourPunCallbacks
             SetActiveNodes(chloeNodes,2);
             SetActiveNodes(rachelNodes,2);
         }
-        if(equalVote)
+        if (equalMaxVote)
+        {
+            SetActiveNodes(maxNodes, 1);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 1);
+        }
+        if (equalChloeVote)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,1);
-            SetActiveNodes(rachelNodes,1);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 1);
+        }
+        if (equalRachelVote)
+        {
+            SetActiveNodes(maxNodes, 3);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 2);
+        }
+        if(equalVote)
+        {
+            SetActiveNodes(maxNodes, 4);
+            SetActiveNodes(chloeNodes,4);
+            SetActiveNodes(rachelNodes,4);
         }
 
         LoadActiveTextForCharacter();
