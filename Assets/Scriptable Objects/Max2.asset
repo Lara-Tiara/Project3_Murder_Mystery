@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Max
   nodeId: 1
-  storyText: {fileID: 4900000, guid: be6bea03906285444a7bd3d721f0a6f6, type: 3}
+  storyText: {fileID: 4900000, guid: 76eef18898d4e8b449be10ddc25f69a1, type: 3}
+  clues: []
   isActive: 0
-  hasBeenRead: 0

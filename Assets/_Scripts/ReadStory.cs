@@ -13,7 +13,6 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public Slider maxSlider;
     public Slider rachelSlider;
     public Slider chloeSlider;
-
     public StoryNode[] maxNodes;
     public StoryNode[] rachelNodes;
     public StoryNode[] chloeNodes;
@@ -23,12 +22,9 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public GameObject maxPhone;
     public GameObject rachelPhone;
     public GameObject chloePhone;
-
     public int nextScene;
-
     private string[] currentStory;
     private int i;
-
     public GameObject readOverBtn;
     public GameObject[] readOverTips;
     private static int readOverCount;
@@ -36,12 +32,12 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private string maxStory;
     private string rachelStory;
     private string chloeStory;
-    private List<StoryClue> maxClues;
-    private List<StoryClue> rachelClues;
-    private List<StoryClue> chloeClues;
-    private List<StoryClue> currentClueList;
     public Transform gridLayoutClue;
     public GameObject clueButtonPrefab;
+    [SerializeField]
+    private int sharedClueNum;
+    private int cluesPickedCount = 0;
+
 
     private void Awake() {
 
@@ -155,8 +151,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
 
             photonView.RPC("UpdateSliderValue", RpcTarget.All, GameDataManager.selectCharacter, i);
 
-            if (i == currentStory.Length - 1 && !hasReadOver)
-                readOverBtn.SetActive(true);
+            CheckReadOverActivation();
         }
     }
 
@@ -222,12 +217,29 @@ public class ReadStory : MonoBehaviourPunCallbacks
             clueButtonText.text = clue.clueText;
 
             Button button = newClueButton.GetComponent<Button>();
-            button.onClick.AddListener(() => ShareClue(clue));
+            button.onClick.AddListener(() => {
+            ShareClue(clue);
+            button.interactable = false;
+            });
         }
     }
 
     public void ShareClue(StoryClue clue)
     {
-        CluesManager.Instance.AddSharedClue(clue);
+        if (cluesPickedCount < sharedClueNum)
+        {
+            CluesManager.Instance.AddSharedClue(clue);
+            cluesPickedCount++;
+            CheckReadOverActivation();
+        }
     }
+
+    private void CheckReadOverActivation()
+    {
+        if (i == currentStory.Length - 1 && !hasReadOver && cluesPickedCount >= sharedClueNum)
+        {
+            readOverBtn.SetActive(true);
+        }
+    }
+
 }
