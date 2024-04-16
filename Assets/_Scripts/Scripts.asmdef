@@ -1,7 +1,19 @@
 {
-    "name": "_Scripts",
+    "name": "Scripts",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "PhotonUnityNetworking.Utilities",
+        "PhotonUnityNetworking",
+        "Unity.TextMeshPro",
+        "Unity.TextMeshPro.Editor",
+        "Unity.TextMeshPro.Editor.Tests",
+        "Unity.TextMeshPro.Tests",
+        "TMP",
+        "PhotonRealtime",
+        "PhotonChat",
+        "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor",
+        "PhotonUnityNetworking.Editor"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
