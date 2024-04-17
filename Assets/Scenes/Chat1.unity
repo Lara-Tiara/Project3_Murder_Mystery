@@ -2234,7 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 74853855}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957e2e419f46ad41b7fd7cd2cd52d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 30
   timedownText: {fileID: 1728447726}
   nextScene: 4
   iptMessage: {fileID: 1538713647}

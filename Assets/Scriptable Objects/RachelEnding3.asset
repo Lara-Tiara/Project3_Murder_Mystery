@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d2c92697fbef6409bcd102e7af0143, type: 3}
   m_Name: RachelEnding3
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Rachel
   nodeId: 3
   storyText: {fileID: 4900000, guid: 265fa851b70490f469fe6ba5656147ab, type: 3}
   clues: []

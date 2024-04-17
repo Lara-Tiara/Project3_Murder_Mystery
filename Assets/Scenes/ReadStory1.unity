@@ -185,7 +185,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Choose Clues To Share
+  m_text: 'Choose Clues To Share
+
+    (minimum FIVE clues)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
   m_sharedMaterial: {fileID: -343673702534853227, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
@@ -1242,7 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 217640651}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1

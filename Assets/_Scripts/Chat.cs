@@ -66,7 +66,16 @@ public class Chat : MonoBehaviourPunCallbacks
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayout);
             TextMeshProUGUI clueText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
             clueText.text = clue.clueText;
+
+            newClueButton.transform.SetAsFirstSibling();
         }
+        StartCoroutine(ScrollToTop());
+    }
+
+    private IEnumerator ScrollToTop()
+    {
+        yield return new WaitForEndOfFrame();
+        scrollRect.verticalNormalizedPosition = 1f;
     }
 
     private void SendMessageButtonClicked()

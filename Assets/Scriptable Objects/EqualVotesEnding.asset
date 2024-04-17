@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d2c92697fbef6409bcd102e7af0143, type: 3}
   m_Name: EqualVotesEnding
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Equal
   nodeId: 4
   storyText: {fileID: 4900000, guid: ce0ddf116eee3bd48974772feaccc1f6, type: 3}
   clues: []
