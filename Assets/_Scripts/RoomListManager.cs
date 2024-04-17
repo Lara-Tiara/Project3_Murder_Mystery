@@ -71,4 +71,14 @@ public class RoomListManager : MonoBehaviourPunCallbacks
                 "\nnow " + PhotonNetwork.CurrentRoom.PlayerCount + " player(s)";
         }
     }
+
+    public int GetCachedRoomCount()
+    {
+        return cachedRoomList.Count;
+    }
+
+    public bool IsRoomCached(string roomName)
+    {
+        return cachedRoomList.ContainsKey(roomName);
+    }
 }

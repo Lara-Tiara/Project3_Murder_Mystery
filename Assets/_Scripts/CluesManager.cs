@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
-public class CluesManager : PersistentSingleton<CluesManager>
+public class CluesManager : PersistentSingleton<CluesManager>, ICluesManager
 {
     private const string SHARED_CLUES_KEY = "SharedClues";
 

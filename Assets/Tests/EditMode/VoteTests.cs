@@ -1,25 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TestTools;
+using TMPro;
 
 public class VoteTests
 {
-    // A Test behaves as an ordinary method
     [Test]
-    public void VoteTestSimplePasses()
+    public void CombineStoryText_CombinesTextCorrectly()
     {
-        // Use the Assert class to test conditions
-    }
+        // Arrange
+        var vote = new GameObject().AddComponent<Vote>();
+        var storyNodes = new List<StoryNode>
+        {
+            new StoryNode { storyText = new TextAsset("Hello, ") },
+            new StoryNode { storyText = new TextAsset("world!") }
+        };
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator VoteTestWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
+        // Act
+        string result = vote.CombineStoryText(storyNodes);
+
+        // Assert
+        Assert.AreEqual("Hello, \n\nworld!\n\n", result);
     }
 }
+
+

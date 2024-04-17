@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.IO;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("EditMode")]
 public class Chat : MonoBehaviourPunCallbacks
 {
     public float time;
@@ -21,6 +23,7 @@ public class Chat : MonoBehaviourPunCallbacks
     public Transform gridLayout;
     public GameObject clueButtonPrefab;
     private EventSystem eventSystem;
+    public ICustomFileSystem FileSystem { get; set; } = new CustomFileSystem();
     private string[] characterNames = { "Max", "Rachel", "Chloe" };
 
     private void Start()
@@ -130,7 +133,7 @@ public class Chat : MonoBehaviourPunCallbacks
         SaveChatLog();
     }
 
-    private void SaveChatLog()
+    internal void SaveChatLog()
     {
         string directory = Application.dataPath + "/ChatLogs";
         string fileName = "ChatLog_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
@@ -146,7 +149,7 @@ public class Chat : MonoBehaviourPunCallbacks
                                             .Replace("</align>", "")
                                             .Replace("<align=right>", "");
 
-        File.WriteAllText(filePath, formattedText);
+        FileSystem.WriteAllText(filePath, formattedText);
 
         Debug.Log("Chat log saved to " + filePath);
     }

@@ -74,4 +74,9 @@ public class CharacterManager : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene(2);
     }
+
+    #if UNITY_EDITOR
+    public static int GetClickedButtonCount() => clickedButtonCount;
+    public static void ResetClickedButtonCount() => clickedButtonCount = 0;
+    #endif
 }

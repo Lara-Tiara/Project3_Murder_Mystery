@@ -4,7 +4,11 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "Scripts"
+        "Scripts",
+        "PhotonUnityNetworking.Utilities",
+        "PhotonUnityNetworking",
+        "Unity.TextMeshPro",
+        "PhotonRealtime"
     ],
     "includePlatforms": [
         "Editor"
@@ -13,7 +17,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "nunit.framework.dll"
+        "nunit.framework.dll",
+        "Moq.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [

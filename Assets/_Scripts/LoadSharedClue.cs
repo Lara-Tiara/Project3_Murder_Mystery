@@ -8,10 +8,17 @@ public class LoadSharedClue : MonoBehaviourPunCallbacks
 {
     public Transform gridLayout;
     public GameObject clueButtonPrefab;
+    private ICluesManager cluesManager;
 
     private void Start()
     {
+        cluesManager = CluesManager.Instance;
         SharedCluesUpdate(CluesManager.Instance.GetSharedClues());
+    }
+
+    public void SetCluesManager(ICluesManager manager)
+    {
+        cluesManager = manager;
     }
 
     public void SharedCluesUpdate(List<StoryClue> clues)
