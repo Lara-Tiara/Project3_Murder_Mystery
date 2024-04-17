@@ -27,6 +27,7 @@ public class Vote : MonoBehaviourPunCallbacks
     private List<int> roundResults = new List<int>();
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
+    private int votedOutIndex;
 
     private IEnumerator VotingRoutine()
     {
@@ -174,8 +175,6 @@ public class Vote : MonoBehaviourPunCallbacks
             }
         }
 
-        // Check if any player got exactly two votes
-        int votedOutIndex = -1; // -1 means no one was voted out with exactly two votes
         for (int i = 0; i < votes.Length; i++)
         {
             if (votes[i] == 2)
@@ -184,11 +183,10 @@ public class Vote : MonoBehaviourPunCallbacks
                 break;
             }
         }
-
-        // If no one has two votes and each has one vote, we consider no one voted out
-        if (votedOutIndex == -1 && votes.All(v => v == 1))
+        
+        if (votes.All(v => v == 1))
         {
-            votedOutIndex = -1; // No one voted out
+            votedOutIndex = -1; 
         }
 
         roundResults.Add(votedOutIndex);

@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: Max2
   m_EditorClassIdentifier: 
   characterName: Max
-  nodeId: 1
-  storyText: {fileID: 4900000, guid: 76eef18898d4e8b449be10ddc25f69a1, type: 3}
-  clues: []
-  isActive: 0
+  nodeId: 0
+  storyText: {fileID: 4900000, guid: f92afc967d54d0249a500f9a54e011ee, type: 3}
+  clues:
+  - clueText: 'Body: The body has a burnt smell and a hint of gasoline. '
+  - clueText: 'Studio: A table is blocking the bedroom door from the outside. '
+  - clueText: 'Studio: There''s a burnt metal lighter on the bed in the bedroom.'
+  - clueText: "Rachel: There are ashes in Rachel\u2019s fireplace, despite it being
+      summer."
+  - clueText: "Chloe: Chloe\u2019s home contains many IOUs, some of which include
+      Rachel's name. "
+  - clueText: 'Rumors: It''s rumored that Mr. Jefferson is quite wealthy, owning
+      gold and jewels that most people have never seen. Can a photographer really
+      earn that much?'
+  - clueText: "Rumor: Did you know? It seems Miss Caufiel wasn\u2019t originally
+      a student at our school, she transferred here before graduation."
+  isActive: 1

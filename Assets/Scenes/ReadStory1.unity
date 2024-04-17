@@ -391,6 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217640651}
   - component: {fileID: 217640652}
+  - component: {fileID: 217640653}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -414,8 +415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000028821813}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &217640652
 MonoBehaviour:
@@ -437,10 +438,24 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 545, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 545, y: 250}
+  m_Spacing: {x: 0, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &217640653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217640650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1001 &401440820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,7 +1253,7 @@ MonoBehaviour:
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1378691767}
   m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: -3
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
@@ -2579,7 +2594,6 @@ MonoBehaviour:
   chloeSlider: {fileID: 1739090380}
   maxNodes:
   - {fileID: 11400000, guid: c5cecfd9ed05a714696157be16c3c7b0, type: 2}
-  - {fileID: 11400000, guid: 39ab2dfe9fd118c46978165314ff32d0, type: 2}
   rachelNodes:
   - {fileID: 11400000, guid: b56eca4fb317c74499ebfcc262087c0e, type: 2}
   chloeNodes:
@@ -2595,7 +2609,7 @@ MonoBehaviour:
   - {fileID: 1739090381}
   gridLayoutClue: {fileID: 217640651}
   clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
-  sharedClueNum: 1
+  sharedClueNum: 5
 --- !u!4 &1772605325
 Transform:
   m_ObjectHideFlags: 0

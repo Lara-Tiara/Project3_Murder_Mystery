@@ -16,5 +16,17 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: 0d9530ae17838a84e978e3bea9b40598, type: 3}
   clues:
-  - clueText: Chloe
+  - clueText: 'Body: Traces of glass shards were visible on the body.'
+  - clueText: 'Rachel: Rachel''s family owns several luxury cars.'
+  - clueText: 'Max: Max carries a photo in his pocket of a young woman intimately
+      holding another man, who is smiling sweetly. However, the man''s face has been
+      cut out of the photo.'
+  - clueText: 'Rumor: I heard Mr. Jefferson really enjoys hand-ground coffee and
+      often invites many girls to his home for coffee.'
+  - clueText: "Rumor: A: I'm so jealous of Mr. Jefferson; he\u2019s very popular
+      with the girls. B: He\u2019s famous, so it\u2019s normal, but he usually doesn\u2019t
+      seem to treat the boys well."
+  - clueText: "Rumor: After Mr. Jefferson arrived, fewer students attended Miss Caufield\u2019s
+      classes, but Miss Caufield doesn\u2019t seem to mind and even seems to have
+      a good relationship with Mr. Jefferson. "
   isActive: 1

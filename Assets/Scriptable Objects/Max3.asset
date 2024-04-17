@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2c92697fbef6409bcd102e7af0143, type: 3}
+  m_Name: Max3
+  m_EditorClassIdentifier: 
+  characterName: Max
+  nodeId: 0
+  storyText: {fileID: 4900000, guid: d9b9de4932db7254987eaf40e769bd1b, type: 3}
+  clues:
+  - clueText: 'Basement: The basement door is concealed under a square piece of flooring,
+      which opens by pulling outward and closes by pushing downward.'
+  - clueText: 'Basement: When discovered, the door was locked from the inside, the
+      basement has no windows, is fully enclosed, and lacks any tunnel-like structures.'
+  - clueText: 'Basement: The bolt socket has notches on both the upper and lower
+      sides of one face.'
+  - clueText: 'Mr. Jefferson''s body: The back of the skull has severe damage, indicative
+      of being struck by a heavy object. '
+  - clueText: 'Mr. Jefferson''s body: The phone was on silent mode, with several
+      missed calls from Bill, a photography exhibition staff member, between 20:30
+      and 21:00. '
+  isActive: 1

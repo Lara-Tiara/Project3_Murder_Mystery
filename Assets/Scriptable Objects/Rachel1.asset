@@ -16,5 +16,18 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: 0551182a1c139d9489e135526a74b8fb, type: 3}
   clues:
-  - clueText: Rachel
+  - clueText: 'Body: The body was discovered outside Mr. Jefferson''s bedroom window,
+      completely charred and unrecognizable due to severe burns.'
+  - clueText: 'Studio: A cup of coffee on the living room table appears untouched
+      and has been found to contain a strong sedative.'
+  - clueText: 'Studio: The dining table has two plates of leftover food and two glasses
+      of whiskey; one glass is empty, and the other appears to have been sipped only
+      slightly. Next to it, a napkin with a brown whiskey stain tested positive for
+      a potent sedative.'
+  - clueText: "Chloe: A pearl necklace was found in the hallway of Chloe\u2019s home."
+  - clueText: "Rumor: A: Rachel is definitely the star of our club, and I bet she\u2019s
+      going to be a great actress someday. B: Yeah, apparently, it's been her dream
+      since she was little."
+  - clueText: "Rumor: A: Poor Chloe, I heard it\u2019s always just been her and her
+      mom. B: Yeah, that\u2019s why she studies so hard, it\u2019s really admirable."
   isActive: 1

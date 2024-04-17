@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2c92697fbef6409bcd102e7af0143, type: 3}
+  m_Name: Rachel3
+  m_EditorClassIdentifier: 
+  characterName: Rachel
+  nodeId: 0
+  storyText: {fileID: 4900000, guid: 484e65b06ec64e24591d26780ae5e459, type: 3}
+  clues:
+  - clueText: 'Basement: The body was found directly beneath the basement door, with
+      several non-severe fractures. '
+  - clueText: 'Basement: A rubber band was found beside the body. '
+  - clueText: 'Basement: The basement contains nude photos of women, many with their
+      eyes closed as if asleep, including photos of Chloe. '
+  - clueText: 'Basement: There are numerous drugs and several rolls of bandages in
+      the basement, some are common medications, but most are sedatives.'
+  - clueText: 'Basement: There is a camera in the basement with a broken lens, appearing
+      to have been smashed. When turned on, most previous photos are not visible,
+      but some recent photos appear to be of Rachel. '
+  isActive: 1

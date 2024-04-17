@@ -16,5 +16,18 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: 76eef18898d4e8b449be10ddc25f69a1, type: 3}
   clues:
-  - clueText: Max
+  - clueText: 'Studio: Shoe prints were found outside the studio''s kitchen window,
+      appearing to be from two different individuals.'
+  - clueText: 'Studio: The water valve in the studio was mysteriously shut off last
+      night.'
+  - clueText: 'Rachel: Rachel seems to have a smoking habit, as her bedroom ashtray
+      contains many cigarette butts, which appear to have been smoked yesterday.'
+  - clueText: 'Chloe: A critical illness notice for a female patient aged fifty-three
+      is found in Chloe''s room.'
+  - clueText: "Rumor: A: Why would someone like Mr. Jefferson come to our academy?
+      B: You might not know this, but it\u2019s his habit to switch academies periodically
+      to teach."
+  - clueText: "Rumor: A: Rachel is definitely the star of our club, and I bet she\u2019s
+      going to be a great actress someday. B: Yeah, apparently, it's been her dream
+      since she was little."
   isActive: 1

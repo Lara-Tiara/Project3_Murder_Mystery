@@ -407,12 +407,11 @@ MonoBehaviour:
   rachelSlider: {fileID: 918510169}
   chloeSlider: {fileID: 620891633}
   maxNodes:
-  - {fileID: 11400000, guid: c5cecfd9ed05a714696157be16c3c7b0, type: 2}
-  - {fileID: 11400000, guid: 39ab2dfe9fd118c46978165314ff32d0, type: 2}
+  - {fileID: 11400000, guid: 935e270d072904747b0fdce2dd8c3b41, type: 2}
   rachelNodes:
-  - {fileID: 11400000, guid: b56eca4fb317c74499ebfcc262087c0e, type: 2}
+  - {fileID: 11400000, guid: c53dff867d1a2334e9c64132c9f21ea0, type: 2}
   chloeNodes:
-  - {fileID: 11400000, guid: 1a04028b47796a04980e1a251e45aad2, type: 2}
+  - {fileID: 11400000, guid: 68d387482c289c242883d909d1f387d5, type: 2}
   maxPhone: {fileID: 1352681052}
   rachelPhone: {fileID: 27828728}
   chloePhone: {fileID: 1292445295}
@@ -424,7 +423,7 @@ MonoBehaviour:
   - {fileID: 620891629}
   gridLayoutClue: {fileID: 384083288}
   clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
-  sharedClueNum: 1
+  sharedClueNum: 5
 --- !u!4 &38068355
 Transform:
   m_ObjectHideFlags: 0
@@ -1033,6 +1032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384083288}
   - component: {fileID: 384083289}
+  - component: {fileID: 384083290}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1056,8 +1056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000886648}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &384083289
 MonoBehaviour:
@@ -1079,10 +1079,24 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 545, y: 100}
+  m_CellSize: {x: 545, y: 250}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &384083290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384083287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &467450341
 GameObject:
   m_ObjectHideFlags: 0

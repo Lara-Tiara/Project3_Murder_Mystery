@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2c92697fbef6409bcd102e7af0143, type: 3}
+  m_Name: Chloe3
+  m_EditorClassIdentifier: 
+  characterName: Chloe
+  nodeId: 0
+  storyText: {fileID: 4900000, guid: 155b3cb64e1a7414fb9933a768c06af8, type: 3}
+  clues:
+  - clueText: 'Basement: The door can be locked from the outside and also bolted
+      from the inside using a latch lock (it typically consists of a movable metal
+      bar or bolt that can be slid into a fixed part). '
+  - clueText: 'Basement: The bolt of the door is made of hard plastic, which cannot
+      be locked with a magnet from the outside.'
+  - clueText: 'Mr. Jefferson''s body: The abdomen is wrapped with several loops of
+      bandage, under which is a wound caused by a sharp object. '
+  - clueText: 'Basement: The basement has a computer logged into various websites
+      involved in trading a large number of nude photos of women, which appear to
+      be expensive. '
+  - clueText: 'Mr. Jefferson''s body: His phone appears to have dialed 911 on September
+      12th at 19:50. '
+  isActive: 1
