@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: eu
+    FixedRegion: 
     Server: 
     Port: 0
     ProxyServer: 
@@ -52,6 +52,8 @@ MonoBehaviour:
   - PrepareNextRound
   - CheckEndOfRound
   - ResetTimer
+  - SetTimeText
+  - PlayerVote
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

@@ -12,17 +12,17 @@ public class RoomListManager : MonoBehaviourPunCallbacks
     public Transform gridLayout;
     public GameObject joinRoomTip;
     public GameObject loginUI;
+    private Dictionary<string, RoomInfo> cachedRoomList = new Dictionary<string, RoomInfo>();
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        UpdateCachedRoomList(roomList);
         foreach (Transform child in gridLayout)
         {
             Destroy(child.gameObject);
         }
-
-        roomList.RemoveAll(room => room.PlayerCount == 0);
-
-        foreach (var room in roomList)
+        
+        foreach (var room in cachedRoomList.Values)
         {
             GameObject newRoomButton = Instantiate(roomNamePrefab, gridLayout);
             TextMeshProUGUI roomText = newRoomButton.GetComponentInChildren<TextMeshProUGUI>();
@@ -32,6 +32,27 @@ public class RoomListManager : MonoBehaviourPunCallbacks
             string roomName = room.Name;
 
             button.onClick.AddListener(() => JoinRoom(roomName));
+        }
+    }
+
+    private void UpdateCachedRoomList(List<RoomInfo> roomList)
+    {
+        for(int i=0; i<roomList.Count; i++)
+        {
+            RoomInfo info = roomList[i];
+            if (info.RemovedFromList)
+            {
+                cachedRoomList.Remove(info.Name);
+            }
+            else
+            {
+                cachedRoomList[info.Name] = info;
+            }
+
+            if (info.PlayerCount == 0)
+            {
+                cachedRoomList.Remove(info.Name);
+            }
         }
     }
 

@@ -423,7 +423,7 @@ MonoBehaviour:
   - {fileID: 620891629}
   gridLayoutClue: {fileID: 384083288}
   clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
-  sharedClueNum: 5
+  sharedClueNum: 1
 --- !u!4 &38068355
 Transform:
   m_ObjectHideFlags: 0
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 545, y: 250}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 0, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &384083290

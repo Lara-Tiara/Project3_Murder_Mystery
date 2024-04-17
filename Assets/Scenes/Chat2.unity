@@ -3163,7 +3163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957e2e419f46ad41b7fd7cd2cd52d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 15
+  time: 2
   timedownText: {fileID: 1748381405}
   nextScene: 6
   iptMessage: {fileID: 1439758760}

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Linq;
+using System;
 
 public class Vote : MonoBehaviourPunCallbacks
 {
@@ -14,6 +15,7 @@ public class Vote : MonoBehaviourPunCallbacks
     public int[] murderEachRound;
     public TextMeshProUGUI timedownText;
     public float time;
+    public const float MAXTIME = 10;
     public TextMeshProUGUI roundTitle;
     public string[] titleText;
     public GameObject endUI;
@@ -28,47 +30,54 @@ public class Vote : MonoBehaviourPunCallbacks
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
     private int votedOutIndex;
+    private Dictionary<int, int> votedOutMap;
 
     private IEnumerator VotingRoutine()
     {
         while (currentRound < totalRounds)
         {
             ResetTimer();
-            while (time > 0)
+            while (time >= 0)
             {
-                timedownText.text = time.ToString("f1");
+                photonView.RPC("SetTimeText", RpcTarget.All, time.ToString("f1"));
                 yield return new WaitForSeconds(1);
                 time--;
             }
-            
-            photonView.RPC("CheckEndOfRound", RpcTarget.All);
+
             yield return new WaitForSeconds(5);
+            CheckEndOfRound();
         }
+    }
+
+    [PunRPC]
+    private void SetTimeText(string text)
+    {
+        timedownText.text = text;
     }
 
     [PunRPC]
     private void ResetTimer()
     {
-        //time = 10;
+        time = MAXTIME;
         timedownText.text = time.ToString("f1");
     }
 
-    private int GetRandomButtonIndex()
+    private int GetRandomButtonIndex(int unVoterID)
     {
         List<int> availableIndices = new List<int>();
         for (int i = 0; i < buttons.Length; i++)
         {
-            if (buttons[i].interactable && i != GameDataManager.selectCharacter)
+            if (buttons[i].interactable && i != unVoterID)
             {
                 availableIndices.Add(i);
             }
         }
         if (availableIndices.Count > 0)
         {
-            int index = Random.Range(0, availableIndices.Count);
+            int index = UnityEngine.Random.Range(0, availableIndices.Count);
             return availableIndices[index];
         }
-        return -1;
+        return 0;
     }
 
     private void Start()
@@ -76,7 +85,10 @@ public class Vote : MonoBehaviourPunCallbacks
         buttons[GameDataManager.selectCharacter].interactable = false;
         ResetTimer();
         UpdateRoundTitle();
-        StartCoroutine(VotingRoutine());
+        if (PhotonNetwork.IsMasterClient)
+        {
+            StartCoroutine(VotingRoutine());
+        }
     }
 
     public void OnButtonClick(int buttonIndex)
@@ -87,31 +99,35 @@ public class Vote : MonoBehaviourPunCallbacks
         }
 
         GameDataManager.voteCharacter = buttonIndex;
-        photonView.RPC("IncreaseClickedButtonCount", RpcTarget.All);
+        photonView.RPC("PlayerVote", RpcTarget.All, GameDataManager.selectCharacter, buttonIndex);
         if (buttonIndex >= 0)
         {
             buttons[buttonIndex].interactable = false;
         }
         hasSelect = true;
-        CheckAllPlayersClicked();
-    }
-
-    private void CheckAllPlayersClicked()
-    {
-        if (clickedButtonCount >= buttons.Length)
-        {
-            photonView.RPC("PrepareNextRound", RpcTarget.All);
-        }
     }
 
     [PunRPC]
-    private void CheckEndOfRound()
+    private void PlayerVote(int voterID, int buttonIndex)
     {
-        if (clickedButtonCount < buttons.Length - 1)
+        if (!PhotonNetwork.IsMasterClient)
         {
-            SimulateVotesForNonVoters();
+            return;
+        }
+        
+        if (votedOutMap == null)
+        {
+            votedOutMap = new Dictionary<int, int>();
         }
 
+        if (votedOutMap.TryAdd(voterID, buttonIndex) == false)
+        {
+            votedOutMap[voterID] = buttonIndex;
+        }
+    }
+
+    private void CheckEndOfRound()
+    {
         DetermineRoundResult();
 
         if (currentRound + 1 < totalRounds)
@@ -120,17 +136,9 @@ public class Vote : MonoBehaviourPunCallbacks
         }
         else
         {
-            photonView.RPC("ShowEndUI", RpcTarget.All);
-        }
-    }
-
-    private void SimulateVotesForNonVoters()
-    {
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            if (buttons[i].interactable && i != GameDataManager.selectCharacter)
-            {
-                OnButtonClick(GetRandomButtonIndex());
+            StopAllCoroutines();
+            if (roundResults.Count >= totalRounds){
+                photonView.RPC("ShowEndUI", RpcTarget.All, roundResults[0], roundResults[1]);
             }
         }
     }
@@ -148,13 +156,18 @@ public class Vote : MonoBehaviourPunCallbacks
         ResetVotingState();
         if (currentRound < totalRounds)
         {
-            photonView.RPC("ResetTimer", RpcTarget.All);
+            ResetTimer();
             UpdateRoundTitle();
         }
     }
 
     private void ResetVotingState()
     {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            votedOutMap = new Dictionary<int, int>();
+        }
+
         clickedButtonCount = 0;
         hasSelect = false;
         foreach (Button button in buttons)
@@ -167,11 +180,14 @@ public class Vote : MonoBehaviourPunCallbacks
     private void DetermineRoundResult()
     {
         int[] votes = new int[buttons.Length];
-        foreach (var vote in roundResults)
+        Array.Clear(votes, 0, votes.Length);
+        for (int i = 0; i < buttons.Length; i++)
         {
-            if (vote >= 0 && vote < buttons.Length)
+            if (votedOutMap.TryGetValue(i, out int result))
             {
-                votes[vote]++;
+                votes[result]++;
+            } else {
+                votes[GetRandomButtonIndex(i)]++;
             }
         }
 
@@ -193,16 +209,11 @@ public class Vote : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void ShowPlayerName(int buttonIndex, string playerName)
+    private void ShowEndUI(int round1, int round2)
     {
-        buttons[buttonIndex].transform.GetChild(0).gameObject.SetActive(true);
-        Text buttonText = buttons[buttonIndex].GetComponentInChildren<Text>();
-        buttonText.text = playerName;
-    }
-
-    [PunRPC]
-    private void ShowEndUI()
-    {
+        roundResults.Clear();
+        roundResults.Add(round1);
+        roundResults.Add(round2);
         bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] {0, 0});
         bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] {1, 1});
         bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] {2, 2});
