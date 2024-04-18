@@ -78,9 +78,9 @@ public class ReadStory : MonoBehaviourPunCallbacks
         rachelStory = CombineStoryText(activeRachelNodes);
         chloeStory = CombineStoryText(activeChloeNodes);
 
-        maxStorySplit = maxStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        maxStorySplit = maxStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        rachelStorySplit = rachelStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        chloeStorySplit = chloeStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
         switch (GameDataManager.selectCharacter) {
             case 0:
