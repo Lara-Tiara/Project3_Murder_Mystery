@@ -39,8 +39,11 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public GameObject clueButtonPrefab;
     [SerializeField]
     private int sharedClueNum;
+    [SerializeField]
+    private int maxCheckClueNum;
     private int cluesPickedCount = 0;
-
+    private Dictionary<string, GameObject> destroyClueButtons = new Dictionary<string, GameObject>();
+    private List<Button> clueButtons = new List<Button>();
 
     private void Awake() {
 
@@ -239,7 +242,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
             var cluesStateDict = (Dictionary<string, bool>)cluesState["CluesState"];
             foreach (var clueState in cluesStateDict)
             {
-                if (clueState.Value) // If true, this clue is disabled
+                if (clueState.Value)
                 {
                     photonView.RPC("DisableClueButton", RpcTarget.All, clueState.Key);
                 }
@@ -263,12 +266,35 @@ public class ReadStory : MonoBehaviourPunCallbacks
             clueButtonText.text = clue.clueKeyWord;
 
             Button button = newClueButton.GetComponent<Button>();
+            clueButtons.Add(button);
             button.onClick.AddListener(() => {
             ShareClue(clue);
             clueButtonText.text = clue.clueText;
             button.interactable = false;
+            ShowDestroyButton();
             });
+            Transform destroyButtonTransform =  newClueButton.transform.Find("DestroyButton");
+            Button destroyButton = destroyButtonTransform.GetComponent<Button>();
+            destroyButton.onClick.AddListener(() => {
+                CluesManager.Instance.DestroyClue(clue, sharedClueNum);
+                newClueButton.SetActive(false);
+                ShowDestroyButton();
+                CheckReadOverActivation();
+            });
+            destroyClueButtons.TryAdd(clue.clueKeyWord, destroyButtonTransform.gameObject);
         }
+    }
+
+    public void ShowDestroyButton()
+    {
+        bool shouldDestroy = CluesManager.Instance.GetSharedCluesCount() > sharedClueNum;
+        foreach (var clue in CluesManager.Instance.myClues)
+        {
+            if (destroyClueButtons.TryGetValue(clue.clueKeyWord, out GameObject destroyButtonGameObject))
+            {
+                destroyButtonGameObject.SetActive(shouldDestroy);
+            } 
+        } 
     }
 
     [PunRPC]
@@ -289,21 +315,32 @@ public class ReadStory : MonoBehaviourPunCallbacks
 
     public void ShareClue(Clue clue)
     {
-        if (cluesPickedCount < sharedClueNum)
-        {
-            CluesManager.Instance.AddSharedClue(clue);
-            cluesPickedCount++;
-            CheckReadOverActivation();
+        CluesManager.Instance.AddSharedClue(clue);
+        cluesPickedCount++;
+        CheckReadOverActivation();
+        photonView.RPC("DisableClueButton", RpcTarget.All, clue.clueKeyWord);
+        CheckStopSelecting();
+    }
 
-            photonView.RPC("DisableClueButton", RpcTarget.All, clue.clueKeyWord);
+    public void CheckStopSelecting()
+    {
+        if (cluesPickedCount < maxCheckClueNum)
+        {
+            return;
+        }
+        foreach (var button in clueButtons)
+        {
+            button.interactable = false;
         }
     }
 
     private void CheckReadOverActivation()
     {
-        if (i == currentStory.Length - 1 && !hasReadOver && cluesPickedCount >= sharedClueNum)
+        if (i == currentStory.Length - 1 && !hasReadOver && CluesManager.Instance.GetSharedCluesCount() == sharedClueNum)
         {
             readOverBtn.SetActive(true);
+        } else {
+            readOverBtn.SetActive(false);
         }
     }
 
