@@ -22,6 +22,8 @@ public class Launcher : MonoBehaviourPunCallbacks
     public TMP_InputField playerName;
     public int playerCount;
     public GameObject inValidInputText;
+    private int readyPlayersCount = 0;
+
 
     void Start()
     {
@@ -98,15 +100,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (PhotonNetwork.CurrentRoom != null)
-        {
-            if (PhotonNetwork.CurrentRoom.PlayerCount == playerCount)
-            {
-                SceneManager.LoadScene(1);
-            }
-            joinRoomTip.GetComponentInChildren<TextMeshProUGUI>().text = "Room joined! Wait for other players, 3 players needed," + 
-                "\nnow " + PhotonNetwork.CurrentRoom.PlayerCount + " player(s)";
-        }
+
     }
 
     public override void OnJoinedRoom()
@@ -115,4 +109,36 @@ public class Launcher : MonoBehaviourPunCallbacks
 
         Debug.Log("Successful Join the Room");
     }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public void StartGameButtonPressed()
+    {
+        photonView.RPC("IncrementReadyPlayers", RpcTarget.AllBuffered);
+    }
+
+    [PunRPC]
+    void IncrementReadyPlayers()
+    {
+        readyPlayersCount++;
+        CheckAllPlayersReady();
+    }
+
+    void CheckAllPlayersReady()
+    {
+        if (PhotonNetwork.IsMasterClient && readyPlayersCount == PhotonNetwork.CurrentRoom.PlayerCount)
+        {
+            photonView.RPC("LoadGameLevel", RpcTarget.All);
+        }
+    }
+
+    [PunRPC]
+    void LoadGameLevel()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 }

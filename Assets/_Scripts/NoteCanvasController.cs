@@ -15,7 +15,6 @@ public class NoteCanvasController : MonoBehaviour
             string note = noteDataManager.LoadNote();
             noteInputField.text = note;
 
-            // Add a listener to handle input field changes instead of using Update
             noteInputField.onValueChanged.AddListener(delegate { SaveNote(); });
         }
     }
@@ -24,7 +23,6 @@ public class NoteCanvasController : MonoBehaviour
     {
         if (noteDataManager != null)
         {
-            // Save the note content whenever it changes
             noteDataManager.SaveNote(noteInputField.text);
         }
     }
