@@ -423,7 +423,7 @@ MonoBehaviour:
   - {fileID: 620891629}
   gridLayoutClue: {fileID: 384083288}
   clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
-  sharedClueNum: 1
+  sharedClueNum: 5
 --- !u!4 &38068355
 Transform:
   m_ObjectHideFlags: 0

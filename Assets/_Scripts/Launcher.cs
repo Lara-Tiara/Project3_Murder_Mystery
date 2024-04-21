@@ -22,6 +22,8 @@ public class Launcher : MonoBehaviourPunCallbacks
     public TMP_InputField playerName;
     public int playerCount;
     public GameObject inValidInputText;
+    
+
 
     void Start()
     {
@@ -37,13 +39,17 @@ public class Launcher : MonoBehaviourPunCallbacks
         Debug.Log("Connected");
 
         connectTip.SetActive(false);
-        nameUI.SetActive(true);
+        if (string.IsNullOrEmpty(PhotonNetwork.LocalPlayer.NickName))
+        {
+            nameUI.SetActive(true);
+        }
         PhotonNetwork.JoinLobby();
     }
 
     public void StartButton()
     {
         string nickname = nickNameIpt.GetComponent<TMP_InputField>().text;
+        Debug.Log("shdsiodyh");
 
         if (string.IsNullOrWhiteSpace(nickname) || !Regex.IsMatch(nickname, @"^[a-zA-Z0-9]+$"))
         {
@@ -98,15 +104,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (PhotonNetwork.CurrentRoom != null)
-        {
-            if (PhotonNetwork.CurrentRoom.PlayerCount == playerCount)
-            {
-                SceneManager.LoadScene(1);
-            }
-            joinRoomTip.GetComponentInChildren<TextMeshProUGUI>().text = "Room joined! Wait for other players, 3 players needed," + 
-                "\nnow " + PhotonNetwork.CurrentRoom.PlayerCount + " player(s)";
-        }
+
     }
 
     public override void OnJoinedRoom()
@@ -115,4 +113,10 @@ public class Launcher : MonoBehaviourPunCallbacks
 
         Debug.Log("Successful Join the Room");
     }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
 }
