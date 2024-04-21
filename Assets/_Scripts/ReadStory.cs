@@ -6,6 +6,7 @@ using Photon.Pun;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 public class ReadStory : MonoBehaviourPunCallbacks
 {
@@ -16,6 +17,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public StoryNode[] maxNodes;
     public StoryNode[] rachelNodes;
     public StoryNode[] chloeNodes;
+    public Clues clues;
     private string[] maxStorySplit;
     private string[] rachelStorySplit;
     private string[] chloeStorySplit;
@@ -26,6 +28,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private string[] currentStory;
     private int i;
     public GameObject readOverBtn;
+    public GameObject cluesButton;
     public GameObject[] readOverTips;
     private static int readOverCount;
     private bool hasReadOver;
@@ -86,23 +89,44 @@ public class ReadStory : MonoBehaviourPunCallbacks
             case 0:
                 currentStory = maxStorySplit;
                 maxPhone.SetActive(true);
-                LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
+                DisableButtonsMatchingRegex("(?i)Max.*");
                 break;
             case 1:
                 currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
-                LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
+                DisableButtonsMatchingRegex("(?i)Chloe.*");
                 break;
             case 2:
                 currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
-                LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
+                DisableButtonsMatchingRegex("(?i)Rachel.*");
                 break;
             default:
                 break;
         }
 
         content.text = currentStory.Length > 0 ? currentStory[i] : "";
+        LoadClues(clues);
+    }
+
+    public void DisableButtonsMatchingRegex(string pattern)
+    {
+        Regex regex = new Regex(pattern);
+
+        foreach (Transform child in gridLayoutClue)
+        {
+            Button button = child.GetComponent<Button>();
+            TextMeshProUGUI textComponent = child.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (textComponent != null && regex.IsMatch(textComponent.text))
+            {
+                button.interactable = false;
+
+            }
+        }
     }
 
     public string CombineStoryText(List<StoryNode> storyNodes)
@@ -150,6 +174,10 @@ public class ReadStory : MonoBehaviourPunCallbacks
             content.text = currentStory[i];
 
             photonView.RPC("UpdateSliderValue", RpcTarget.All, GameDataManager.selectCharacter, i);
+            if (i == currentStory.Length - 1)
+            {
+                cluesButton.SetActive(true);
+            }
 
             CheckReadOverActivation();
         }
@@ -203,34 +231,71 @@ public class ReadStory : MonoBehaviourPunCallbacks
         return activeStoryNodes;
     }
 
-    public void LoadClues(List<StoryClue> clues)
+    public void InitializeClueButtons()
+    {
+        ExitGames.Client.Photon.Hashtable cluesState = PhotonNetwork.CurrentRoom.CustomProperties;
+        if (cluesState.ContainsKey("CluesState"))
+        {
+            var cluesStateDict = (Dictionary<string, bool>)cluesState["CluesState"];
+            foreach (var clueState in cluesStateDict)
+            {
+                if (clueState.Value) // If true, this clue is disabled
+                {
+                    photonView.RPC("DisableClueButton", RpcTarget.All, clueState.Key);
+                }
+            }
+        }
+    }
+
+    public void LoadClues(Clues newClues)
     {
         foreach (Transform child in gridLayoutClue)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (StoryClue clue in clues)
+        if (newClues.clues == null) return;
+
+        foreach (Clue clue in newClues.clues)
         {
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
             TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
-            clueButtonText.text = clue.clueText;
+            clueButtonText.text = clue.clueKeyWord;
 
             Button button = newClueButton.GetComponent<Button>();
             button.onClick.AddListener(() => {
             ShareClue(clue);
+            clueButtonText.text = clue.clueText;
             button.interactable = false;
             });
         }
     }
 
-    public void ShareClue(StoryClue clue)
+    [PunRPC]
+    public void DisableClueButton(string clueKeyWord)
+    {
+        foreach (Transform child in gridLayoutClue)
+        {
+            var btn = child.GetComponentInChildren<Button>();
+            var textComponent = btn.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (textComponent.text.Equals(clueKeyWord))
+            {
+                btn.interactable = false;
+                break;
+            }
+        }
+    }
+
+    public void ShareClue(Clue clue)
     {
         if (cluesPickedCount < sharedClueNum)
         {
             CluesManager.Instance.AddSharedClue(clue);
             cluesPickedCount++;
             CheckReadOverActivation();
+
+            photonView.RPC("DisableClueButton", RpcTarget.All, clue.clueKeyWord);
         }
     }
 

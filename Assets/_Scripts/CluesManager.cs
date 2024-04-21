@@ -8,9 +8,9 @@ public class CluesManager : PersistentSingleton<CluesManager>
 {
     private const string SHARED_CLUES_KEY = "SharedClues";
 
-    public void AddSharedClue(StoryClue clue)
+    public void AddSharedClue(Clue clue)
     {
-        List<StoryClue> clues = GetSharedClues();
+        List<Clue> clues = GetSharedClues();
         if (!clues.Any(c => c.clueText == clue.clueText))
         {
             clues.Add(clue);
@@ -19,7 +19,7 @@ public class CluesManager : PersistentSingleton<CluesManager>
         }
     }
 
-    public List<StoryClue> GetSharedClues()
+    public List<Clue> GetSharedClues()
     {
         if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(SHARED_CLUES_KEY, out object value))
         {
@@ -30,12 +30,12 @@ public class CluesManager : PersistentSingleton<CluesManager>
                 return cluesList.Clues;
             }
         }
-        return new List<StoryClue>();
+        return new List<Clue>();
     }
 
     [Serializable]
     private class SerializableCluesList
     {
-        public List<StoryClue> Clues;
+        public List<Clue> Clues;
     }
 }
