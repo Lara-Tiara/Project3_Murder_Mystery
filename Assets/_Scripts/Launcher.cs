@@ -22,7 +22,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public TMP_InputField playerName;
     public int playerCount;
     public GameObject inValidInputText;
-    private int readyPlayersCount = 0;
+    
 
 
     void Start()
@@ -39,13 +39,17 @@ public class Launcher : MonoBehaviourPunCallbacks
         Debug.Log("Connected");
 
         connectTip.SetActive(false);
-        nameUI.SetActive(true);
+        if (string.IsNullOrEmpty(PhotonNetwork.LocalPlayer.NickName))
+        {
+            nameUI.SetActive(true);
+        }
         PhotonNetwork.JoinLobby();
     }
 
     public void StartButton()
     {
         string nickname = nickNameIpt.GetComponent<TMP_InputField>().text;
+        Debug.Log("shdsiodyh");
 
         if (string.IsNullOrWhiteSpace(nickname) || !Regex.IsMatch(nickname, @"^[a-zA-Z0-9]+$"))
         {
@@ -113,32 +117,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
-    }
-
-    public void StartGameButtonPressed()
-    {
-        photonView.RPC("IncrementReadyPlayers", RpcTarget.AllBuffered);
-    }
-
-    [PunRPC]
-    void IncrementReadyPlayers()
-    {
-        readyPlayersCount++;
-        CheckAllPlayersReady();
-    }
-
-    void CheckAllPlayersReady()
-    {
-        if (PhotonNetwork.IsMasterClient && readyPlayersCount == PhotonNetwork.CurrentRoom.PlayerCount)
-        {
-            photonView.RPC("LoadGameLevel", RpcTarget.All);
-        }
-    }
-
-    [PunRPC]
-    void LoadGameLevel()
-    {
-        SceneManager.LoadScene(1);
     }
 
 }
