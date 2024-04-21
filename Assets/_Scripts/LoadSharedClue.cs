@@ -14,14 +14,14 @@ public class LoadSharedClue : MonoBehaviourPunCallbacks
         SharedCluesUpdate(CluesManager.Instance.GetSharedClues());
     }
 
-    public void SharedCluesUpdate(List<StoryClue> clues)
+    public void SharedCluesUpdate(List<Clue> clues)
     {
         foreach (Transform child in gridLayout)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (StoryClue clue in clues)
+        foreach (Clue clue in clues)
         {
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayout);
             TextMeshProUGUI clueText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
