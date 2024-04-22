@@ -2499,18 +2499,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2b25048992736ae4bbd417e72457153b, type: 2}
   chloeNodes:
   - {fileID: 11400000, guid: 88a927ed76bfa424692299f8d0f3c1e7, type: 2}
+  clues: {fileID: 11400000, guid: 5f1a7ae4f25fc9f41b181549ab2131aa, type: 2}
   maxPhone: {fileID: 1052900116}
   rachelPhone: {fileID: 286458555}
   chloePhone: {fileID: 738800283}
   nextScene: 5
   readOverBtn: {fileID: 710334228}
+  cluesButton: {fileID: 1531958138}
   readOverTips:
   - {fileID: 468004631}
   - {fileID: 1686728334}
   - {fileID: 695372468}
   gridLayoutClue: {fileID: 1196763285}
-  clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
+  clueButtonPrefab: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
   sharedClueNum: 6
+  maxCheckClueNum: 7
 --- !u!114 &1489763960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,7 +2569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1531958139
 RectTransform:
   m_ObjectHideFlags: 0

@@ -53,6 +53,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private void Start()
     {
         SetupStoryEnvironment();
+        Debug.Log("Share Clue " + sharedClueNum);
     }
 
     private void InitializeStoryNodes() 
@@ -87,6 +88,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
         maxStorySplit = maxStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        LoadClues(clues);
 
         switch (GameDataManager.selectCharacter) {
             case 0:
@@ -99,35 +101,36 @@ public class ReadStory : MonoBehaviourPunCallbacks
                 currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
                 //LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
-                DisableButtonsMatchingRegex("(?i)Chloe.*");
+                DisableButtonsMatchingRegex("(?i)Rachel.*");
                 break;
             case 2:
                 currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
                 //LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
-                DisableButtonsMatchingRegex("(?i)Rachel.*");
+                DisableButtonsMatchingRegex("(?i)Chloe.*");
                 break;
             default:
                 break;
         }
 
         content.text = currentStory.Length > 0 ? currentStory[i] : "";
-        LoadClues(clues);
+        
     }
 
     public void DisableButtonsMatchingRegex(string pattern)
     {
-        Regex regex = new Regex(pattern);
+        Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
         foreach (Transform child in gridLayoutClue)
         {
             Button button = child.GetComponent<Button>();
-            TextMeshProUGUI textComponent = child.GetComponentInChildren<TextMeshProUGUI>();
+
+            TextMeshProUGUI textComponent = child.GetComponentsInChildren<TextMeshProUGUI>()
+                                                 .FirstOrDefault(tmPro => tmPro.gameObject.name == "ButtonText");
 
             if (textComponent != null && regex.IsMatch(textComponent.text))
             {
                 button.interactable = false;
-
             }
         }
     }

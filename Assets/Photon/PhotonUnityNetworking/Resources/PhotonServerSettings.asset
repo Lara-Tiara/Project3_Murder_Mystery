@@ -54,9 +54,10 @@ MonoBehaviour:
   - ResetTimer
   - SetTimeText
   - PlayerVote
-
+  - 
   - DisableClueButton
-
+  - LoadGameLevel
+  - PlayerReadyStateChanged
   DisableAutoOpenWizard: 1
-  ShowSettings: 1
-  DevRegionSetOnce: 1
+  ShowSettings: 0
+  DevRegionSetOnce: 0
