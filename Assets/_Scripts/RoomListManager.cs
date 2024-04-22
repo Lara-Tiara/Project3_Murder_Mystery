@@ -25,6 +25,7 @@ public class RoomListManager : MonoBehaviourPunCallbacks
     private Dictionary<string, RoomInfo> cachedRoomList = new Dictionary<string, RoomInfo>();
     private Dictionary<Player, GameObject> playerToGameObjectMap = new Dictionary<Player, GameObject>();
     private Dictionary<Player, bool> playerReadyMap = new Dictionary<Player, bool>();
+    private bool isLocalPlayerReady = false;
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
@@ -80,6 +81,8 @@ public class RoomListManager : MonoBehaviourPunCallbacks
             Destroy(child.gameObject);
         }
 
+        playerReadyMap.Clear();
+
         foreach (Player player in PhotonNetwork.CurrentRoom.Players.Values)
         {
             GameObject newPlayerButton = Instantiate(playerListPrefab, gridLayoutPlayer);
@@ -94,6 +97,7 @@ public class RoomListManager : MonoBehaviourPunCallbacks
     {
         UpdatePlayerList();
         Debug.Log("Test " + newPlayer.NickName);
+        photonView.RPC("PlayerReadyStateChanged", RpcTarget.All, PhotonNetwork.LocalPlayer, isLocalPlayerReady);
     }
 
     public override void OnJoinedRoom()
@@ -105,17 +109,21 @@ public class RoomListManager : MonoBehaviourPunCallbacks
         joinRoomTip.SetActive(true);
         readyButton.SetActive(true);
         leaveRoomButton.SetActive(true);
+        photonView.RPC("PlayerReadyStateChanged", RpcTarget.All, PhotonNetwork.LocalPlayer, false);
     }
 
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
         loginUI.SetActive(true);
-        
         playerListUI.SetActive(false);
         joinRoomTip.SetActive(false);
         readyButton.SetActive(false);
         leaveRoomButton.SetActive(false);
+
+        isLocalPlayerReady = false;
+        Toggle toggle = readyButton.GetComponent<Toggle>();
+        toggle.isOn = false;
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
@@ -124,6 +132,7 @@ public class RoomListManager : MonoBehaviourPunCallbacks
         {
             Destroy(playerObject);
             playerToGameObjectMap.Remove(otherPlayer);
+            playerReadyMap.Remove(otherPlayer);
         }
     }
 
@@ -136,6 +145,7 @@ public class RoomListManager : MonoBehaviourPunCallbacks
             playerReadyMap[player] = isReady;
             HighlightPlayerButton(playerButton, isReady);
 
+            Debug.Log($"Count {GameDataManager.playerCount}, {playerReadyMap.Count}");
             if (playerReadyMap.Count != GameDataManager.playerCount)
             {
                 return;
@@ -143,9 +153,10 @@ public class RoomListManager : MonoBehaviourPunCallbacks
 
             bool allReady = true;
 
-            foreach (var isReadyPlayer in playerReadyMap.Values)
+            foreach (var isReadyPlayer in playerReadyMap)
             {
-                allReady = allReady && isReadyPlayer;
+                Debug.Log($"Ready {isReadyPlayer.Key}, {isReadyPlayer.Value}");
+                allReady = allReady && isReadyPlayer.Value;
             }
 
             if (allReady && PhotonNetwork.IsMasterClient)
@@ -170,11 +181,11 @@ public class RoomListManager : MonoBehaviourPunCallbacks
         }
     }
 
+    //On Ready Toggle
     public void OnReadyStateChanged(bool isReady)
     {
-        //PhotonHashtable properties = new PhotonHashtable { { "IsReady", true } };
-        //PhotonNetwork.LocalPlayer.SetCustomProperties(properties);
         Debug.Log("Ready State " + isReady);
+        isLocalPlayerReady = isReady;
         photonView.RPC("PlayerReadyStateChanged", RpcTarget.All, PhotonNetwork.LocalPlayer, isReady);
     }
 

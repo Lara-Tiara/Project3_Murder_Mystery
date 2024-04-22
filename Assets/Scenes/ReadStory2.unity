@@ -1503,6 +1503,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1489763959}
+        m_TargetAssemblyTypeName: ReadStory, Scripts
+        m_MethodName: DisableClueSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &710334231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,37 +3257,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8079051248368538444, guid: f9f5c25f9f0f52347bfeb9989d25576c, type: 3}
   m_PrefabInstance: {fileID: 1686728333}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1763086503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1763086504}
-  m_Layer: 0
-  m_Name: ChoiceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1763086504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763086503}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1008.82043, y: 604.29926, z: 12.03946}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006514001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,5 +3671,4 @@ SceneRoots:
   - {fileID: 1620662769}
   - {fileID: 1489763961}
   - {fileID: 1565196532}
-  - {fileID: 1763086504}
   - {fileID: 785675363}

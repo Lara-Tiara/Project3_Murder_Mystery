@@ -425,7 +425,7 @@ MonoBehaviour:
   - {fileID: 620891629}
   gridLayoutClue: {fileID: 384083288}
   clueButtonPrefab: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-  sharedClueNum: 4
+  sharedClueNum: 5
   maxCheckClueNum: 5
 --- !u!4 &38068355
 Transform:
@@ -726,6 +726,18 @@ MonoBehaviour:
       - m_Target: {fileID: 38068354}
         m_TargetAssemblyTypeName: ReadStory, Assembly-CSharp
         m_MethodName: ReadOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 38068354}
+        m_TargetAssemblyTypeName: ReadStory, Scripts
+        m_MethodName: DisableClueSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2667,37 +2679,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542200806}
   m_CullTransparentMesh: 1
---- !u!1 &1633791915
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1633791916}
-  m_Layer: 0
-  m_Name: ChoiceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1633791916
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633791915}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1008.82043, y: 604.29926, z: 12.03946}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654131236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,5 +3671,4 @@ SceneRoots:
   - {fileID: 1196958279}
   - {fileID: 38068355}
   - {fileID: 1700779943}
-  - {fileID: 1633791916}
   - {fileID: 50344513}
