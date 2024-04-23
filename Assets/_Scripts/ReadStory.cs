@@ -262,11 +262,12 @@ public class ReadStory : MonoBehaviourPunCallbacks
         {
             Destroy(child.gameObject);
         }
-
+        
         if (newClues.clues == null) return;
 
         foreach (Clue clue in newClues.clues)
         {
+            Debug.Log("Clue Loaded");
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
             TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
             clueButtonText.text = clue.clueKeyWord;
