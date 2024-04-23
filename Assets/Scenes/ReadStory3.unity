@@ -3677,7 +3677,7 @@ PrefabInstance:
     - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 93d1ccda546bae44392ccda3a4a6f29b, type: 3}
+      objectReference: {fileID: 8300000, guid: 4cff4d35961d4a946931c79bd01622bd, type: 3}
     - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
       propertyPath: sounds.Array.data[0].loop
       value: 1
@@ -3685,6 +3685,10 @@ PrefabInstance:
     - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
       propertyPath: sounds.Array.data[0].name
       value: BGM
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
       propertyPath: sounds.Array.data[0].volume
