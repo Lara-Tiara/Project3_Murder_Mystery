@@ -1503,6 +1503,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1489763959}
+        m_TargetAssemblyTypeName: ReadStory, Scripts
+        m_MethodName: DisableClueSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &710334231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2499,18 +2511,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2b25048992736ae4bbd417e72457153b, type: 2}
   chloeNodes:
   - {fileID: 11400000, guid: 88a927ed76bfa424692299f8d0f3c1e7, type: 2}
+  clues: {fileID: 11400000, guid: 5f1a7ae4f25fc9f41b181549ab2131aa, type: 2}
   maxPhone: {fileID: 1052900116}
   rachelPhone: {fileID: 286458555}
   chloePhone: {fileID: 738800283}
   nextScene: 5
   readOverBtn: {fileID: 710334228}
+  cluesButton: {fileID: 1531958138}
   readOverTips:
   - {fileID: 468004631}
   - {fileID: 1686728334}
   - {fileID: 695372468}
   gridLayoutClue: {fileID: 1196763285}
-  clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
+  clueButtonPrefab: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
   sharedClueNum: 6
+  maxCheckClueNum: 7
 --- !u!114 &1489763960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,7 +2581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1531958139
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3242,37 +3257,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8079051248368538444, guid: f9f5c25f9f0f52347bfeb9989d25576c, type: 3}
   m_PrefabInstance: {fileID: 1686728333}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1763086503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1763086504}
-  m_Layer: 0
-  m_Name: ChoiceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1763086504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763086503}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1008.82043, y: 604.29926, z: 12.03946}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006514001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,5 +3671,4 @@ SceneRoots:
   - {fileID: 1620662769}
   - {fileID: 1489763961}
   - {fileID: 1565196532}
-  - {fileID: 1763086504}
   - {fileID: 785675363}

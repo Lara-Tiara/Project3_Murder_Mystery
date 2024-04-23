@@ -53,6 +53,8 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private void Start()
     {
         SetupStoryEnvironment();
+        CluesManager.Instance.cluesCurrentRound.Clear();
+        Debug.Log("Share Clue " + sharedClueNum);
     }
 
     private void InitializeStoryNodes() 
@@ -88,49 +90,53 @@ public class ReadStory : MonoBehaviourPunCallbacks
         rachelStorySplit = rachelStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         chloeStorySplit = chloeStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
+
         switch (GameDataManager.selectCharacter) {
             case 0:
                 currentStory = maxStorySplit;
                 maxPhone.SetActive(true);
                 //LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
-                DisableButtonsMatchingRegex("(?i)Max.*");
+                //DisableButtonsMatchingRegex("(?i)Max.*");
                 break;
             case 1:
                 currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
                 //LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
-                DisableButtonsMatchingRegex("(?i)Chloe.*");
+                //DisableButtonsMatchingRegex("(?i)Rachel.*");
                 break;
             case 2:
                 currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
                 //LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
-                DisableButtonsMatchingRegex("(?i)Rachel.*");
+                //DisableButtonsMatchingRegex("(?i)Chloe.*");
                 break;
             default:
                 break;
         }
 
         content.text = currentStory.Length > 0 ? currentStory[i] : "";
-        LoadClues(clues);
+        
     }
 
+    /*
     public void DisableButtonsMatchingRegex(string pattern)
     {
-        Regex regex = new Regex(pattern);
+        Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
         foreach (Transform child in gridLayoutClue)
         {
             Button button = child.GetComponent<Button>();
-            TextMeshProUGUI textComponent = child.GetComponentInChildren<TextMeshProUGUI>();
+
+            TextMeshProUGUI textComponent = child.GetComponentsInChildren<TextMeshProUGUI>()
+                                                 .FirstOrDefault(tmPro => tmPro.gameObject.name == "ButtonText");
 
             if (textComponent != null && regex.IsMatch(textComponent.text))
             {
                 button.interactable = false;
-
             }
         }
     }
+    */
 
     public string CombineStoryText(List<StoryNode> storyNodes)
     {
@@ -288,7 +294,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public void ShowDestroyButton()
     {
         bool shouldDestroy = CluesManager.Instance.GetSharedCluesCount() > sharedClueNum;
-        foreach (var clue in CluesManager.Instance.myClues)
+        foreach (var clue in CluesManager.Instance.cluesCurrentRound)
         {
             if (destroyClueButtons.TryGetValue(clue.clueKeyWord, out GameObject destroyButtonGameObject))
             {
@@ -328,6 +334,11 @@ public class ReadStory : MonoBehaviourPunCallbacks
         {
             return;
         }
+        DisableClueSelection();
+    }
+
+    public void DisableClueSelection()
+    {
         foreach (var button in clueButtons)
         {
             button.interactable = false;

@@ -412,14 +412,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 483496733}
+  m_Children: []
   m_Father: {fileID: 1083696331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 250}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &217640652
 MonoBehaviour:
@@ -852,112 +851,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &483496732
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 217640651}
-    m_Modifications:
-    - target: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_Name
-      value: ClueButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 545
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 272.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6469408766089016374, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
---- !u!224 &483496733 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6401392757064664402, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-  m_PrefabInstance: {fileID: 483496732}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &836080473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,6 +1812,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1772605324}
+        m_TargetAssemblyTypeName: ReadStory, Scripts
+        m_MethodName: DisableClueSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230664061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2720,8 +2625,8 @@ MonoBehaviour:
   - {fileID: 1739090381}
   gridLayoutClue: {fileID: 217640651}
   clueButtonPrefab: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
-  sharedClueNum: 1
-  maxCheckClueNum: 2
+  sharedClueNum: 5
+  maxCheckClueNum: 6
 --- !u!4 &1772605325
 Transform:
   m_ObjectHideFlags: 0

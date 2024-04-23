@@ -15,21 +15,72 @@ MonoBehaviour:
   clues:
   - clueKeyWord: Body1
     clueText: Traces of glass shards were visible on the body.
+    hasDestroyed: 0
   - clueKeyWord: Studio1
     clueText: Shoe prints were found outside the studio's kitchen window, appearing
       to be from two different individuals.
+    hasDestroyed: 0
   - clueKeyWord: Body2
     clueText: The body was discovered outside Mr. Jefferson's bedroom window, completely
       charred and unrecognizable due to severe burns.
+    hasDestroyed: 0
   - clueKeyWord: Chloe1
     clueText: "A pearl necklace was found in the hallway of Chloe\u2019s home."
+    hasDestroyed: 0
   - clueKeyWord: Chloe2
     clueText: A critical illness notice for a female patient aged fifty-three is
       found in Chloe's room.
+    hasDestroyed: 0
   - clueKeyWord: Rachel1
     clueText: Rachel seems to have a smoking habit, as her bedroom ashtray contains
       many cigarette butts, which appear to have been smoked yesterday.
+    hasDestroyed: 0
+  - clueKeyWord: Rachel2
+    clueText: Rachel's family owns several luxury cars.
+    hasDestroyed: 0
+  - clueKeyWord: Studio2
+    clueText: 'A cup of coffee on the living room table appears untouched and has
+      been found to contain a strong sedative. '
+    hasDestroyed: 0
+  - clueKeyWord: Studio3
+    clueText: 'The dining table has two plates of leftover food and two glasses of
+      whiskey; one glass is empty, and the other appears to have been sipped only
+      slightly. Next to it, a napkin with a brown whiskey stain tested positive for
+      a potent sedative. '
+    hasDestroyed: 0
+  - clueKeyWord: Studio4
+    clueText: 'The water valve in the studio was mysteriously shut off last night. '
+    hasDestroyed: 0
   - clueKeyWord: Max1
     clueText: Max carries a photo in his pocket of a young woman intimately holding
       another man, who is smiling sweetly. However, the man's face has been cut out
       of the photo.
+    hasDestroyed: 0
+  - clueKeyWord: Rumor1
+    clueText: 'I heard Mr. Jefferson really enjoys hand-ground coffee and often invites
+      many girls to his home for coffee. '
+    hasDestroyed: 0
+  - clueKeyWord: Rumor2
+    clueText: "A: Why would someone like Mr. Jefferson come to our academy? B: You
+      might not know this, but it\u2019s his habit to switch academies periodically
+      to teach. "
+    hasDestroyed: 0
+  - clueKeyWord: Rumor3
+    clueText: "A: I'm so jealous of Mr. Jefferson; he\u2019s very popular with the
+      girls. B: He\u2019s famous, so it\u2019s normal, but he usually doesn\u2019t
+      seem to treat the boys well. "
+    hasDestroyed: 0
+  - clueKeyWord: Rumor4
+    clueText: "A: Rachel is definitely the star of our club, and I bet she\u2019s
+      going to be a great actress someday. B: Yeah, apparently, it's been her dream
+      since she was little. "
+    hasDestroyed: 0
+  - clueKeyWord: Rumor5
+    clueText: "A: Poor Chloe, I heard it\u2019s always just been her and her mom.
+      B: Yeah, that\u2019s why she studies so hard, it\u2019s really admirable. "
+    hasDestroyed: 0
+  - clueKeyWord: Rumor6
+    clueText: "After Mr. Jefferson arrived, fewer students attended Max\u2019s classes,
+      but Max doesn\u2019t seem to mind and even seems to have a good relationship
+      with Mr. Jefferson. "
+    hasDestroyed: 0
