@@ -2360,7 +2360,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 429940892}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 192377108}
@@ -3163,7 +3163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957e2e419f46ad41b7fd7cd2cd52d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 900
   timedownText: {fileID: 1748381405}
   nextScene: 6
   iptMessage: {fileID: 1439758760}
@@ -4511,13 +4511,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 16998781}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 1719428486}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1907161848}
@@ -5506,7 +5506,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 1047421153}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1979798319}
