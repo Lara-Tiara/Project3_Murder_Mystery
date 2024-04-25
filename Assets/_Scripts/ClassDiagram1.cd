@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Launcher" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBQIAAAAAGAAAAAAAEEAAICAAACAEABEEQAAABCAACA=</HashCode>
+      <FileName>Assets\_Scripts\Launcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomListManager" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggSEASgAAGIAgAEAAAAAECAAgQAAAUAQEQEEAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\RoomListManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoryNode">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAIABAAAAAAABAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\StoryNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoryClue">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\StoryNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReadStory">
+    <Position X="6.25" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>aQQCAQCIAKAYAFEOKQIIBkCAAhICAGIgIDAggIKEAkI=</HashCode>
+      <FileName>Assets\_Scripts\ReadStory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clues">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\Clues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clue">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAEAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\Clues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CluesManager">
+    <Position X="4.5" Y="7.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CluesManager.SerializableCluesList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_Scripts\CluesManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CgAAAAAAAAAAAAAAAAAAAAAAACAAAAGAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\CluesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadSharedClue">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\LoadSharedClue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaticInstance&lt;T&gt;" Collapsed="true">
+    <Position X="1" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\_Scripts\Tools\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="1" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\_Scripts\Tools\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistentSingleton&lt;T&gt;" Collapsed="true">
+    <Position X="1" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\_Scripts\Tools\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

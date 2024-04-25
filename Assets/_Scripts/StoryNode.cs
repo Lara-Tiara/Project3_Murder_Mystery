@@ -7,7 +7,7 @@ public class StoryNode : ScriptableObject
     public string characterName;
     public int nodeId;
     public TextAsset storyText;
-    public List<StoryClue> clues;
+    public List<StoryClue> storyClues;
     public bool isActive = false;
 }
 
@@ -15,6 +15,6 @@ public class StoryNode : ScriptableObject
 [System.Serializable]
 public class StoryClue
 {
-    public string clueText;
+    public string storyClueText;
 }
 

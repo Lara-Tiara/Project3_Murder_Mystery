@@ -30,7 +30,7 @@ public class Vote : MonoBehaviourPunCallbacks
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
     private int votedOutIndex;
-    private Dictionary<int, int> votedOutMap;
+    private Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
 
     private IEnumerator VotingRoutine()
     {

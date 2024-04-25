@@ -22,7 +22,7 @@ public class NoteDataManager : PersistentSingleton<NoteDataManager>
         return PlayerPrefs.GetString(key, "");
     }
 
-    private void OnApplicationQuit()
+    protected override void OnApplicationQuit()
     {
         PlayerPrefs.DeleteAll();
     }

@@ -8,7 +8,7 @@ public class LoadSharedClue : MonoBehaviourPunCallbacks
 {
     public Transform gridLayout;
     public GameObject clueButtonPrefab;
-    private ICluesManager cluesManager;
+    private CluesManager cluesManager;
 
     private void Start()
     {
@@ -16,19 +16,16 @@ public class LoadSharedClue : MonoBehaviourPunCallbacks
         SharedCluesUpdate(CluesManager.Instance.GetSharedClues());
     }
 
-    public void SetCluesManager(ICluesManager manager)
-    {
-        cluesManager = manager;
-    }
 
-    public void SharedCluesUpdate(List<StoryClue> clues)
+    public void SharedCluesUpdate(List<Clue> clues)
+
     {
         foreach (Transform child in gridLayout)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (StoryClue clue in clues)
+        foreach (Clue clue in clues)
         {
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayout);
             TextMeshProUGUI clueText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();

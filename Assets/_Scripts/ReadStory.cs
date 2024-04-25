@@ -6,6 +6,7 @@ using Photon.Pun;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 public class ReadStory : MonoBehaviourPunCallbacks
 {
@@ -16,6 +17,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public StoryNode[] maxNodes;
     public StoryNode[] rachelNodes;
     public StoryNode[] chloeNodes;
+    public Clues clues;
     private string[] maxStorySplit;
     private string[] rachelStorySplit;
     private string[] chloeStorySplit;
@@ -26,6 +28,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private string[] currentStory;
     private int i;
     public GameObject readOverBtn;
+    public GameObject cluesButton;
     public GameObject[] readOverTips;
     private static int readOverCount;
     private bool hasReadOver;
@@ -36,8 +39,11 @@ public class ReadStory : MonoBehaviourPunCallbacks
     public GameObject clueButtonPrefab;
     [SerializeField]
     private int sharedClueNum;
+    [SerializeField]
+    private int maxCheckClueNum;
     private int cluesPickedCount = 0;
-
+    private Dictionary<string, GameObject> destroyClueButtons = new Dictionary<string, GameObject>();
+    private List<Button> clueButtons = new List<Button>();
 
     private void Awake() {
 
@@ -47,6 +53,8 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private void Start()
     {
         SetupStoryEnvironment();
+        CluesManager.Instance.cluesCurrentRound.Clear();
+        Debug.Log("Share Clue " + sharedClueNum);
     }
 
     private void InitializeStoryNodes() 
@@ -81,29 +89,54 @@ public class ReadStory : MonoBehaviourPunCallbacks
         maxStorySplit = maxStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        LoadClues(clues);
 
         switch (GameDataManager.selectCharacter) {
             case 0:
                 currentStory = maxStorySplit;
                 maxPhone.SetActive(true);
-                LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeMaxNodes.SelectMany(node => node.clues).ToList());
+                //DisableButtonsMatchingRegex("(?i)Max.*");
                 break;
             case 1:
                 currentStory = rachelStorySplit;
                 rachelPhone.SetActive(true);
-                LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeRachelNodes.SelectMany(node => node.clues).ToList());
+                //DisableButtonsMatchingRegex("(?i)Rachel.*");
                 break;
             case 2:
                 currentStory = chloeStorySplit;
                 chloePhone.SetActive(true);
-                LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
+                //LoadClues(activeChloeNodes.SelectMany(node => node.clues).ToList());
+                //DisableButtonsMatchingRegex("(?i)Chloe.*");
                 break;
             default:
                 break;
         }
 
         content.text = currentStory.Length > 0 ? currentStory[i] : "";
+        
     }
+
+    /*
+    public void DisableButtonsMatchingRegex(string pattern)
+    {
+        Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
+
+        foreach (Transform child in gridLayoutClue)
+        {
+            Button button = child.GetComponent<Button>();
+
+            TextMeshProUGUI textComponent = child.GetComponentsInChildren<TextMeshProUGUI>()
+                                                 .FirstOrDefault(tmPro => tmPro.gameObject.name == "ButtonText");
+
+            if (textComponent != null && regex.IsMatch(textComponent.text))
+            {
+                button.interactable = false;
+            }
+        }
+    }
+    */
 
     public string CombineStoryText(List<StoryNode> storyNodes)
     {
@@ -150,6 +183,10 @@ public class ReadStory : MonoBehaviourPunCallbacks
             content.text = currentStory[i];
 
             photonView.RPC("UpdateSliderValue", RpcTarget.All, GameDataManager.selectCharacter, i);
+            if (i == currentStory.Length - 1)
+            {
+                cluesButton.SetActive(true);
+            }
 
             CheckReadOverActivation();
         }
@@ -203,42 +240,118 @@ public class ReadStory : MonoBehaviourPunCallbacks
         return activeStoryNodes;
     }
 
-    public void LoadClues(List<StoryClue> clues)
+    public void InitializeClueButtons()
+    {
+        ExitGames.Client.Photon.Hashtable cluesState = PhotonNetwork.CurrentRoom.CustomProperties;
+        if (cluesState.ContainsKey("CluesState"))
+        {
+            var cluesStateDict = (Dictionary<string, bool>)cluesState["CluesState"];
+            foreach (var clueState in cluesStateDict)
+            {
+                if (clueState.Value)
+                {
+                    photonView.RPC("DisableClueButton", RpcTarget.All, clueState.Key);
+                }
+            }
+        }
+    }
+
+    public void LoadClues(Clues newClues)
     {
         foreach (Transform child in gridLayoutClue)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (StoryClue clue in clues)
+        if (newClues.clues == null) return;
+
+        foreach (Clue clue in newClues.clues)
         {
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
             TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
-            clueButtonText.text = clue.clueText;
+            clueButtonText.text = clue.clueKeyWord;
 
             Button button = newClueButton.GetComponent<Button>();
+            clueButtons.Add(button);
             button.onClick.AddListener(() => {
             ShareClue(clue);
+            clueButtonText.text = clue.clueText;
             button.interactable = false;
+            ShowDestroyButton();
             });
+            Transform destroyButtonTransform =  newClueButton.transform.Find("DestroyButton");
+            Button destroyButton = destroyButtonTransform.GetComponent<Button>();
+            destroyButton.onClick.AddListener(() => {
+                CluesManager.Instance.DestroyClue(clue, sharedClueNum);
+                newClueButton.SetActive(false);
+                ShowDestroyButton();
+                CheckReadOverActivation();
+            });
+            destroyClueButtons.TryAdd(clue.clueKeyWord, destroyButtonTransform.gameObject);
         }
     }
 
-    public void ShareClue(StoryClue clue)
+    public void ShowDestroyButton()
     {
-        if (cluesPickedCount < sharedClueNum)
+        bool shouldDestroy = CluesManager.Instance.GetSharedCluesCount() > sharedClueNum;
+        foreach (var clue in CluesManager.Instance.cluesCurrentRound)
         {
-            CluesManager.Instance.AddSharedClue(clue);
-            cluesPickedCount++;
-            CheckReadOverActivation();
+            if (destroyClueButtons.TryGetValue(clue.clueKeyWord, out GameObject destroyButtonGameObject))
+            {
+                destroyButtonGameObject.SetActive(shouldDestroy);
+            } 
+        } 
+    }
+
+    [PunRPC]
+    public void DisableClueButton(string clueKeyWord)
+    {
+        foreach (Transform child in gridLayoutClue)
+        {
+            var btn = child.GetComponentInChildren<Button>();
+            var textComponent = btn.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (textComponent.text.Equals(clueKeyWord))
+            {
+                btn.interactable = false;
+                break;
+            }
+        }
+    }
+
+    public void ShareClue(Clue clue)
+    {
+        CluesManager.Instance.AddSharedClue(clue);
+        cluesPickedCount++;
+        CheckReadOverActivation();
+        photonView.RPC("DisableClueButton", RpcTarget.All, clue.clueKeyWord);
+        CheckStopSelecting();
+    }
+
+    public void CheckStopSelecting()
+    {
+        if (cluesPickedCount < maxCheckClueNum)
+        {
+            return;
+        }
+        DisableClueSelection();
+    }
+
+    public void DisableClueSelection()
+    {
+        foreach (var button in clueButtons)
+        {
+            button.interactable = false;
         }
     }
 
     private void CheckReadOverActivation()
     {
-        if (i == currentStory.Length - 1 && !hasReadOver && cluesPickedCount >= sharedClueNum)
+        if (i == currentStory.Length - 1 && !hasReadOver && CluesManager.Instance.GetSharedCluesCount() == sharedClueNum)
         {
             readOverBtn.SetActive(true);
+        } else {
+            readOverBtn.SetActive(false);
         }
     }
 

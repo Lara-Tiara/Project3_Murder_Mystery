@@ -214,7 +214,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.4
+  m_fontSize: 40.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -851,6 +851,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &817188996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b1c8e4c6e4deaaa4da14c24f30001c99, type: 3}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: BGM
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1154.1779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 566.73175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.734032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319973441200311372, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
 --- !u!1 &836080473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,6 +1889,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1772605324}
+        m_TargetAssemblyTypeName: ReadStory, Scripts
+        m_MethodName: DisableClueSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230664061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,7 +2291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1625854525
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2600,18 +2689,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b56eca4fb317c74499ebfcc262087c0e, type: 2}
   chloeNodes:
   - {fileID: 11400000, guid: 1a04028b47796a04980e1a251e45aad2, type: 2}
+  clues: {fileID: 11400000, guid: b3cfe1aa67fb2e14982acafc271dce9e, type: 2}
   maxPhone: {fileID: 206090177}
   rachelPhone: {fileID: 462546901}
   chloePhone: {fileID: 934744616}
   nextScene: 3
   readOverBtn: {fileID: 1230664058}
+  cluesButton: {fileID: 1625854524}
   readOverTips:
   - {fileID: 401440823}
   - {fileID: 2005226537}
   - {fileID: 1739090381}
   gridLayoutClue: {fileID: 217640651}
-  clueButtonPrefab: {fileID: 6982819441650229567, guid: 03c9eeb8b22ec554c9d10b9d5e9d2d57, type: 3}
-  sharedClueNum: 1
+  clueButtonPrefab: {fileID: 6051094059280828331, guid: e4eaf3297b431ed4ba2557059218dfbf, type: 3}
+  sharedClueNum: 5
+  maxCheckClueNum: 6
 --- !u!4 &1772605325
 Transform:
   m_ObjectHideFlags: 0
@@ -3657,3 +3749,4 @@ SceneRoots:
   - {fileID: 900474901}
   - {fileID: 1772605325}
   - {fileID: 2597246746791679804}
+  - {fileID: 817188996}
