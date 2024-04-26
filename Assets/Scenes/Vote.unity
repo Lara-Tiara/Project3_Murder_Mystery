@@ -1052,7 +1052,7 @@ MonoBehaviour:
   suspect: 1
   murderEachRound: 0100000000000000
   timedownText: {fileID: 477272683}
-  time: 10
+  time: 20
   roundTitle: {fileID: 2085893668}
   titleText:
   - Who's the murder of Bill?
