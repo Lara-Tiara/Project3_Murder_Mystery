@@ -72,6 +72,7 @@ public class CharacterManager : MonoBehaviourPunCallbacks
     [PunRPC]
     private void LoadNextScene()
     {
-        SceneManager.LoadScene(2);
+        //SceneManager.LoadScene(2);
+        SceneManager.LoadScene(8);
     }
 }

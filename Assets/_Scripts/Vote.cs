@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Linq;
 using System;
+using Photon.Realtime;
 
 public class Vote : MonoBehaviourPunCallbacks
 {
-    public int murder;
-    public int suspect;
-    public int[] murderEachRound;
+    public const string ROUND_ONE_KEY = "Round One";
+    public const string ROUND_TWO_KEY = "Round Two";
     public TextMeshProUGUI timedownText;
     public float time;
     public const float MAXTIME = 10;
@@ -26,17 +26,17 @@ public class Vote : MonoBehaviourPunCallbacks
     public StoryNode[] chloeNodes;
     public int totalRounds = 2;
     private int currentRound = 0;
-    private List<int> roundResults = new List<int>();
+    public List<int> roundResults = new List<int>();
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
     private int votedOutIndex;
     private Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
+    public string masterClient;
 
-    private IEnumerator VotingRoutine()
+    public IEnumerator VotingRoutine()
     {
         while (currentRound < totalRounds)
         {
-            ResetTimer();
             while (time >= 0)
             {
                 photonView.RPC("SetTimeText", RpcTarget.All, time.ToString("f1"));
@@ -46,6 +46,7 @@ public class Vote : MonoBehaviourPunCallbacks
 
             yield return new WaitForSeconds(5);
             CheckEndOfRound();
+            ResetTimer();
         }
     }
 
@@ -89,6 +90,15 @@ public class Vote : MonoBehaviourPunCallbacks
         {
             StartCoroutine(VotingRoutine());
         }
+        masterClient = PhotonNetwork.MasterClient.UserId;
+        Debug.Log(masterClient);
+        Debug.Log(PhotonNetwork.MasterClient);
+        Debug.Log(PhotonNetwork.MasterClient.GetHashCode());
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        StopAllCoroutines();
     }
 
     public void OnButtonClick(int buttonIndex)
@@ -133,12 +143,13 @@ public class Vote : MonoBehaviourPunCallbacks
         if (currentRound + 1 < totalRounds)
         {
             photonView.RPC("PrepareNextRound", RpcTarget.All);
+            
         }
         else
         {
             StopAllCoroutines();
             if (roundResults.Count >= totalRounds){
-                photonView.RPC("ShowEndUI", RpcTarget.All, roundResults[0], roundResults[1]);
+                photonView.RPC("ShowEndUI", RpcTarget.All);
             }
         }
     }
@@ -206,14 +217,51 @@ public class Vote : MonoBehaviourPunCallbacks
         }
 
         roundResults.Add(votedOutIndex);
+        if (roundResults.Count == 1)
+        {
+            PhotonNetwork.CurrentRoom.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { ROUND_ONE_KEY, votedOutIndex } });
+        }
+        else if (roundResults.Count == 2)
+        {
+            PhotonNetwork.CurrentRoom.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { ROUND_TWO_KEY, votedOutIndex } });
+        }
     }
 
     [PunRPC]
-    private void ShowEndUI(int round1, int round2)
+    public void ShowEndUI()
     {
         roundResults.Clear();
-        roundResults.Add(round1);
-        roundResults.Add(round2);
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(ROUND_ONE_KEY, out object data1))
+        {
+            if (int.TryParse(data1.ToString(), out int round1))
+            {
+                roundResults.Add(round1);
+            }
+            else
+            {
+            return;
+            }
+        }
+        else
+        {
+            return;
+        }
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(ROUND_TWO_KEY, out object data2))
+        {
+            if (int.TryParse(data2.ToString(), out int round2))
+            {
+                roundResults.Add(round2);
+            }
+            else
+            {
+            return;
+            }
+        }
+        else
+        {
+            return;
+        }
+        
         bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] {0, 0});
         bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] {1, 1});
         bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] {2, 2});

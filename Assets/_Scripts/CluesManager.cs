@@ -6,7 +6,7 @@ using System;
 
 public class CluesManager : PersistentSingleton<CluesManager>
 {
-    private const string SHARED_CLUES_KEY = "SharedClues";
+    public const string SHARED_CLUES_KEY = "SharedClues";
     public List<Clue> cluesCurrentRound = new List<Clue>();
 
     public void AddSharedClue(Clue clue)
@@ -61,11 +61,5 @@ public class CluesManager : PersistentSingleton<CluesManager>
             }
         }
         return new List<Clue>();
-    }
-
-    [Serializable]
-    private class SerializableCluesList
-    {
-        public List<Clue> Clues;
     }
 }

@@ -20,6 +20,7 @@ namespace Photon.Pun
 
     using ExitGames.Client.Photon;
     using Photon.Realtime;
+    using SharedScripts;
 
     using Hashtable = ExitGames.Client.Photon.Hashtable;
     using SupportClassPun = ExitGames.Client.Photon.SupportClass;
@@ -290,6 +291,11 @@ namespace Photon.Pun
             //{
             //    Debug.LogWarning("It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite ");
             //}
+
+            if (SettingsSO.Instance.doNotDestroyOnLeave)
+            {
+                destroyInstantiatedGameObjects = false;
+            }
 
             // Destroy GO's (if we should)
             if (destroyInstantiatedGameObjects)
