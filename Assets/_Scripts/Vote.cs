@@ -44,7 +44,7 @@ public class Vote : MonoBehaviourPunCallbacks
                 time--;
             }
 
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3);
             CheckEndOfRound();
             ResetTimer();
         }

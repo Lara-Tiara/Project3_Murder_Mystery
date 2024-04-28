@@ -87,9 +87,9 @@ public class ReadStory : MonoBehaviourPunCallbacks
         rachelStory = CombineStoryText(activeRachelNodes);
         chloeStory = CombineStoryText(activeChloeNodes);
 
-        maxStorySplit = maxStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        rachelStorySplit = rachelStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
-        chloeStorySplit = chloeStory.Split(new string[] { "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        maxStorySplit = maxStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        rachelStorySplit = rachelStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+        chloeStorySplit = chloeStory.Split(new string[] { "\r\n\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         LoadClues(clues);
 
         switch (GameDataManager.selectCharacter) {
@@ -265,11 +265,12 @@ public class ReadStory : MonoBehaviourPunCallbacks
         {
             Destroy(child.gameObject);
         }
-
+        
         if (newClues.clues == null) return;
 
         foreach (Clue clue in newClues.clues)
         {
+            Debug.Log("Clue Loaded");
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
             TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
             clueButtonText.text = clue.clueKeyWord;

@@ -16,17 +16,10 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: 0d9530ae17838a84e978e3bea9b40598, type: 3}
   clues:
-  - clueText: 'Body: Traces of glass shards were visible on the body.'
-  - clueText: 'Rachel: Rachel''s family owns several luxury cars.'
-  - clueText: 'Max: Max carries a photo in his pocket of a young woman intimately
-      holding another man, who is smiling sweetly. However, the man''s face has been
-      cut out of the photo.'
-  - clueText: 'Rumor: I heard Mr. Jefferson really enjoys hand-ground coffee and
-      often invites many girls to his home for coffee.'
-  - clueText: "Rumor: A: I'm so jealous of Mr. Jefferson; he\u2019s very popular
-      with the girls. B: He\u2019s famous, so it\u2019s normal, but he usually doesn\u2019t
-      seem to treat the boys well."
-  - clueText: "Rumor: After Mr. Jefferson arrived, fewer students attended Miss Caufield\u2019s
-      classes, but Miss Caufield doesn\u2019t seem to mind and even seems to have
-      a good relationship with Mr. Jefferson. "
+  - clueText: "\u5C38\u4F53:\u5C38\u4F53\u8EAB\u4E0A\u9690\u7EA6\u53EF\u89C1\u4E00\u4E9B\u73BB\u7483\u788E\u6E23"
+  - clueText: "\u745E\u79CB:\u745E\u79CB\u5BB6\u91CC\u6709\u6570\u53F0\u8C6A\u8F66"
+  - clueText: "\u9EA6\u514B\u65AF:\u9EA6\u514B\u65AF\u7684\u53E3\u888B\u4E2D\u6709\u4E00\u5F20\u5408\u7167\uFF0C\u4E00\u4E2A\u5E74\u8F7B\u5973\u4EBA\u4EB2\u5BC6\u7684\u633D\u7740\u53E6\u5916\u4E00\u4E2A\u7537\u4EBA\uFF0C\u7B11\u5BB9\u751C\u871C\uFF0C\u53EA\u662F\u90A3\u4E2A\u7537\u4EBA\u7684\u8138\u88AB\u88C1\u6389\u4E86"
+  - clueText: "\u4F20\u95FB:\u6211\u542C\u8BF4\uFF0C\u6770\u5F17\u900A\u8001\u5E08\u7279\u522B\u559C\u6B22\u624B\u78E8\u5496\u5561\uFF0C\u7ECF\u5E38\u9080\u8BF7\u5F88\u591A\u5973\u751F\u53BB\u4ED6\u5BB6\u559D\u5496\u5561\u5462"
+  - clueText: "\u4F20\u95FB:\u7532:\u771F\u7FA1\u6155\u6770\u5F17\u900A\u8001\u5E08\uFF0C\u7ADF\u7136\u90A3\u4E48\u53D7\u5973\u751F\u6B22\u8FCE\u3002\u4E59:\u4ED6\u90A3\u4E48\u51FA\u540D\uFF0C\u8FD9\u4E5F\u5F88\u6B63\u5E38\uFF0C\u4E0D\u8FC7\u4ED6\u5BF9\u7537\u751F\u597D\u50CF\u901A\u5E38\u90FD\u6CA1\u4EC0\u4E48\u597D\u8138\u8272"
+  - clueText: "\u4F20\u95FB:\u6770\u5F17\u900A\u8001\u5E08\u6765\u4E86\u4EE5\u540E\u4E0A\u9EA6\u514B\u65AF\u8001\u5E08\u8BFE\u7684\u540C\u5B66\u5C11\u4E86\u5F88\u591A\uFF0C\u4F46\u9EA6\u514B\u65AF\u8001\u5E08\u597D\u50CF\u5E76\u4E0D\u5728\u610F\uFF0C\u751A\u81F3\u548C\u6770\u5F17\u900A\u8001\u5E08\u7684\u5173\u7CFB\u8FD8\u5F88\u597D\u5462"
   isActive: 1

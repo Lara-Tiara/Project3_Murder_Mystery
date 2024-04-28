@@ -16,15 +16,9 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: d9b9de4932db7254987eaf40e769bd1b, type: 3}
   clues:
-  - clueText: 'Basement: The basement door is concealed under a square piece of flooring,
-      which opens by pulling outward and closes by pushing downward.'
-  - clueText: 'Basement: When discovered, the door was locked from the inside, the
-      basement has no windows, is fully enclosed, and lacks any tunnel-like structures.'
-  - clueText: 'Basement: The bolt socket has notches on both the upper and lower
-      sides of one face.'
-  - clueText: 'Mr. Jefferson''s body: The back of the skull has severe damage, indicative
-      of being struck by a heavy object. '
-  - clueText: 'Mr. Jefferson''s body: The phone was on silent mode, with several
-      missed calls from Bill, a photography exhibition staff member, between 20:30
-      and 21:00. '
+  - clueText: "\u5730\u4E0B\u5BA4:\u5730\u4E0B\u5BA4\u7684\u5C0F\u95E8\u9690\u85CF\u5728\u4E00\u5757\u6B63\u65B9\u5F62\u7684\u5730\u677F\u4E0B\u9762\uFF0C\u5411\u5916\u62C9\u662F\u5F00\uFF0C\u5F80\u4E0B\u653E\u662F\u5173"
+  - clueText: "\u5730\u4E0B\u5BA4:\u5730\u4E0B\u5BA4\u88AB\u53D1\u73B0\u7684\u65F6\u5019\u662F\u4ECE\u5185\u90E8\u4E0A\u9501\u7684\uFF0C\u5730\u4E0B\u5BA4\u91CC\u9762\u5E76\u6CA1\u6709\u4EFB\u4F55\u7A97\u6237\uFF0C\u662F\u5B8C\u5168\u5C01\u95ED\u7684\uFF0C\u4E5F\u6CA1\u6709\u5730\u9053\u4E4B\u7C7B\u7684\u7ED3\u6784"
+  - clueText: "\u5730\u4E0B\u5BA4:\u63D2\u9500\u7684\u63D2\u5B54\uFF0C\u5B54\u7684\u4E0A\u9762\u548C\u4E0B\u9762\uFF0C\u6709\u4E00\u4FA7\u5206\u522B\u6709\u4E24\u4E2A\u8C41\u53E3"
+  - clueText: "\u6770\u5F17\u900A\u5C38\u4F53:\u5C38\u4F53\u540E\u8111\u9885\u9AA8\u635F\u4F24\u4E25\u91CD\uFF0C\u6709\u88AB\u91CD\u7269\u51FB\u6253\u7684\u75D5\u8FF9"
+  - clueText: "\u6770\u5F17\u900A\u5C38\u4F53:\u624B\u673A\u662F\u9759\u97F3\u72B6\u6001\uFF0C\u4F3C\u4E4E\u6709\u51E0\u4E2A\u672A\u63A5\u6765\u7535\uFF0C\u6765\u7535\u4EBA\u662F:\u6444\u5F71\u5C55\u5DE5\u4F5C\u4EBA\u5458:\u6BD4\u5C14\u3002\u65F6\u95F4\u90FD\u662F\u572820:30\u523021:00\u4E4B\u95F4"
   isActive: 1
