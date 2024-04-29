@@ -7,12 +7,17 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Linq;
 using System;
+using Photon.Realtime;
 
 public class Vote : MonoBehaviourPunCallbacks
 {
-    public int murder;
-    public int suspect;
-    public int[] murderEachRound;
+    public const string ROUND_ONE_KEY = "Round One";
+    public const string ROUND_TWO_KEY = "Round Two";
+    public const string CURRENT_ROUND_KEY = "CurrentRound";
+
+    public const string VOTE_OUT_MAP_KEY = "VotedOutMap";
+
+    [Header("UI Elements")]
     public TextMeshProUGUI timedownText;
     public float time;
     public const float MAXTIME = 10;
@@ -20,23 +25,29 @@ public class Vote : MonoBehaviourPunCallbacks
     public string[] titleText;
     public GameObject endUI;
     public TextMeshProUGUI endingText;
+
+    [Header("Vote buttons")]
     public Button[] buttons;
+
+    [Header("Story Nodes")]
     public StoryNode[] maxNodes;
     public StoryNode[] rachelNodes;
     public StoryNode[] chloeNodes;
+
+    [Header("Vote Routine settings")]
     public int totalRounds = 2;
-    private int currentRound = 0;
-    private List<int> roundResults = new List<int>();
+    [HideInInspector] public int currentRound = 0;
+    [HideInInspector] public List<int> roundResults = new List<int>();
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
     private int votedOutIndex;
-    private Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
+    public Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
+    public string masterClient;
 
-    private IEnumerator VotingRoutine()
+    public IEnumerator VotingRoutine()
     {
         while (currentRound < totalRounds)
         {
-            ResetTimer();
             while (time >= 0)
             {
                 photonView.RPC("SetTimeText", RpcTarget.All, time.ToString("f1"));
@@ -46,16 +57,17 @@ public class Vote : MonoBehaviourPunCallbacks
 
             yield return new WaitForSeconds(5);
             CheckEndOfRound();
+            ResetTimer();
         }
     }
 
     [PunRPC]
     private void SetTimeText(string text)
     {
+        time = float.Parse(text);
         timedownText.text = text;
     }
 
-    [PunRPC]
     private void ResetTimer()
     {
         time = MAXTIME;
@@ -85,10 +97,24 @@ public class Vote : MonoBehaviourPunCallbacks
         buttons[GameDataManager.selectCharacter].interactable = false;
         ResetTimer();
         UpdateRoundTitle();
+
         if (PhotonNetwork.IsMasterClient)
         {
             StartCoroutine(VotingRoutine());
         }
+    }
+
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        if (newMasterClient.UserId == PhotonNetwork.LocalPlayer.UserId)
+        {
+            StartCoroutine(VotingRoutine());
+        }
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        StopAllCoroutines();
     }
 
     public void OnButtonClick(int buttonIndex)
@@ -110,11 +136,6 @@ public class Vote : MonoBehaviourPunCallbacks
     [PunRPC]
     private void PlayerVote(int voterID, int buttonIndex)
     {
-        if (!PhotonNetwork.IsMasterClient)
-        {
-            return;
-        }
-        
         if (votedOutMap == null)
         {
             votedOutMap = new Dictionary<int, int>();
@@ -123,6 +144,13 @@ public class Vote : MonoBehaviourPunCallbacks
         if (votedOutMap.TryAdd(voterID, buttonIndex) == false)
         {
             votedOutMap[voterID] = buttonIndex;
+        }
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+            roomProperties[VOTE_OUT_MAP_KEY] = votedOutMap;
+            PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
         }
     }
 
@@ -133,12 +161,14 @@ public class Vote : MonoBehaviourPunCallbacks
         if (currentRound + 1 < totalRounds)
         {
             photonView.RPC("PrepareNextRound", RpcTarget.All);
+
         }
         else
         {
             StopAllCoroutines();
-            if (roundResults.Count >= totalRounds){
-                photonView.RPC("ShowEndUI", RpcTarget.All, roundResults[0], roundResults[1]);
+            if (roundResults.Count >= totalRounds)
+            {
+                photonView.RPC("ShowEndUI", RpcTarget.All);
             }
         }
     }
@@ -153,6 +183,11 @@ public class Vote : MonoBehaviourPunCallbacks
     private void PrepareNextRound()
     {
         currentRound++;
+
+        var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+        roomProperties[CURRENT_ROUND_KEY] = currentRound;
+        PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
+
         ResetVotingState();
         if (currentRound < totalRounds)
         {
@@ -163,11 +198,7 @@ public class Vote : MonoBehaviourPunCallbacks
 
     private void ResetVotingState()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            votedOutMap = new Dictionary<int, int>();
-        }
-
+        votedOutMap = new Dictionary<int, int>();
         clickedButtonCount = 0;
         hasSelect = false;
         foreach (Button button in buttons)
@@ -186,7 +217,9 @@ public class Vote : MonoBehaviourPunCallbacks
             if (votedOutMap.TryGetValue(i, out int result))
             {
                 votes[result]++;
-            } else {
+            }
+            else
+            {
                 votes[GetRandomButtonIndex(i)]++;
             }
         }
@@ -199,25 +232,70 @@ public class Vote : MonoBehaviourPunCallbacks
                 break;
             }
         }
-        
+
         if (votes.All(v => v == 1))
         {
-            votedOutIndex = -1; 
+            votedOutIndex = -1;
         }
 
         roundResults.Add(votedOutIndex);
+        var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+
+        if (roundResults.Count == 1)
+        {
+            roomProperties[ROUND_ONE_KEY] = votedOutIndex;
+        }
+        else if (roundResults.Count == 2)
+        {
+            roomProperties[ROUND_TWO_KEY] = votedOutIndex;
+        }
+
+        PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
     }
 
     [PunRPC]
-    private void ShowEndUI(int round1, int round2)
+    public void ShowEndUI()
     {
         roundResults.Clear();
-        roundResults.Add(round1);
-        roundResults.Add(round2);
-        bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] {0, 0});
-        bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] {1, 1});
-        bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] {2, 2});
-        bool equalVote = roundResults.SequenceEqual(new int[] {-1, -1});
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(ROUND_ONE_KEY, out object data1))
+        {
+            if (int.TryParse(data1.ToString(), out int round1))
+            {
+                roundResults.Add(round1);
+            }
+            else
+            {
+                Debug.LogError("Failed to parse round 1 result.");
+                return;
+            }
+        }
+        else
+        {
+            Debug.LogError("Failed to get round 1 result.");
+            return;
+        }
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(ROUND_TWO_KEY, out object data2))
+        {
+            if (int.TryParse(data2.ToString(), out int round2))
+            {
+                roundResults.Add(round2);
+            }
+            else
+            {
+                Debug.LogError("Failed to parse round 2 result.");
+                return;
+            }
+        }
+        else
+        {
+            Debug.LogError("Failed to get round 2 result.");
+            return;
+        }
+
+        bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] { 0, 0 });
+        bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] { 1, 1 });
+        bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] { 2, 2 });
+        bool equalVote = roundResults.SequenceEqual(new int[] { -1, -1 });
         bool maxRachelVotedOut = roundResults.Contains(0) && roundResults.Contains(1);
         bool maxChloeVotedOut = roundResults.Contains(0) && roundResults.Contains(2);
         bool chloeRachelVotedOut = roundResults.Contains(1) && roundResults.Contains(2);
@@ -231,35 +309,35 @@ public class Vote : MonoBehaviourPunCallbacks
             SetActiveNodes(chloeNodes, 1);
             SetActiveNodes(rachelNodes, 1);
         }
-        if(rachelVotedOutTwice)
+        if (rachelVotedOutTwice)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,1);
-            SetActiveNodes(rachelNodes,3);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 3);
         }
-        if(chloeVotedOutTwice)
+        if (chloeVotedOutTwice)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,1);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 1);
         }
-        if(maxRachelVotedOut)
+        if (maxRachelVotedOut)
         {
             SetActiveNodes(maxNodes, 2);
-            SetActiveNodes(chloeNodes,1);
-            SetActiveNodes(rachelNodes,2);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 2);
         }
-        if(maxChloeVotedOut)
+        if (maxChloeVotedOut)
         {
             SetActiveNodes(maxNodes, 2);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,1);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 1);
         }
-        if(chloeRachelVotedOut)
+        if (chloeRachelVotedOut)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,2);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 2);
         }
         if (equalMaxVote)
         {
@@ -279,11 +357,11 @@ public class Vote : MonoBehaviourPunCallbacks
             SetActiveNodes(chloeNodes, 1);
             SetActiveNodes(rachelNodes, 2);
         }
-        if(equalVote)
+        if (equalVote)
         {
             SetActiveNodes(maxNodes, 4);
-            SetActiveNodes(chloeNodes,4);
-            SetActiveNodes(rachelNodes,4);
+            SetActiveNodes(chloeNodes, 4);
+            SetActiveNodes(rachelNodes, 4);
         }
 
         LoadActiveTextForCharacter();
@@ -334,14 +412,16 @@ public class Vote : MonoBehaviourPunCallbacks
 
     public void SetActiveNodes(StoryNode[] nodes, int nodeID)
     {
-        foreach (var node in nodes) {
-            if(node.nodeId == nodeID) {
+        foreach (var node in nodes)
+        {
+            if (node.nodeId == nodeID)
+            {
                 node.isActive = true;
             }
         }
     }
 
-    private void UpdateRoundTitle()
+    public void UpdateRoundTitle()
     {
         if (currentRound < titleText.Length)
         {

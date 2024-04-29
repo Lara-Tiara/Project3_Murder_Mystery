@@ -904,8 +904,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b7d25a304bfbb0e4694aa9099137cc86, type: 2}
+  m_sharedMaterial: {fileID: -3494253177761336510, guid: b7d25a304bfbb0e4694aa9099137cc86, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 144130905}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1750546526}
@@ -2296,7 +2296,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b7d25a304bfbb0e4694aa9099137cc86, type: 2}
   m_sharedMaterial: {fileID: -343673702534853227, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2360,7 +2360,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &628659359
@@ -2547,13 +2547,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 170545296}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 1162258825}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 535977578}
@@ -3069,7 +3069,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 50
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 890321280}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1535940960}
@@ -3222,7 +3222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957e2e419f46ad41b7fd7cd2cd52d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 900
   timedownText: {fileID: 2087749700}
   nextScene: 8
   iptMessage: {fileID: 1232575772}
@@ -4316,7 +4316,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b7d25a304bfbb0e4694aa9099137cc86, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4380,7 +4380,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1415031380
@@ -5208,6 +5208,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828012463}
   m_CullTransparentMesh: 1
+--- !u!1001 &1871113082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a5d39a4fbfcbf414697c7a42b44b2b5b, type: 3}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: BGM
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1154.1779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 566.73175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.734032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319973441200311372, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
 --- !u!1 &1944732220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,7 +5714,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 98203a63314ca7b40a6afa7d8598bb01, type: 3}
+    m_Font: {fileID: 12800000, guid: 188384ac112701644b24ea19e6bf4f02, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -6040,3 +6121,4 @@ SceneRoots:
   - {fileID: 513091341}
   - {fileID: 1076188724}
   - {fileID: 1135053663}
+  - {fileID: 1871113082}

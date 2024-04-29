@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using Photon.Realtime;
 using TMPro;
 using System.Text.RegularExpressions;
+using SharedScripts;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
@@ -97,7 +98,11 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
 
         loginUI.SetActive(false);
-        PhotonNetwork.JoinOrCreateRoom(roomName.text, new Photon.Realtime.RoomOptions { MaxPlayers = playerCount }, default);
+        RoomOptions options = new RoomOptions();
+        options.MaxPlayers = playerCount;
+        options.PlayerTtl = -1;
+        options.EmptyRoomTtl = 60000;
+        PhotonNetwork.JoinOrCreateRoom(roomName.text, options, default);
 
         joinRoomTip.SetActive(true);
     }
@@ -110,12 +115,15 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
-
+        Reconnection.Instance.shouldReconnected = true;
+        SettingsSO.Instance.doNotDestroyOnLeave = true;
         Debug.Log("Successful Join the Room");
     }
 
     public void LeaveRoom()
     {
+        Reconnection.Instance.shouldReconnected = false;
+        SettingsSO.Instance.doNotDestroyOnLeave = false;
         PhotonNetwork.LeaveRoom();
     }
 

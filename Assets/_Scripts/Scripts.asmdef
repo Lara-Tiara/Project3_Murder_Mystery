@@ -12,7 +12,8 @@
         "PhotonRealtime",
         "PhotonChat",
         "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor",
-        "PhotonUnityNetworking.Editor"
+        "PhotonUnityNetworking.Editor",
+        "SharedScripts"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

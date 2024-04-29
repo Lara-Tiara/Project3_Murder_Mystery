@@ -454,6 +454,132 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &134249115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134249117}
+  - component: {fileID: 134249116}
+  m_Layer: 0
+  m_Name: VoteRecovery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134249116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134249115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ecb08289b28d6499b9380d9a9153c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vote: {fileID: 605944741}
+--- !u!4 &134249117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134249115}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &192540285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 93d1ccda546bae44392ccda3a4a6f29b, type: 3}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: BGM
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3994993274995762485, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1154.1779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 566.73175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.734032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794637220344780649, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319973441200311372, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff08203b3144df74d9f59256cd666dc9, type: 3}
 --- !u!1 &226241198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,11 +1174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f5cc93433451c4588277f736430f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  murder: 0
-  suspect: 1
-  murderEachRound: 0100000000000000
   timedownText: {fileID: 477272683}
-  time: 20
+  time: 30
   roundTitle: {fileID: 2085893668}
   titleText:
   - Who's the murder of Bill?
@@ -1078,6 +1201,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1dc34b9f7c9a6746b73c1553ce81a58, type: 2}
   - {fileID: 11400000, guid: da97fa293cf64ed459876abb596bb6d3, type: 2}
   totalRounds: 2
+  currentRound: 0
+  roundResults: 
+  masterClient: 
 --- !u!4 &605944742
 Transform:
   m_ObjectHideFlags: 0
@@ -1805,7 +1931,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b7d25a304bfbb0e4694aa9099137cc86, type: 2}
   m_sharedMaterial: {fileID: -343673702534853227, guid: 979c9a6987e175a49b7cdc1d6e3dc8fb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1869,7 +1995,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1508846385
@@ -2685,3 +2811,5 @@ SceneRoots:
   - {fileID: 326888727}
   - {fileID: 639084049}
   - {fileID: 605944742}
+  - {fileID: 192540285}
+  - {fileID: 134249117}

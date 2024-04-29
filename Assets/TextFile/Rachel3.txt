@@ -1,7 +1,7 @@
-Guard: Just now, during the evidence search, our team found a small door under the bedroom floor that leads to a basement. Incredibly, we found Mr. Jefferson's body there! Now, can anyone tell me who this charred person is?! I'm running out of patience. Quickly find the murderer, and remember, I want the murderer responsible for both deaths found. I don't care how many people are involved; I just want results, or else I will have all three of you thrown into jail!
+你们的胆子也太大了,刚才,就在刚才搜证的过程中,我们的人在卧室的地板下发现了一扇小门,下面竟然是一间地下室,在里面竟然发现了杰弗逊先生的尸体！那谁能告诉我,这个烧焦的人又是谁？！我已经没有多少耐心了,快点给我找出凶手,注意,是杀死这两个人的凶手都要找到,我不管有几个人,反正我只要结果,不然我就把你们三个全部送进监狱！
 
 
-Task:
-1. This round you need to click and share all the clues avaliable, carefully prepare yourself before the last round of the chat.
-
-2. Find out the identity of the burnt body.
+任务:
+1. 本轮是最后一轮搜证,下一轮对话结束后,需要进行投票。
+2. 本轮需要查看六条线索。不能进行销毁。
+3. 找出被烧毁尸体的身份.

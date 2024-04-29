@@ -16,16 +16,9 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: 155b3cb64e1a7414fb9933a768c06af8, type: 3}
   clues:
-  - clueText: 'Basement: The door can be locked from the outside and also bolted
-      from the inside using a latch lock (it typically consists of a movable metal
-      bar or bolt that can be slid into a fixed part). '
-  - clueText: 'Basement: The bolt of the door is made of hard plastic, which cannot
-      be locked with a magnet from the outside.'
-  - clueText: 'Mr. Jefferson''s body: The abdomen is wrapped with several loops of
-      bandage, under which is a wound caused by a sharp object. '
-  - clueText: 'Basement: The basement has a computer logged into various websites
-      involved in trading a large number of nude photos of women, which appear to
-      be expensive. '
-  - clueText: 'Mr. Jefferson''s body: His phone appears to have dialed 911 on September
-      12th at 19:50. '
+  - clueText: "\u5730\u4E0B\u5BA4:\u5730\u4E0B\u5BA4\u7684\u95E8\u53EF\u4ECE\u5916\u9762\u4E0A\u9501\uFF0C\u4E5F\u53EF\u4EE5\u5728\u91CC\u9762\u7528\u63D2\u9500\u4E0A\u9501 "
+  - clueText: "\u5730\u4E0B\u5BA4:\u5730\u4E0B\u5BA4\u63D2\u9500\u7684\u95E8\u9501\u6750\u8D28\u662F\u786C\u5851\u6599\uFF0C\u65E0\u6CD5\u4F7F\u7528\u5438\u94C1\u77F3\u4ECE\u5916\u9762\u5C06\u63D2\u9500\u63D2\u4E0A"
+  - clueText: "\u6770\u5F17\u900A\u5C38\u4F53:\u5C38\u4F53\u8179\u90E8\u7F20\u7740\u51E0\u5708\u7EF7\u5E26\uFF0C\u7EF7\u5E26\u4E0B\u662F\u4E00\u9053\u88AB\u9510\u5668\u5212\u5F00\u7684\u4F24\u53E3"
+  - clueText: "\u5730\u4E0B\u5BA4:\u5730\u4E0B\u5BA4\u6709\u4E00\u53F0\u7535\u8111\uFF0C\u4E0A\u9762\u767B\u9646\u7740\u4E00\u4E9B\u7F51\u7AD9\uFF0C\u7F51\u7AD9\u4E0A\u6709\u8BB8\u591A\u548C\u522B\u4EBA\u4EA4\u6613\u5927\u91CF\u88F8\u4F53\u5973\u4EBA\u7167\u7247\u7684\u5185\u5BB9\uFF0C\u770B\u8D77\u6765\u4EF7\u683C\u4E0D\u83F2"
+  - clueText: "\u6770\u5F17\u900A\u5C38\u4F53:\u624B\u673A\u4E0A\u4F3C\u4E4E\u66FE\u62E8\u6253\u8FC7911\uFF0C\u65F6\u95F4\u662F9\u670812\u65E519:50"
   isActive: 1

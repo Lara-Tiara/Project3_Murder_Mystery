@@ -43,7 +43,8 @@ public class ReadStory : MonoBehaviourPunCallbacks
     private int maxCheckClueNum;
     private int cluesPickedCount = 0;
     private Dictionary<string, GameObject> destroyClueButtons = new Dictionary<string, GameObject>();
-    private List<Button> clueButtons = new List<Button>();
+    [HideInInspector]
+    public List<Button> clueButtons = new List<Button>();
 
     private void Awake() {
 
@@ -240,6 +241,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
         return activeStoryNodes;
     }
 
+    /*
     public void InitializeClueButtons()
     {
         ExitGames.Client.Photon.Hashtable cluesState = PhotonNetwork.CurrentRoom.CustomProperties;
@@ -255,6 +257,7 @@ public class ReadStory : MonoBehaviourPunCallbacks
             }
         }
     }
+    */
 
     public void LoadClues(Clues newClues)
     {
@@ -262,11 +265,12 @@ public class ReadStory : MonoBehaviourPunCallbacks
         {
             Destroy(child.gameObject);
         }
-
+        
         if (newClues.clues == null) return;
 
         foreach (Clue clue in newClues.clues)
         {
+            Debug.Log("Clue Loaded");
             GameObject newClueButton = Instantiate(clueButtonPrefab, gridLayoutClue);
             TextMeshProUGUI clueButtonText = newClueButton.GetComponentInChildren<TextMeshProUGUI>();
             clueButtonText.text = clue.clueKeyWord;

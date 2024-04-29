@@ -16,16 +16,11 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: f92afc967d54d0249a500f9a54e011ee, type: 3}
   clues:
-  - clueText: 'Body: The body has a burnt smell and a hint of gasoline. '
-  - clueText: 'Studio: A table is blocking the bedroom door from the outside. '
-  - clueText: 'Studio: There''s a burnt metal lighter on the bed in the bedroom.'
-  - clueText: "Rachel: There are ashes in Rachel\u2019s fireplace, despite it being
-      summer."
-  - clueText: "Chloe: Chloe\u2019s home contains many IOUs, some of which include
-      Rachel's name. "
-  - clueText: 'Rumors: It''s rumored that Mr. Jefferson is quite wealthy, owning
-      gold and jewels that most people have never seen. Can a photographer really
-      earn that much?'
-  - clueText: "Rumor: Did you know? It seems Miss Caufiel wasn\u2019t originally
-      a student at our school, she transferred here before graduation."
+  - clueText: "\u5C38\u4F53:\u5C38\u4F53\u8EAB\u4E0A\u9664\u4E86\u70E7\u7126\u7684\u6C14\u606F\u8FD8\u6709\u4E00\u4E9B\u6C7D\u6CB9\u5473"
+  - clueText: "\u5DE5\u4F5C\u5BA4:\u5367\u5BA4\u7684\u95E8\u5916\u62B5\u7740\u4E00\u5F20\u684C\u5B50"
+  - clueText: "\u5DE5\u4F5C\u5BA4:\u5367\u5BA4\u7684\u5E8A\u4E0A\u6709\u4E00\u4E2A\u88AB\u70E7\u9ED1\u7684\u91D1\u5C5E\u6253\u706B\u673A"
+  - clueText: "\u745E\u79CB:\u745E\u79CB\u5BB6\u4E2D\u7684\u58C1\u7089\u6709\u4E00\u5806\u7070\u70EC\uFF0C\u53EF\u73B0\u5728\u660E\u660E\u662F\u590F\u5929\u554A"
+  - clueText: "\u514B\u6D1B\u4F0A:\u514B\u6D1B\u4F0A\u5BB6\u4E2D\u6709\u5F88\u591A\u6B20\u6761\uFF0C\u5176\u4E2D\u7ADF\u7136\u6709\u745E\u79CB\u7684\u540D\u5B57"
+  - clueText: "\u4F20\u95FB:\u636E\u8BF4\u6770\u5F17\u900A\u8001\u5E08\u4E5F\u662F\u4E2A\u6709\u94B1\u4EBA\uFF0C\u5BB6\u91CC\u7684\u91D1\u94F6\u73E0\u5B9D\u4E00\u822C\u4EBA\u53EF\u80FD\u90FD\u6CA1\u89C1\u8FC7\uFF0C\u5F53\u6444\u5F71\u5E08\u8FD9\u4E48\u8D5A\u94B1\u7684\u5417\uFF1F"
+  - clueText: "\u4F20\u95FB:\u4F60\u4EEC\u77E5\u9053\u5417\uFF1F\u9EA6\u514B\u65AF\u8001\u5E08\u4EE5\u524D\u597D\u50CF\u4E0D\u662F\u54B1\u4EEC\u5B66\u9662\u7684\u5B66\u751F\uFF0C\u662F\u6BD5\u4E1A\u524D\u524D\u7A81\u7136\u8F6C\u5B66\u8FC7\u6765\u7684"
   isActive: 1
