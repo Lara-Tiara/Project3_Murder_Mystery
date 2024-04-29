@@ -207,6 +207,12 @@ public class Vote : MonoBehaviourPunCallbacks
         }
     }
 
+    [PunRPC]
+    private void IncreaseClickedButtonCount() // this seems usless
+    {
+        clickedButtonCount++;
+    }
+
     /// <summary>
     /// Prepare for the next round. Called by CheckEndOfRound.
     /// Every player will be able to execute this function.
@@ -305,11 +311,13 @@ public class Vote : MonoBehaviourPunCallbacks
             }
             else
             {
+                Debug.LogError("Failed to parse round 1 result.");
                 return;
             }
         }
         else
         {
+            Debug.LogError("Failed to get round 1 result.");
             return;
         }
         if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(ROUND_TWO_KEY, out object data2))
@@ -320,11 +328,13 @@ public class Vote : MonoBehaviourPunCallbacks
             }
             else
             {
+                Debug.LogError("Failed to parse round 2 result.");
                 return;
             }
         }
         else
         {
+            Debug.LogError("Failed to get round 2 result.");
             return;
         }
 
