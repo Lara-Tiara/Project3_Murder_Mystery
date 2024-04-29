@@ -13,6 +13,11 @@ public class Vote : MonoBehaviourPunCallbacks
 {
     public const string ROUND_ONE_KEY = "Round One";
     public const string ROUND_TWO_KEY = "Round Two";
+    public const string CURRENT_ROUND_KEY = "CurrentRound";
+
+    public const string VOTE_OUT_MAP_KEY = "VotedOutMap";
+
+    [Header("UI Elements")]
     public TextMeshProUGUI timedownText;
     public float time;
     public const float MAXTIME = 10;
@@ -20,19 +25,30 @@ public class Vote : MonoBehaviourPunCallbacks
     public string[] titleText;
     public GameObject endUI;
     public TextMeshProUGUI endingText;
+
+    [Header("Vote buttons")]
     public Button[] buttons;
+
+    [Header("Story Nodes")]
     public StoryNode[] maxNodes;
     public StoryNode[] rachelNodes;
     public StoryNode[] chloeNodes;
+
+    [Header("Vote Routine settings")]
     public int totalRounds = 2;
-    private int currentRound = 0;
-    public List<int> roundResults = new List<int>();
+    [HideInInspector] public int currentRound = 0;
+    [HideInInspector] public List<int> roundResults = new List<int>();
     private static int clickedButtonCount = 0;
     private bool hasSelect = false;
     private int votedOutIndex;
-    private Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
+    public Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
     public string masterClient;
 
+    /// <summary>
+    /// Voting routine is a coroutine that will run for the duration of the voting phase.
+    /// To keep everything synchronized, this coroutine should be run by the master client only.
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator VotingRoutine()
     {
         while (currentRound < totalRounds)
@@ -44,25 +60,38 @@ public class Vote : MonoBehaviourPunCallbacks
                 time--;
             }
 
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             CheckEndOfRound();
             ResetTimer();
         }
     }
 
+    /// <summary>
+    /// Set the time text. Called by VotingRoutine.
+    /// </summary>
+    /// <param name="text"></param>
     [PunRPC]
     private void SetTimeText(string text)
     {
+        time = float.Parse(text); // do a backup in case of master client disconnection
         timedownText.text = text;
     }
 
-    [PunRPC]
+    /// <summary>
+    /// Reset the timer. Called by VotingRoutine.
+    /// </summary>
+    /// <returns></returns>
     private void ResetTimer()
     {
         time = MAXTIME;
         timedownText.text = time.ToString("f1");
     }
 
+    /// <summary>
+    /// Choose a random button index for the one who is not voting.
+    /// </summary>
+    /// <param name="unVoterID"> id for whoever is not voting. </param>
+    /// <returns></returns>
     private int GetRandomButtonIndex(int unVoterID)
     {
         List<int> availableIndices = new List<int>();
@@ -83,17 +112,23 @@ public class Vote : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        buttons[GameDataManager.selectCharacter].interactable = false;
+        buttons[GameDataManager.selectCharacter].interactable = false; // a player cannot vote for themselves
         ResetTimer();
         UpdateRoundTitle();
+
         if (PhotonNetwork.IsMasterClient)
         {
             StartCoroutine(VotingRoutine());
         }
-        masterClient = PhotonNetwork.MasterClient.UserId;
-        Debug.Log(masterClient);
-        Debug.Log(PhotonNetwork.MasterClient);
-        Debug.Log(PhotonNetwork.MasterClient.GetHashCode());
+    }
+
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        // if local becomes master client, start the voting routine
+        if (newMasterClient.UserId == PhotonNetwork.LocalPlayer.UserId)
+        {
+            StartCoroutine(VotingRoutine());
+        }
     }
 
     public override void OnDisconnected(DisconnectCause cause)
@@ -101,6 +136,11 @@ public class Vote : MonoBehaviourPunCallbacks
         StopAllCoroutines();
     }
 
+    /// <summary>
+    /// Called when a button is clicked. this is monted to the vote button's onClick event.
+    /// This method will notify all other players of the vote.
+    /// </summary>
+    /// <param name="buttonIndex"></param>
     public void OnButtonClick(int buttonIndex)
     {
         if (buttonIndex == -1 || hasSelect || (PhotonNetwork.IsMasterClient && clickedButtonCount >= buttons.Length))
@@ -117,14 +157,14 @@ public class Vote : MonoBehaviourPunCallbacks
         hasSelect = true;
     }
 
+    /// <summary>
+    ///  Called when a player votes. This is called by OnButtonClick.
+    /// </summary>
+    /// <param name="voterID"></param>
+    /// <param name="buttonIndex"></param>
     [PunRPC]
     private void PlayerVote(int voterID, int buttonIndex)
     {
-        if (!PhotonNetwork.IsMasterClient)
-        {
-            return;
-        }
-        
         if (votedOutMap == null)
         {
             votedOutMap = new Dictionary<int, int>();
@@ -134,8 +174,20 @@ public class Vote : MonoBehaviourPunCallbacks
         {
             votedOutMap[voterID] = buttonIndex;
         }
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // update the current custom properties
+            var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+            roomProperties[VOTE_OUT_MAP_KEY] = votedOutMap;
+            PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
+        }
     }
 
+    /// <summary>
+    /// Determine the round result and check if the game is over.
+    /// This funciton can only get called by the master client.
+    /// </summary>
     private void CheckEndOfRound()
     {
         DetermineRoundResult();
@@ -143,27 +195,32 @@ public class Vote : MonoBehaviourPunCallbacks
         if (currentRound + 1 < totalRounds)
         {
             photonView.RPC("PrepareNextRound", RpcTarget.All);
-            
+
         }
         else
         {
             StopAllCoroutines();
-            if (roundResults.Count >= totalRounds){
+            if (roundResults.Count >= totalRounds)
+            {
                 photonView.RPC("ShowEndUI", RpcTarget.All);
             }
         }
     }
 
-    [PunRPC]
-    private void IncreaseClickedButtonCount()
-    {
-        clickedButtonCount++;
-    }
-
+    /// <summary>
+    /// Prepare for the next round. Called by CheckEndOfRound.
+    /// Every player will be able to execute this function.
+    /// </summary>
     [PunRPC]
     private void PrepareNextRound()
     {
         currentRound++;
+
+        // set the round info to the room properties
+        var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+        roomProperties[CURRENT_ROUND_KEY] = currentRound;
+        PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
+
         ResetVotingState();
         if (currentRound < totalRounds)
         {
@@ -172,13 +229,13 @@ public class Vote : MonoBehaviourPunCallbacks
         }
     }
 
+    /// <summary>
+    /// Reset the voting state for the next round.
+    /// Every player will be able to execute this function.
+    /// </summary>
     private void ResetVotingState()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            votedOutMap = new Dictionary<int, int>();
-        }
-
+        votedOutMap = new Dictionary<int, int>();
         clickedButtonCount = 0;
         hasSelect = false;
         foreach (Button button in buttons)
@@ -188,6 +245,9 @@ public class Vote : MonoBehaviourPunCallbacks
         buttons[GameDataManager.selectCharacter].interactable = false;
     }
 
+    /// <summary>
+    /// Determine the round result.
+    /// </summary>
     private void DetermineRoundResult()
     {
         int[] votes = new int[buttons.Length];
@@ -197,7 +257,9 @@ public class Vote : MonoBehaviourPunCallbacks
             if (votedOutMap.TryGetValue(i, out int result))
             {
                 votes[result]++;
-            } else {
+            }
+            else
+            {
                 votes[GetRandomButtonIndex(i)]++;
             }
         }
@@ -210,21 +272,25 @@ public class Vote : MonoBehaviourPunCallbacks
                 break;
             }
         }
-        
+
         if (votes.All(v => v == 1))
         {
-            votedOutIndex = -1; 
+            votedOutIndex = -1;
         }
 
         roundResults.Add(votedOutIndex);
+        var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+
         if (roundResults.Count == 1)
         {
-            PhotonNetwork.CurrentRoom.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { ROUND_ONE_KEY, votedOutIndex } });
+            roomProperties[ROUND_ONE_KEY] = votedOutIndex;
         }
         else if (roundResults.Count == 2)
         {
-            PhotonNetwork.CurrentRoom.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { ROUND_TWO_KEY, votedOutIndex } });
+            roomProperties[ROUND_TWO_KEY] = votedOutIndex;
         }
+
+        PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
     }
 
     [PunRPC]
@@ -239,7 +305,7 @@ public class Vote : MonoBehaviourPunCallbacks
             }
             else
             {
-            return;
+                return;
             }
         }
         else
@@ -254,18 +320,18 @@ public class Vote : MonoBehaviourPunCallbacks
             }
             else
             {
-            return;
+                return;
             }
         }
         else
         {
             return;
         }
-        
-        bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] {0, 0});
-        bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] {1, 1});
-        bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] {2, 2});
-        bool equalVote = roundResults.SequenceEqual(new int[] {-1, -1});
+
+        bool maxVotedOutTwice = roundResults.SequenceEqual(new int[] { 0, 0 });
+        bool rachelVotedOutTwice = roundResults.SequenceEqual(new int[] { 1, 1 });
+        bool chloeVotedOutTwice = roundResults.SequenceEqual(new int[] { 2, 2 });
+        bool equalVote = roundResults.SequenceEqual(new int[] { -1, -1 });
         bool maxRachelVotedOut = roundResults.Contains(0) && roundResults.Contains(1);
         bool maxChloeVotedOut = roundResults.Contains(0) && roundResults.Contains(2);
         bool chloeRachelVotedOut = roundResults.Contains(1) && roundResults.Contains(2);
@@ -279,35 +345,35 @@ public class Vote : MonoBehaviourPunCallbacks
             SetActiveNodes(chloeNodes, 1);
             SetActiveNodes(rachelNodes, 1);
         }
-        if(rachelVotedOutTwice)
+        if (rachelVotedOutTwice)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,1);
-            SetActiveNodes(rachelNodes,3);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 3);
         }
-        if(chloeVotedOutTwice)
+        if (chloeVotedOutTwice)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,1);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 1);
         }
-        if(maxRachelVotedOut)
+        if (maxRachelVotedOut)
         {
             SetActiveNodes(maxNodes, 2);
-            SetActiveNodes(chloeNodes,1);
-            SetActiveNodes(rachelNodes,2);
+            SetActiveNodes(chloeNodes, 1);
+            SetActiveNodes(rachelNodes, 2);
         }
-        if(maxChloeVotedOut)
+        if (maxChloeVotedOut)
         {
             SetActiveNodes(maxNodes, 2);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,1);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 1);
         }
-        if(chloeRachelVotedOut)
+        if (chloeRachelVotedOut)
         {
             SetActiveNodes(maxNodes, 3);
-            SetActiveNodes(chloeNodes,2);
-            SetActiveNodes(rachelNodes,2);
+            SetActiveNodes(chloeNodes, 2);
+            SetActiveNodes(rachelNodes, 2);
         }
         if (equalMaxVote)
         {
@@ -327,11 +393,11 @@ public class Vote : MonoBehaviourPunCallbacks
             SetActiveNodes(chloeNodes, 1);
             SetActiveNodes(rachelNodes, 2);
         }
-        if(equalVote)
+        if (equalVote)
         {
             SetActiveNodes(maxNodes, 4);
-            SetActiveNodes(chloeNodes,4);
-            SetActiveNodes(rachelNodes,4);
+            SetActiveNodes(chloeNodes, 4);
+            SetActiveNodes(rachelNodes, 4);
         }
 
         LoadActiveTextForCharacter();
@@ -382,14 +448,16 @@ public class Vote : MonoBehaviourPunCallbacks
 
     public void SetActiveNodes(StoryNode[] nodes, int nodeID)
     {
-        foreach (var node in nodes) {
-            if(node.nodeId == nodeID) {
+        foreach (var node in nodes)
+        {
+            if (node.nodeId == nodeID)
+            {
                 node.isActive = true;
             }
         }
     }
 
-    private void UpdateRoundTitle()
+    public void UpdateRoundTitle()
     {
         if (currentRound < titleText.Length)
         {

@@ -1129,11 +1129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f5cc93433451c4588277f736430f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  murder: 0
-  suspect: 1
-  murderEachRound: 0100000000000000
   timedownText: {fileID: 477272683}
-  time: 20
+  time: 30
   roundTitle: {fileID: 2085893668}
   titleText:
   - Who's the murder of Bill?
@@ -1159,6 +1156,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1dc34b9f7c9a6746b73c1553ce81a58, type: 2}
   - {fileID: 11400000, guid: da97fa293cf64ed459876abb596bb6d3, type: 2}
   totalRounds: 2
+  roundResults: 
+  masterClient: 
 --- !u!4 &605944742
 Transform:
   m_ObjectHideFlags: 0
