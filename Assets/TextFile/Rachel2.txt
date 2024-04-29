@@ -1,8 +1,5 @@
-警卫:咳咳,9月12日晚,也就是昨晚。马克·杰克逊先生的工作室发生了一场火灾,幸好911发现得及时,大火并没有彻底吞没他的工作室,而在杰弗逊先生卧室的外面,我们却发现了一具被烧焦的尸体。经过排查以及工作室附近的监控显示,昨天只有你们三个在那附近出现过,所以今天我才把你们几个叫过来！
+Guard: Cough, cough. On the evening of September 12th, just last night, there was a fire at Mr. Mark Jackson's studio. Thankfully, 911 was alerted in time, and the fire didn't completely destroy his studio. However, outside Mr. Jefferson's bedroom, we found a charred body. After investigating and checking the surveillance near the studio, it appears that only the three of you were seen in that area yesterday, which is why I've called you here today!
 
 
-没想到布莱克韦尔学院竟然会发生这样的事件,为了维护学院的声誉,学院方面暂时没有通知警察,但是,我们也并没有太多时间,对于杰弗逊先生的死,你们必须尽快给学院、给广大师生、给社会一个交代！我不管你们三个到底都做了些什么,我只要结果,懂吗？结果！在你们三个调查过程中我会尽量派人配合你们,希望你们别让我失望！
-
-
-任务:
-继续搜索线索,每条线索的去留都至关重要。本轮你需要分享至少六条线搜索,如果你查看了超过六条线索,需要销毁多余线索。本轮最多查看七条线索。
+Task:
+You need to keep searching the clues and carefully decide which to share.

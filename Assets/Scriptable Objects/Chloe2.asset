@@ -16,11 +16,16 @@ MonoBehaviour:
   nodeId: 0
   storyText: {fileID: 4900000, guid: ba100dfc4aeed754996c53e42333e430, type: 3}
   clues:
-  - clueText: "\u5DE5\u4F5C\u5BA4:\u5367\u5BA4\u7684\u5E8A\u4E0A\u5145\u65A5\u7740\u6C7D\u6CB9\u5473"
-  - clueText: "\u5DE5\u4F5C\u5BA4:\u4FDD\u9669\u67DC\u5B8C\u597D\u65E0\u635F\uFF0C\u6CA1\u6709\u88AB\u7834\u574F\u7684\u75D5\u8FF9\u3002\u5F3A\u5236\u6253\u5F00\u540E\uFF0C\u91CC\u9762\u7A7A\u7A7A\u5982\u4E5F\uFF0C\u4EC0\u4E48\u90FD\u6CA1\u6709"
-  - clueText: "\u5DE5\u4F5C\u5BA4:\u5DE5\u4F5C\u5BA4\u7684\u5BA2\u5385\u684C\u5B50\u4E0A\u6709\u4E00\u4E2A\u5C0F\u96D5\u50CF\uFF0C\u96D5\u50CF\u7684\u4E00\u89D2\u6709\u4E00\u4E9B\u8840\u8FF9"
-  - clueText: "\u745E\u79CB:\u5367\u5BA4\u7684\u65E5\u5386\u4E0A\uFF0C9\u670812\u65E5\u88AB\u7EA2\u5708\u5708\u4F4F\u4E86"
-  - clueText: "\u9EA6\u514B\u65AF:\u9EA6\u514B\u65AF\u7684\u5BB6\u4E2D\u6709\u4E00\u5F20\u623F\u5C4B\u79DF\u8D41\u5408\u540C\uFF0C\u4ED4\u7EC6\u4E00\u770B\uFF0C\u5979\u79DF\u7684\u623F\u5B50\u7ADF\u7136\u5C31\u662F\u6770\u5F17\u900A\u8001\u5E08\u7684\u5DE5\u4F5C\u5BA4"
-  - clueText: "\u4F20\u95FB:\u7532:\u542C\u8BF4\u54B1\u4EEC\u5B66\u9662\u4E4B\u524D\u8FD8\u6709\u4E2A\u5973\u751F\u5728\u5BBF\u820D\u81EA\u6740\uFF0C\u597D\u50CF\u8FD8\u662F\u56E0\u4E3A\u4E00\u4E2A\u7537\u7684\u3002\u4E59:\u5475\uFF0C\u7537\u4EBA\uFF0C\u522B\u6765\u6CBE\u8FB9\uFF01"
-  - clueText: "\u5DE5\u4F5C\u5BA4:\u53A8\u623F\u7684\u51B0\u7BB1\u865A\u63A9\u7740\uFF0C\u5E76\u6CA1\u6709\u5173\u4E25"
+  - clueText: 'Studio: The bedroom is overwhelmed with the smell of gasoline'
+  - clueText: 'Studio: The safe is intact with no signs of tampering. It was found
+      empty upon being forced open.'
+  - clueText: 'Studio: A small statue on the living room table has traces of blood
+      on one of its corners. '
+  - clueText: 'Rachel: September 12th is circled in red on the calendar in her bedroom. '
+  - clueText: 'Max: There is a rental agreement in Max''s home for a house, which
+      turns out to be Mr. Jefferson''s studio. '
+  - clueText: 'Rumor: A: I heard that a girl committed suicide in her dormitory here
+      because of a guy. B: Men, better stay away! '
+  - clueText: 'Studio: The kitchen refrigerator is slightly ajar and not properly
+      closed.'
   isActive: 1
