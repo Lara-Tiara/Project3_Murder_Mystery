@@ -13,24 +13,12 @@ MonoBehaviour:
   m_Name: RoundTwoClues
   m_EditorClassIdentifier: 
   clues:
-  - clueKeyWord: Body1
+  - clueKeyWord: Body3
     clueText: The body shows a visible dent at the back of the head, suggesting it
       was struck by a heavy object.
     hasDestroyed: 0
-  - clueKeyWord: Body2
+  - clueKeyWord: Body4
     clueText: 'The body has a burnt smell and a hint of gasoline. '
-    hasDestroyed: 0
-  - clueKeyWord: Studio1
-    clueText: 'A fruit knife was discovered under the living room sofa. '
-    hasDestroyed: 0
-  - clueKeyWord: Studio2
-    clueText: The bedroom is overwhelmed with the smell of gasoline.
-    hasDestroyed: 0
-  - clueKeyWord: Studio3
-    clueText: 'The bedroom window has been broken. '
-    hasDestroyed: 0
-  - clueKeyWord: Studio4
-    clueText: 'A table is blocking the bedroom door from the outside. '
     hasDestroyed: 0
   - clueKeyWord: Studio5
     clueText: 'The safe is intact with no signs of tampering. It was found empty
@@ -46,48 +34,60 @@ MonoBehaviour:
   - clueKeyWord: Studio8
     clueText: 'The kitchen refrigerator is slightly ajar and not properly closed. '
     hasDestroyed: 0
-  - clueKeyWord: Rachel1
+  - clueKeyWord: Studio9
+    clueText: 'A table is blocking the bedroom door from the outside. '
+    hasDestroyed: 0
+  - clueKeyWord: Studio10
+    clueText: 'The bedroom window has been broken. '
+    hasDestroyed: 0
+  - clueKeyWord: Studio11
+    clueText: The bedroom is overwhelmed with the smell of gasoline.
+    hasDestroyed: 0
+  - clueKeyWord: Studio12
+    clueText: 'A fruit knife was discovered under the living room sofa. '
+    hasDestroyed: 0
+  - clueKeyWord: Rachel3
     clueText: "There are ashes in Rachel\u2019s fireplace, despite it being summer. "
     hasDestroyed: 0
-  - clueKeyWord: Rachel2
+  - clueKeyWord: Rachel4
     clueText: September 12th is circled in red on the calendar in her bedroom.
-    hasDestroyed: 0
-  - clueKeyWord: Max1
-    clueText: Under Max's bed is a toolbox containing saws, drill bits, and other
-      tools.
     hasDestroyed: 0
   - clueKeyWord: Max2
     clueText: 'There is a rental agreement in Max''s home for a house, which turns
       out to be Mr. Jefferson''s studio. '
     hasDestroyed: 0
-  - clueKeyWord: Chloe1
+  - clueKeyWord: Max3
+    clueText: Under Max's bed is a toolbox containing saws, drill bits, and other
+      tools.
+    hasDestroyed: 0
+  - clueKeyWord: Chloe3
     clueText: "Chloe\u2019s home contains many IOUs, some of which include Rachel's
       name."
     hasDestroyed: 0
-  - clueKeyWord: Chloe2
+  - clueKeyWord: Chloe4
     clueText: "Chloe\u2019s study is filled with notes that contain Mr. Jefferson's
       handwriting."
     hasDestroyed: 0
-  - clueKeyWord: Rumor1
+  - clueKeyWord: Rumor7
     clueText: 'It''s rumored that Mr. Jefferson is quite wealthy, owning gold and
       jewels that most people have never seen. Can a photographer really earn that
       much? '
     hasDestroyed: 0
-  - clueKeyWord: Rumor2
+  - clueKeyWord: Rumor8
     clueText: 'A: I heard that a girl committed suicide in her dormitory here because
       of a guy. B: Men, better stay away! '
     hasDestroyed: 0
-  - clueKeyWord: Rumor3
+  - clueKeyWord: Rumor9
     clueText: "Did you know? Lately, I\u2019ve seen Chloe heading to Mr. Jefferson's
       studio every Saturday! "
     hasDestroyed: 0
-  - clueKeyWord: Rumor4
+  - clueKeyWord: Rumor10
     clueText: "Did you know? It seems Max wasn\u2019t originally a student at our
       school, she transferred here before graduation. "
     hasDestroyed: 0
-  - clueKeyWord: Rumor5
+  - clueKeyWord: Rumor11
     clueText: "Last night while out jogging, someone who seemed to be a staff member
       for a photography exhibition asked me for directions, claiming they couldn't
       reach Mr. Jefferson by phone, so they asked for directions to Mr. Jefferson\u2019s
       studio. "
-    hasDestroyed: 0
+    hasDestroyed: 1

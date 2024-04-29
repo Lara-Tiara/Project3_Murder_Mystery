@@ -101,7 +101,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         RoomOptions options = new RoomOptions();
         options.MaxPlayers = playerCount;
         options.PlayerTtl = -1;
-        options.EmptyRoomTtl = 60000;
+        options.EmptyRoomTtl = 10000;
         PhotonNetwork.JoinOrCreateRoom(roomName.text, options, default);
 
         joinRoomTip.SetActive(true);
