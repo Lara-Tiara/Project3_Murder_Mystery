@@ -44,11 +44,6 @@ public class Vote : MonoBehaviourPunCallbacks
     public Dictionary<int, int> votedOutMap = new Dictionary<int, int>();
     public string masterClient;
 
-    /// <summary>
-    /// Voting routine is a coroutine that will run for the duration of the voting phase.
-    /// To keep everything synchronized, this coroutine should be run by the master client only.
-    /// </summary>
-    /// <returns></returns>
     public IEnumerator VotingRoutine()
     {
         while (currentRound < totalRounds)
@@ -66,32 +61,19 @@ public class Vote : MonoBehaviourPunCallbacks
         }
     }
 
-    /// <summary>
-    /// Set the time text. Called by VotingRoutine.
-    /// </summary>
-    /// <param name="text"></param>
     [PunRPC]
     private void SetTimeText(string text)
     {
-        time = float.Parse(text); // do a backup in case of master client disconnection
+        time = float.Parse(text);
         timedownText.text = text;
     }
 
-    /// <summary>
-    /// Reset the timer. Called by VotingRoutine.
-    /// </summary>
-    /// <returns></returns>
     private void ResetTimer()
     {
         time = MAXTIME;
         timedownText.text = time.ToString("f1");
     }
 
-    /// <summary>
-    /// Choose a random button index for the one who is not voting.
-    /// </summary>
-    /// <param name="unVoterID"> id for whoever is not voting. </param>
-    /// <returns></returns>
     private int GetRandomButtonIndex(int unVoterID)
     {
         List<int> availableIndices = new List<int>();
@@ -112,7 +94,7 @@ public class Vote : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        buttons[GameDataManager.selectCharacter].interactable = false; // a player cannot vote for themselves
+        buttons[GameDataManager.selectCharacter].interactable = false;
         ResetTimer();
         UpdateRoundTitle();
 
@@ -124,7 +106,6 @@ public class Vote : MonoBehaviourPunCallbacks
 
     public override void OnMasterClientSwitched(Player newMasterClient)
     {
-        // if local becomes master client, start the voting routine
         if (newMasterClient.UserId == PhotonNetwork.LocalPlayer.UserId)
         {
             StartCoroutine(VotingRoutine());
@@ -136,11 +117,6 @@ public class Vote : MonoBehaviourPunCallbacks
         StopAllCoroutines();
     }
 
-    /// <summary>
-    /// Called when a button is clicked. this is monted to the vote button's onClick event.
-    /// This method will notify all other players of the vote.
-    /// </summary>
-    /// <param name="buttonIndex"></param>
     public void OnButtonClick(int buttonIndex)
     {
         if (buttonIndex == -1 || hasSelect || (PhotonNetwork.IsMasterClient && clickedButtonCount >= buttons.Length))
@@ -157,11 +133,6 @@ public class Vote : MonoBehaviourPunCallbacks
         hasSelect = true;
     }
 
-    /// <summary>
-    ///  Called when a player votes. This is called by OnButtonClick.
-    /// </summary>
-    /// <param name="voterID"></param>
-    /// <param name="buttonIndex"></param>
     [PunRPC]
     private void PlayerVote(int voterID, int buttonIndex)
     {
@@ -177,17 +148,12 @@ public class Vote : MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.IsMasterClient)
         {
-            // update the current custom properties
             var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
             roomProperties[VOTE_OUT_MAP_KEY] = votedOutMap;
             PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
         }
     }
 
-    /// <summary>
-    /// Determine the round result and check if the game is over.
-    /// This funciton can only get called by the master client.
-    /// </summary>
     private void CheckEndOfRound()
     {
         DetermineRoundResult();
@@ -208,21 +174,16 @@ public class Vote : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void IncreaseClickedButtonCount() // this seems usless
+    private void IncreaseClickedButtonCount()
     {
         clickedButtonCount++;
     }
 
-    /// <summary>
-    /// Prepare for the next round. Called by CheckEndOfRound.
-    /// Every player will be able to execute this function.
-    /// </summary>
     [PunRPC]
     private void PrepareNextRound()
     {
         currentRound++;
 
-        // set the round info to the room properties
         var roomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
         roomProperties[CURRENT_ROUND_KEY] = currentRound;
         PhotonNetwork.CurrentRoom.SetCustomProperties(roomProperties);
@@ -235,10 +196,6 @@ public class Vote : MonoBehaviourPunCallbacks
         }
     }
 
-    /// <summary>
-    /// Reset the voting state for the next round.
-    /// Every player will be able to execute this function.
-    /// </summary>
     private void ResetVotingState()
     {
         votedOutMap = new Dictionary<int, int>();
@@ -251,9 +208,6 @@ public class Vote : MonoBehaviourPunCallbacks
         buttons[GameDataManager.selectCharacter].interactable = false;
     }
 
-    /// <summary>
-    /// Determine the round result.
-    /// </summary>
     private void DetermineRoundResult()
     {
         int[] votes = new int[buttons.Length];

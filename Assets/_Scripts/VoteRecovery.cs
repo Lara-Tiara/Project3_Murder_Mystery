@@ -22,7 +22,6 @@ public class VoteRecovery : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom called in VoteRecovery.");
-        // set vote.currentRound according to room properties
         if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(Vote.CURRENT_ROUND_KEY, out object value))
         {
             if (int.TryParse(value.ToString(), out int currentRound))
@@ -33,7 +32,6 @@ public class VoteRecovery : MonoBehaviourPunCallbacks
 
         vote.UpdateRoundTitle();
 
-        // load voteOutMap back to vote
         if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(Vote.VOTE_OUT_MAP_KEY, out value))
         {
             vote.votedOutMap = (Dictionary<int, int>)value;
@@ -41,7 +39,6 @@ public class VoteRecovery : MonoBehaviourPunCallbacks
 
         vote.roundResults.Clear();
 
-        // we have finished both rounds
         Debug.Log("Now let's try to show the end UI.");
         vote.ShowEndUI();
     }
