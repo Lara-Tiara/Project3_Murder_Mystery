@@ -93,7 +93,7 @@ public class Chat : MonoBehaviourPunCallbacks
         {
             string characterName = characterNames[GameDataManager.selectCharacter];
 
-            photonView.RPC("ReceiveMessage", RpcTarget.All, characterName, message);
+            photonView.RPC("ReceiveMessage", RpcTarget.AllBuffered, characterName, message);
             iptMessage.text = "";
 
             SetFocusOnInputField();

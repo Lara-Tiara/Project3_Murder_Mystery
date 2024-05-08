@@ -20,7 +20,7 @@ public class Vote : MonoBehaviourPunCallbacks
     [Header("UI Elements")]
     public TextMeshProUGUI timedownText;
     public float time;
-    public const float MAXTIME = 10;
+    public const float MAXTIME = 30;
     public TextMeshProUGUI roundTitle;
     public string[] titleText;
     public GameObject endUI;
